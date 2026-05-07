@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens
+package com.cct.music.lite.ui.screens
 
 import android.net.Uri
 import androidx.compose.animation.core.tween
@@ -47,52 +47,52 @@ import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.DarkModeKey
-import moe.koiverse.archivetune.constants.PureBlackKey
-import moe.koiverse.archivetune.ui.component.BottomSheet
-import moe.koiverse.archivetune.ui.component.BottomSheetMenu
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.rememberBottomSheetState
-import moe.koiverse.archivetune.ui.screens.BrowseScreen
-import moe.koiverse.archivetune.ui.screens.artist.ArtistAlbumsScreen
-import moe.koiverse.archivetune.ui.screens.artist.ArtistItemsScreen
-import moe.koiverse.archivetune.ui.screens.artist.ArtistScreen
-import moe.koiverse.archivetune.ui.screens.artist.ArtistSongsScreen
-import moe.koiverse.archivetune.ui.screens.library.LocalSongScreen
-import moe.koiverse.archivetune.ui.screens.library.LibraryScreen
-import moe.koiverse.archivetune.ui.screens.playlist.AutoPlaylistScreen
-import moe.koiverse.archivetune.ui.screens.playlist.LocalPlaylistScreen
-import moe.koiverse.archivetune.ui.screens.playlist.OnlinePlaylistScreen
-import moe.koiverse.archivetune.ui.screens.playlist.TopPlaylistScreen
-import moe.koiverse.archivetune.ui.screens.playlist.CachePlaylistScreen
-import moe.koiverse.archivetune.ui.screens.search.OnlineSearchResult
-import moe.koiverse.archivetune.ui.screens.settings.AboutScreen
-import moe.koiverse.archivetune.ui.screens.settings.AccountSettings
-import moe.koiverse.archivetune.ui.screens.settings.AppearanceSettings
-import moe.koiverse.archivetune.ui.screens.settings.CustomizeBackground
-import moe.koiverse.archivetune.ui.screens.settings.BackupAndRestore
-import moe.koiverse.archivetune.ui.screens.settings.ChangelogScreen
-import moe.koiverse.archivetune.ui.screens.settings.ContentSettings
-import moe.koiverse.archivetune.ui.screens.settings.DarkMode
-import moe.koiverse.archivetune.ui.screens.settings.DiscordLoginScreen
-import moe.koiverse.archivetune.ui.screens.settings.DiscordSettings
-import moe.koiverse.archivetune.ui.screens.settings.DebugSettings
-import moe.koiverse.archivetune.ui.screens.settings.IntegrationScreen
-import moe.koiverse.archivetune.ui.screens.settings.LastFMSettings
-import moe.koiverse.archivetune.ui.screens.settings.PalettePickerScreen
-import moe.koiverse.archivetune.ui.screens.settings.PlayerSettings
-import moe.koiverse.archivetune.ui.screens.settings.PoTokenScreen
-import moe.koiverse.archivetune.ui.screens.settings.PrivacySettings
-import moe.koiverse.archivetune.ui.screens.settings.SettingsScreen
-import moe.koiverse.archivetune.ui.screens.settings.StorageSettings
-import moe.koiverse.archivetune.ui.screens.settings.ThemeCreatorScreen
-import moe.koiverse.archivetune.ui.screens.settings.UpdateScreen
-import moe.koiverse.archivetune.musicrecognition.MusicRecognitionRoute
-import moe.koiverse.archivetune.ui.screens.musicrecognition.MusicRecognitionScreen
-import moe.koiverse.archivetune.ui.utils.ShowMediaInfo
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.DarkModeKey
+import com.cct.music.lite.constants.PureBlackKey
+import com.cct.music.lite.ui.component.BottomSheet
+import com.cct.music.lite.ui.component.BottomSheetMenu
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.rememberBottomSheetState
+import com.cct.music.lite.ui.screens.BrowseScreen
+import com.cct.music.lite.ui.screens.artist.ArtistAlbumsScreen
+import com.cct.music.lite.ui.screens.artist.ArtistItemsScreen
+import com.cct.music.lite.ui.screens.artist.ArtistScreen
+import com.cct.music.lite.ui.screens.artist.ArtistSongsScreen
+import com.cct.music.lite.ui.screens.library.LocalSongScreen
+import com.cct.music.lite.ui.screens.library.LibraryScreen
+import com.cct.music.lite.ui.screens.playlist.AutoPlaylistScreen
+import com.cct.music.lite.ui.screens.playlist.LocalPlaylistScreen
+import com.cct.music.lite.ui.screens.playlist.OnlinePlaylistScreen
+import com.cct.music.lite.ui.screens.playlist.TopPlaylistScreen
+import com.cct.music.lite.ui.screens.playlist.CachePlaylistScreen
+import com.cct.music.lite.ui.screens.search.OnlineSearchResult
+import com.cct.music.lite.ui.screens.settings.AboutScreen
+import com.cct.music.lite.ui.screens.settings.AccountSettings
+import com.cct.music.lite.ui.screens.settings.AppearanceSettings
+import com.cct.music.lite.ui.screens.settings.CustomizeBackground
+import com.cct.music.lite.ui.screens.settings.BackupAndRestore
+import com.cct.music.lite.ui.screens.settings.ChangelogScreen
+import com.cct.music.lite.ui.screens.settings.ContentSettings
+import com.cct.music.lite.ui.screens.settings.DarkMode
+import com.cct.music.lite.ui.screens.settings.DiscordLoginScreen
+import com.cct.music.lite.ui.screens.settings.DiscordSettings
+import com.cct.music.lite.ui.screens.settings.DebugSettings
+import com.cct.music.lite.ui.screens.settings.IntegrationScreen
+import com.cct.music.lite.ui.screens.settings.LastFMSettings
+import com.cct.music.lite.ui.screens.settings.PalettePickerScreen
+import com.cct.music.lite.ui.screens.settings.PlayerSettings
+import com.cct.music.lite.ui.screens.settings.PoTokenScreen
+import com.cct.music.lite.ui.screens.settings.PrivacySettings
+import com.cct.music.lite.ui.screens.settings.SettingsScreen
+import com.cct.music.lite.ui.screens.settings.StorageSettings
+import com.cct.music.lite.ui.screens.settings.ThemeCreatorScreen
+import com.cct.music.lite.ui.screens.settings.UpdateScreen
+import com.cct.music.lite.musicrecognition.MusicRecognitionRoute
+import com.cct.music.lite.ui.screens.musicrecognition.MusicRecognitionScreen
+import com.cct.music.lite.ui.utils.ShowMediaInfo
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
 
 @OptIn(ExperimentalMaterial3Api::class)
 fun NavGraphBuilder.navigationBuilder(
@@ -366,7 +366,7 @@ fun NavGraphBuilder.navigationBuilder(
         LastFMSettings(navController, scrollBehavior)
     }
     composable("settings/discord/experimental") {
-        moe.koiverse.archivetune.ui.screens.settings.DiscordExperimental(navController)
+        com.cct.music.lite.ui.screens.settings.DiscordExperimental(navController)
     }
     composable("settings/misc") {
         DebugSettings(navController)

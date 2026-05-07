@@ -8,16 +8,16 @@
 
 
 
-package moe.koiverse.archivetune.viewmodels
+package com.cct.music.lite.viewmodels
 
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.pages.HistoryPage
-import moe.koiverse.archivetune.constants.HistorySource
-import moe.koiverse.archivetune.utils.reportException
-import moe.koiverse.archivetune.db.MusicDatabase
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.pages.HistoryPage
+import com.cct.music.lite.constants.HistorySource
+import com.cct.music.lite.utils.reportException
+import com.cct.music.lite.db.MusicDatabase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow

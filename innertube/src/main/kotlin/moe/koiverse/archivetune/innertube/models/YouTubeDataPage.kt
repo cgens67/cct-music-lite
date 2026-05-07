@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.innertube.models
+package com.cct.music.lite.innertube.models
 
 
 import kotlinx.serialization.SerialName
@@ -162,7 +162,7 @@ data class YouTubeDataPage(
                                     @Serializable
                                     data class Thumbnail(
                                         @SerialName("thumbnails")
-                                        val thumbnails: List<moe.koiverse.archivetune.innertube.models.Thumbnail>? = null,
+                                        val thumbnails: List<com.cct.music.lite.innertube.models.Thumbnail>? = null,
                                     )
 
                                     @Serializable

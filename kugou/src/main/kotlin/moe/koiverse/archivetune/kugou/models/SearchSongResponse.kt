@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.kugou.models
+package com.cct.music.lite.kugou.models
 
 import kotlinx.serialization.Serializable
 

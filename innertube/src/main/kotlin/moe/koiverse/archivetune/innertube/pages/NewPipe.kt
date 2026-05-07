@@ -8,11 +8,11 @@
 
 
 
-package moe.koiverse.archivetune.innertube
+package com.cct.music.lite.innertube
 
-import moe.koiverse.archivetune.innertube.PlaybackAuthState
-import moe.koiverse.archivetune.innertube.models.YouTubeClient
-import moe.koiverse.archivetune.innertube.models.response.PlayerResponse
+import com.cct.music.lite.innertube.PlaybackAuthState
+import com.cct.music.lite.innertube.models.YouTubeClient
+import com.cct.music.lite.innertube.models.response.PlayerResponse
 import io.ktor.http.URLBuilder
 import io.ktor.http.parseQueryString
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull

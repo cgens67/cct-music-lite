@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.lastfm.models
+package com.cct.music.lite.lastfm.models
 
 import kotlinx.serialization.Serializable
 

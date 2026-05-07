@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.playback
+package com.cct.music.lite.playback
 
 internal object PlaybackResumptionPlanner {
     data class PersistedItems<T>(

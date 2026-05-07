@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import android.content.Intent
 import android.net.Uri
@@ -41,33 +41,33 @@ import androidx.media3.common.Player.STATE_READY
 import androidx.navigation.NavController
 import androidx.datastore.preferences.core.stringPreferencesKey
 import coil3.compose.AsyncImage
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.*
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.PreferenceEntry
-import moe.koiverse.archivetune.ui.component.PreferenceGroupTitle
-import moe.koiverse.archivetune.ui.component.SwitchPreference
-import moe.koiverse.archivetune.ui.component.ListItem
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.makeTimeString
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.utils.TranslatorLanguages
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.get
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.*
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.PreferenceEntry
+import com.cct.music.lite.ui.component.PreferenceGroupTitle
+import com.cct.music.lite.ui.component.SwitchPreference
+import com.cct.music.lite.ui.component.ListItem
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.makeTimeString
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.utils.TranslatorLanguages
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.get
 import androidx.compose.material3.AlertDialog
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.TextButton
 import com.my.kizzy.rpc.KizzyRPC
 import timber.log.Timber
-import moe.koiverse.archivetune.utils.DiscordRPC
-import moe.koiverse.archivetune.utils.getPresenceIntervalMillis
+import com.cct.music.lite.utils.DiscordRPC
+import com.cct.music.lite.utils.getPresenceIntervalMillis
 import kotlinx.coroutines.*
-import moe.koiverse.archivetune.utils.ArtworkStorage
+import com.cct.music.lite.utils.ArtworkStorage
 
 enum class ActivitySource { ARTIST, ALBUM, SONG, APP }
 

@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.viewmodels
+package com.cct.music.lite.viewmodels
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -16,11 +16,11 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.filterExplicit
-import moe.koiverse.archivetune.innertube.pages.ArtistPage
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.utils.reportException
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.filterExplicit
+import com.cct.music.lite.innertube.pages.ArtistPage
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.utils.reportException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.SharingStarted
@@ -28,11 +28,11 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 import android.content.Context
-import moe.koiverse.archivetune.constants.HideExplicitKey
-import moe.koiverse.archivetune.extensions.filterExplicit
-import moe.koiverse.archivetune.extensions.filterExplicitAlbums
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.get
+import com.cct.music.lite.constants.HideExplicitKey
+import com.cct.music.lite.extensions.filterExplicit
+import com.cct.music.lite.extensions.filterExplicitAlbums
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.get
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.distinctUntilChanged

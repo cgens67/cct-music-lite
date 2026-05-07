@@ -8,13 +8,13 @@
 
 
 
-package moe.koiverse.archivetune.innertube.pages
+package com.cct.music.lite.innertube.pages
 
-import moe.koiverse.archivetune.innertube.models.AlbumItem
-import moe.koiverse.archivetune.innertube.models.Artist
-import moe.koiverse.archivetune.innertube.models.MusicTwoRowItemRenderer
-import moe.koiverse.archivetune.innertube.models.oddElements
-import moe.koiverse.archivetune.innertube.models.splitBySeparator
+import com.cct.music.lite.innertube.models.AlbumItem
+import com.cct.music.lite.innertube.models.Artist
+import com.cct.music.lite.innertube.models.MusicTwoRowItemRenderer
+import com.cct.music.lite.innertube.models.oddElements
+import com.cct.music.lite.innertube.models.splitBySeparator
 
 object NewReleaseAlbumPage {
     fun fromMusicTwoRowItemRenderer(renderer: MusicTwoRowItemRenderer): AlbumItem? {

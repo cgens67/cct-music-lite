@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.AnimatedVisibility
@@ -59,8 +59,8 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.ui.utils.top
+import com.cct.music.lite.R
+import com.cct.music.lite.ui.utils.top
 import kotlinx.coroutines.launch
 
 val LocalBottomSheetPageState = compositionLocalOf { BottomSheetPageState() }

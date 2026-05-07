@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
@@ -39,7 +39,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.shape.RoundedCornerShape
-import moe.koiverse.archivetune.network.NetworkBannerUiState
+import com.cct.music.lite.network.NetworkBannerUiState
 
 private data class NetworkBannerVisuals(
     val message: String,

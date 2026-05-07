@@ -8,27 +8,27 @@
 
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
 import android.content.Context
 import dagger.hilt.android.qualifiers.ApplicationContext
-import moe.koiverse.archivetune.constants.InnerTubeCookieKey
-import moe.koiverse.archivetune.constants.SelectedYtmPlaylistsKey
-import moe.koiverse.archivetune.constants.YtmSyncKey
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.AlbumItem
-import moe.koiverse.archivetune.innertube.models.ArtistItem
-import moe.koiverse.archivetune.innertube.models.PlaylistItem
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.innertube.utils.completed
-import moe.koiverse.archivetune.innertube.utils.parseCookieString
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.db.entities.ArtistEntity
-import moe.koiverse.archivetune.db.entities.Playlist
-import moe.koiverse.archivetune.db.entities.PlaylistEntity
-import moe.koiverse.archivetune.db.entities.PlaylistSongMap
-import moe.koiverse.archivetune.db.entities.SongEntity
-import moe.koiverse.archivetune.models.toMediaMetadata
+import com.cct.music.lite.constants.InnerTubeCookieKey
+import com.cct.music.lite.constants.SelectedYtmPlaylistsKey
+import com.cct.music.lite.constants.YtmSyncKey
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.AlbumItem
+import com.cct.music.lite.innertube.models.ArtistItem
+import com.cct.music.lite.innertube.models.PlaylistItem
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.innertube.utils.completed
+import com.cct.music.lite.innertube.utils.parseCookieString
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.db.entities.ArtistEntity
+import com.cct.music.lite.db.entities.Playlist
+import com.cct.music.lite.db.entities.PlaylistEntity
+import com.cct.music.lite.db.entities.PlaylistSongMap
+import com.cct.music.lite.db.entities.SongEntity
+import com.cct.music.lite.models.toMediaMetadata
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.coroutineScope

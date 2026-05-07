@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.extensions
+package com.cct.music.lite.extensions
 
 import androidx.media3.exoplayer.ExoPlayer
 import timber.log.Timber

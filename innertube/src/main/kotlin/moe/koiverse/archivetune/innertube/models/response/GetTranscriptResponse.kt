@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.innertube.models.response
+package com.cct.music.lite.innertube.models.response
 
 import kotlinx.serialization.Serializable
 

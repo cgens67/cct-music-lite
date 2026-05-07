@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.db
+package com.cct.music.lite.db
 
 import androidx.room.TypeConverter
 import java.time.Instant

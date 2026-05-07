@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.player
+package com.cct.music.lite.ui.player
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -145,57 +145,57 @@ import com.skydoves.cloudy.cloudy
 import coil3.request.ImageRequest
 import coil3.request.allowHardware
 import coil3.toBitmap
-import moe.koiverse.archivetune.LocalDownloadUtil
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.DarkModeKey
-import moe.koiverse.archivetune.constants.PlayerDesignStyle
-import moe.koiverse.archivetune.constants.PlayerDesignStyleKey
-import moe.koiverse.archivetune.constants.PlayerBackgroundStyle
-import moe.koiverse.archivetune.constants.PlayerBackgroundStyleKey
-import moe.koiverse.archivetune.constants.PlayerCustomImageUriKey
-import moe.koiverse.archivetune.constants.PlayerCustomBlurKey
-import moe.koiverse.archivetune.constants.PlayerCustomContrastKey
-import moe.koiverse.archivetune.constants.PlayerCustomBrightnessKey
-import moe.koiverse.archivetune.constants.DisableBlurKey
-import moe.koiverse.archivetune.constants.BlurRadiusKey
-import moe.koiverse.archivetune.constants.PlayerButtonsStyle
-import moe.koiverse.archivetune.constants.PlayerButtonsStyleKey
-import moe.koiverse.archivetune.ui.theme.PlayerBackgroundColorUtils
-import moe.koiverse.archivetune.ui.theme.PlayerColorExtractor
-import moe.koiverse.archivetune.ui.theme.PlayerSliderColors
-import moe.koiverse.archivetune.constants.PlayerHorizontalPadding
-import moe.koiverse.archivetune.constants.QueuePeekHeight
-import moe.koiverse.archivetune.constants.SliderStyle
-import moe.koiverse.archivetune.constants.SliderStyleKey
-import moe.koiverse.archivetune.extensions.togglePlayPause
-import moe.koiverse.archivetune.extensions.toggleRepeatMode
-import moe.koiverse.archivetune.db.entities.FormatEntity
-import moe.koiverse.archivetune.extensions.metadata
-import moe.koiverse.archivetune.models.MediaMetadata
-import moe.koiverse.archivetune.ui.component.BottomSheet
-import moe.koiverse.archivetune.ui.component.BigSeekBar
-import moe.koiverse.archivetune.ui.component.BottomSheetState
-import moe.koiverse.archivetune.ui.component.LocalBottomSheetPageState
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.BottomSheetPageState
-import moe.koiverse.archivetune.ui.component.MenuState
-import moe.koiverse.archivetune.ui.component.PlayerSliderTrack
-import moe.koiverse.archivetune.ui.component.ResizableIconButton
-import moe.koiverse.archivetune.ui.component.rememberBottomSheetState
-import moe.koiverse.archivetune.ui.menu.PlayerMenu
-import moe.koiverse.archivetune.ui.screens.settings.DarkMode
-import moe.koiverse.archivetune.ui.utils.ShowMediaInfo
-import moe.koiverse.archivetune.utils.makeTimeString
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.LocalDownloadUtil
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.DarkModeKey
+import com.cct.music.lite.constants.PlayerDesignStyle
+import com.cct.music.lite.constants.PlayerDesignStyleKey
+import com.cct.music.lite.constants.PlayerBackgroundStyle
+import com.cct.music.lite.constants.PlayerBackgroundStyleKey
+import com.cct.music.lite.constants.PlayerCustomImageUriKey
+import com.cct.music.lite.constants.PlayerCustomBlurKey
+import com.cct.music.lite.constants.PlayerCustomContrastKey
+import com.cct.music.lite.constants.PlayerCustomBrightnessKey
+import com.cct.music.lite.constants.DisableBlurKey
+import com.cct.music.lite.constants.BlurRadiusKey
+import com.cct.music.lite.constants.PlayerButtonsStyle
+import com.cct.music.lite.constants.PlayerButtonsStyleKey
+import com.cct.music.lite.ui.theme.PlayerBackgroundColorUtils
+import com.cct.music.lite.ui.theme.PlayerColorExtractor
+import com.cct.music.lite.ui.theme.PlayerSliderColors
+import com.cct.music.lite.constants.PlayerHorizontalPadding
+import com.cct.music.lite.constants.QueuePeekHeight
+import com.cct.music.lite.constants.SliderStyle
+import com.cct.music.lite.constants.SliderStyleKey
+import com.cct.music.lite.extensions.togglePlayPause
+import com.cct.music.lite.extensions.toggleRepeatMode
+import com.cct.music.lite.db.entities.FormatEntity
+import com.cct.music.lite.extensions.metadata
+import com.cct.music.lite.models.MediaMetadata
+import com.cct.music.lite.ui.component.BottomSheet
+import com.cct.music.lite.ui.component.BigSeekBar
+import com.cct.music.lite.ui.component.BottomSheetState
+import com.cct.music.lite.ui.component.LocalBottomSheetPageState
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.BottomSheetPageState
+import com.cct.music.lite.ui.component.MenuState
+import com.cct.music.lite.ui.component.PlayerSliderTrack
+import com.cct.music.lite.ui.component.ResizableIconButton
+import com.cct.music.lite.ui.component.rememberBottomSheetState
+import com.cct.music.lite.ui.menu.PlayerMenu
+import com.cct.music.lite.ui.screens.settings.DarkMode
+import com.cct.music.lite.ui.utils.ShowMediaInfo
+import com.cct.music.lite.utils.makeTimeString
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.withContext
 import me.saket.squiggles.SquigglySlider
-import moe.koiverse.archivetune.playback.PlayerConnection
+import com.cct.music.lite.playback.PlayerConnection
 import kotlin.math.abs
 import kotlin.math.roundToInt
 import kotlin.math.roundToLong
@@ -238,7 +238,7 @@ fun BottomSheetPlayer(
     val (disableBlur) = rememberPreference(DisableBlurKey, false)
     val (blurRadius) = rememberPreference(BlurRadiusKey, 36f)
     val (showCodecOnPlayer) = rememberPreference(booleanPreferencesKey("show_codec_on_player"), false)
-    val (incrementalSeekSkipEnabled) = rememberPreference(moe.koiverse.archivetune.constants.SeekExtraSeconds, defaultValue = false)
+    val (incrementalSeekSkipEnabled) = rememberPreference(com.cct.music.lite.constants.SeekExtraSeconds, defaultValue = false)
     var keyboardSkipMultiplier by remember { mutableStateOf(1) }
     var lastKeyboardTapTime by remember { mutableLongStateOf(0L) }
 

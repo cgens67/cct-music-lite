@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.utils
+package com.cct.music.lite.ui.utils
 
 import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.lazy.LazyListState

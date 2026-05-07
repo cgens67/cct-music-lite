@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.spring

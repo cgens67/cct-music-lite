@@ -171,7 +171,7 @@
         </a>
       </td>
       <td align="center">
-        <a href="https://apt.izzysoft.de/fdroid/index/apk/moe.koiverse.archivetune">
+        <a href="https://apt.izzysoft.de/fdroid/index/apk/com.cct.music.lite">
           <img src="https://raw.githubusercontent.com/koiverse/ArchiveTune/757d5932832e1da27ced56de98c5ad1275cf0db1/assets/IzzyOnDroidButtonBorder.svg" height="50" alt="Get ArchiveTune on IzzyOnDroid">
         </a>
       </td>
@@ -192,7 +192,7 @@
     </tr>
     <tr>
       <td align="center">
-        <a href="https://www.openapk.net/archivetune/moe.koiverse.archivetune/">
+        <a href="https://www.openapk.net/archivetune/com.cct.music.lite/">
           <img src="https://www.openapk.net/images/openapk-badge.png" height="75" alt="Get ArchiveTune on OpenAPK">
         </a>
       </td>

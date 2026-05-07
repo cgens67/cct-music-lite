@@ -8,11 +8,11 @@
 
 
 
-package moe.koiverse.archivetune.innertube.pages
+package com.cct.music.lite.innertube.pages
 
-import moe.koiverse.archivetune.innertube.models.YTItem
-import moe.koiverse.archivetune.innertube.models.filterExplicit
-import moe.koiverse.archivetune.innertube.models.filterVideo
+import com.cct.music.lite.innertube.models.YTItem
+import com.cct.music.lite.innertube.models.filterExplicit
+import com.cct.music.lite.innertube.models.filterVideo
 
 data class BrowseResult(
     val title: String?,

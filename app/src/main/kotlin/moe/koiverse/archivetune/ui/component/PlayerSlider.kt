@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.fillMaxWidth

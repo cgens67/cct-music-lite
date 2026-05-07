@@ -8,25 +8,25 @@
 
 
 
-package moe.koiverse.archivetune.viewmodels
+package com.cct.music.lite.viewmodels
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import moe.koiverse.archivetune.constants.HideExplicitKey
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.extensions.filterExplicit
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.get
+import com.cct.music.lite.constants.HideExplicitKey
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.extensions.filterExplicit
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.get
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import javax.inject.Inject
-import moe.koiverse.archivetune.di.PlayerCache
-import moe.koiverse.archivetune.di.DownloadCache
+import com.cct.music.lite.di.PlayerCache
+import com.cct.music.lite.di.DownloadCache
 import androidx.media3.datasource.cache.Cache
 import java.time.LocalDateTime
 import kotlinx.coroutines.Dispatchers

@@ -8,15 +8,15 @@
 
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
 import android.content.Context
 import com.my.kizzy.repository.KizzyRepository
 import kotlinx.coroutines.withTimeoutOrNull
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.constants.*
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.constants.*
 import timber.log.Timber
-import moe.koiverse.archivetune.db.entities.Song
+import com.cct.music.lite.db.entities.Song
 import com.my.kizzy.rpc.RpcImage
 
 private const val TAG = "ResolveImages"

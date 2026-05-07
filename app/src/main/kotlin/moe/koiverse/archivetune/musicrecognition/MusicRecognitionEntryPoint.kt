@@ -5,12 +5,12 @@
  * Don't remove this copyright holder!
  */
 
-package moe.koiverse.archivetune.musicrecognition
+package com.cct.music.lite.musicrecognition
 
 import androidx.navigation.NavHostController
 
 const val MusicRecognitionRoute = "music_recognition"
-const val ACTION_MUSIC_RECOGNITION = "moe.koiverse.archivetune.action.MUSIC_RECOGNITION"
+const val ACTION_MUSIC_RECOGNITION = "com.cct.music.lite.action.MUSIC_RECOGNITION"
 const val MusicRecognitionAutoStartRequestKey = "music_recognition_auto_start_request"
 
 fun NavHostController.openMusicRecognition(

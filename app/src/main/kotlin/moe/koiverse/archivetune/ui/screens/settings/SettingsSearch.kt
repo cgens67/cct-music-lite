@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 fun filterQuickActions(
     actions: List<SettingsQuickAction>,

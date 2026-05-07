@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.constants
+package com.cct.music.lite.constants
 
 import android.os.Bundle
 import androidx.media3.session.SessionCommand

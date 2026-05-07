@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import android.annotation.TargetApi
 import android.content.Context
@@ -40,15 +40,15 @@ import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.floatPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.*
-import moe.koiverse.archivetune.ui.component.*
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.utils.setAppLocale
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.*
+import com.cct.music.lite.ui.component.*
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.utils.setAppLocale
 import java.net.Proxy
 import java.util.Locale
 import androidx.core.net.toUri

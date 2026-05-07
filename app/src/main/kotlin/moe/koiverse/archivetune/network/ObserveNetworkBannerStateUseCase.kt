@@ -5,7 +5,7 @@
  * Don't remove this copyright holder!
  */
 
-package moe.koiverse.archivetune.network
+package com.cct.music.lite.network
 
 import javax.inject.Inject
 import kotlinx.coroutines.delay

@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.theme
+package com.cct.music.lite.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
@@ -16,7 +16,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import moe.koiverse.archivetune.R
+import com.cct.music.lite.R
 
 // TODO: Define or import actual M3 Expressive font families if needed.
 // For now, using default FontFamily as a placeholder.

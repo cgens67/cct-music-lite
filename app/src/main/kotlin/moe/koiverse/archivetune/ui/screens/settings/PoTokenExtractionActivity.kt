@@ -7,7 +7,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -56,10 +56,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.innertube.utils.PoTokenGenerator
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.utils.resetAuthWebViewSession
+import com.cct.music.lite.R
+import com.cct.music.lite.innertube.utils.PoTokenGenerator
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.utils.resetAuthWebViewSession
 
 class PoTokenExtractionActivity : ComponentActivity() {
 

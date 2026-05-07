@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateFloatAsState
@@ -62,8 +62,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
-import moe.koiverse.archivetune.BuildConfig
-import moe.koiverse.archivetune.R
+import com.cct.music.lite.BuildConfig
+import com.cct.music.lite.R
 
 @Composable
 fun SettingsProfileHeader(

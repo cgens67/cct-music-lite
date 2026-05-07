@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.player
+package com.cct.music.lite.ui.player
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.AnimatedVisibility
@@ -76,12 +76,12 @@ import androidx.media3.common.Player
 import coil3.compose.AsyncImage
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.MiniPlayerHeight
-import moe.koiverse.archivetune.extensions.togglePlayPause
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.MiniPlayerHeight
+import com.cct.music.lite.extensions.togglePlayPause
 
-import moe.koiverse.archivetune.models.MediaMetadata
-import moe.koiverse.archivetune.playback.PlayerConnection
+import com.cct.music.lite.models.MediaMetadata
+import com.cct.music.lite.playback.PlayerConnection
 import kotlin.math.absoluteValue
 import kotlin.math.roundToInt
 import androidx.compose.foundation.layout.Arrangement
@@ -178,13 +178,13 @@ fun SwipeableMiniPlayerBox(
 
                                     if (isRightSwipe && canSkipPrevious) {
                                         playerConnection.player.seekToPreviousMediaItem()
-                                        if (moe.koiverse.archivetune.ui.screens.settings.DiscordPresenceManager.isRunning()) {
-                                            try { moe.koiverse.archivetune.ui.screens.settings.DiscordPresenceManager.restart() } catch (_: Exception) {}
+                                        if (com.cct.music.lite.ui.screens.settings.DiscordPresenceManager.isRunning()) {
+                                            try { com.cct.music.lite.ui.screens.settings.DiscordPresenceManager.restart() } catch (_: Exception) {}
                                         }
                                     } else if (!isRightSwipe && canSkipNext) {
                                         playerConnection.player.seekToNext()
-                                        if (moe.koiverse.archivetune.ui.screens.settings.DiscordPresenceManager.isRunning()) {
-                                            try { moe.koiverse.archivetune.ui.screens.settings.DiscordPresenceManager.restart() } catch (_: Exception) {}
+                                        if (com.cct.music.lite.ui.screens.settings.DiscordPresenceManager.isRunning()) {
+                                            try { com.cct.music.lite.ui.screens.settings.DiscordPresenceManager.restart() } catch (_: Exception) {}
                                         }
                                     }
                                 }

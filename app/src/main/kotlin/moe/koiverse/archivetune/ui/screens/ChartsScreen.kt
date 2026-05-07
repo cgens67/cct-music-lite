@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens
+package com.cct.music.lite.ui.screens
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -36,27 +36,27 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.innertube.models.WatchEndpoint
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.ListItemHeight
-import moe.koiverse.archivetune.extensions.togglePlayPause
-import moe.koiverse.archivetune.models.toMediaMetadata
-import moe.koiverse.archivetune.playback.queues.YouTubeQueue
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.NavigationTitle
-import moe.koiverse.archivetune.ui.component.YouTubeGridItem
-import moe.koiverse.archivetune.ui.component.YouTubeListItem
-import moe.koiverse.archivetune.ui.component.shimmer.GridItemPlaceHolder
-import moe.koiverse.archivetune.ui.component.shimmer.ShimmerHost
-import moe.koiverse.archivetune.ui.component.shimmer.TextPlaceholder
-import moe.koiverse.archivetune.ui.menu.YouTubeSongMenu
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.ui.utils.SnapLayoutInfoProvider
-import moe.koiverse.archivetune.viewmodels.ChartsViewModel
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.innertube.models.WatchEndpoint
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.ListItemHeight
+import com.cct.music.lite.extensions.togglePlayPause
+import com.cct.music.lite.models.toMediaMetadata
+import com.cct.music.lite.playback.queues.YouTubeQueue
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.NavigationTitle
+import com.cct.music.lite.ui.component.YouTubeGridItem
+import com.cct.music.lite.ui.component.YouTubeListItem
+import com.cct.music.lite.ui.component.shimmer.GridItemPlaceHolder
+import com.cct.music.lite.ui.component.shimmer.ShimmerHost
+import com.cct.music.lite.ui.component.shimmer.TextPlaceholder
+import com.cct.music.lite.ui.menu.YouTubeSongMenu
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.ui.utils.SnapLayoutInfoProvider
+import com.cct.music.lite.viewmodels.ChartsViewModel
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
 @Composable

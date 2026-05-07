@@ -8,20 +8,20 @@
 
 
 
-package moe.koiverse.archivetune.lyrics
+package com.cct.music.lite.lyrics
 
 import android.content.Context
 import android.util.Log
 import android.util.LruCache
-import moe.koiverse.archivetune.utils.GlobalLog
-import moe.koiverse.archivetune.constants.PreferredLyricsProvider
-import moe.koiverse.archivetune.constants.PreferredLyricsProviderKey
-import moe.koiverse.archivetune.db.entities.LyricsEntity.Companion.LYRICS_NOT_FOUND
-import moe.koiverse.archivetune.extensions.toEnum
-import moe.koiverse.archivetune.models.MediaMetadata
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.reportException
-import moe.koiverse.archivetune.utils.NetworkConnectivityObserver
+import com.cct.music.lite.utils.GlobalLog
+import com.cct.music.lite.constants.PreferredLyricsProvider
+import com.cct.music.lite.constants.PreferredLyricsProviderKey
+import com.cct.music.lite.db.entities.LyricsEntity.Companion.LYRICS_NOT_FOUND
+import com.cct.music.lite.extensions.toEnum
+import com.cct.music.lite.models.MediaMetadata
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.reportException
+import com.cct.music.lite.utils.NetworkConnectivityObserver
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job

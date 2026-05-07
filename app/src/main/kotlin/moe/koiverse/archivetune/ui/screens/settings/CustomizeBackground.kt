@@ -10,7 +10,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import android.net.Uri
 import android.content.Intent
@@ -42,13 +42,13 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import coil3.compose.AsyncImage
-import moe.koiverse.archivetune.constants.PlayerBackgroundStyle
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.PlayerCustomBrightnessKey
-import moe.koiverse.archivetune.constants.PlayerCustomContrastKey
-import moe.koiverse.archivetune.constants.PlayerCustomImageUriKey
-import moe.koiverse.archivetune.constants.PlayerCustomBlurKey
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.constants.PlayerBackgroundStyle
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.PlayerCustomBrightnessKey
+import com.cct.music.lite.constants.PlayerCustomContrastKey
+import com.cct.music.lite.constants.PlayerCustomImageUriKey
+import com.cct.music.lite.constants.PlayerCustomBlurKey
+import com.cct.music.lite.utils.rememberPreference
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

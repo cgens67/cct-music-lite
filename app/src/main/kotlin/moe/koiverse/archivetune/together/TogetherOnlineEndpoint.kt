@@ -6,7 +6,7 @@
  */
 
  
-package moe.koiverse.archivetune.together
+package com.cct.music.lite.together
 
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
@@ -17,9 +17,9 @@ import io.ktor.client.request.get
 import io.ktor.client.statement.bodyAsText
 import java.net.URI
 import java.util.concurrent.TimeUnit
-import moe.koiverse.archivetune.constants.TogetherOnlineEndpointCacheKey
-import moe.koiverse.archivetune.constants.TogetherOnlineEndpointLastCheckedAtKey
-import moe.koiverse.archivetune.utils.getAsync
+import com.cct.music.lite.constants.TogetherOnlineEndpointCacheKey
+import com.cct.music.lite.constants.TogetherOnlineEndpointLastCheckedAtKey
+import com.cct.music.lite.utils.getAsync
 
 object TogetherOnlineEndpoint {
     private const val EndpointSourceUrl =

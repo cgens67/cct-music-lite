@@ -8,12 +8,12 @@
 
 
 
-package moe.koiverse.archivetune.kugou
+package com.cct.music.lite.kugou
 
-import moe.koiverse.archivetune.kugou.models.DownloadLyricsResponse
-import moe.koiverse.archivetune.kugou.models.Keyword
-import moe.koiverse.archivetune.kugou.models.SearchLyricsResponse
-import moe.koiverse.archivetune.kugou.models.SearchSongResponse
+import com.cct.music.lite.kugou.models.DownloadLyricsResponse
+import com.cct.music.lite.kugou.models.Keyword
+import com.cct.music.lite.kugou.models.SearchLyricsResponse
+import com.cct.music.lite.kugou.models.SearchSongResponse
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.plugins.compression.ContentEncoding

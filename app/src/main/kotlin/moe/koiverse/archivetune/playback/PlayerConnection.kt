@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.playback
+package com.cct.music.lite.playback
 
 import android.content.Context
 import androidx.media3.common.MediaItem
@@ -21,13 +21,13 @@ import androidx.media3.common.Player.COMMAND_SEEK_TO_PREVIOUS_MEDIA_ITEM
 import androidx.media3.common.Player.REPEAT_MODE_OFF
 import androidx.media3.common.Player.STATE_ENDED
 import androidx.media3.common.Timeline
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.extensions.getCurrentQueueIndex
-import moe.koiverse.archivetune.extensions.getQueueWindows
-import moe.koiverse.archivetune.extensions.metadata
-import moe.koiverse.archivetune.playback.MusicService.MusicBinder
-import moe.koiverse.archivetune.playback.queues.Queue
-import moe.koiverse.archivetune.utils.reportException
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.extensions.getCurrentQueueIndex
+import com.cct.music.lite.extensions.getQueueWindows
+import com.cct.music.lite.extensions.metadata
+import com.cct.music.lite.playback.MusicService.MusicBinder
+import com.cct.music.lite.playback.queues.Queue
+import com.cct.music.lite.utils.reportException
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -124,35 +124,35 @@ class PlayerConnection(
     }
 
     fun seekToNext() {
-        val state = service.togetherSessionState.value as? moe.koiverse.archivetune.together.TogetherSessionState.Joined
-        if (state?.role is moe.koiverse.archivetune.together.TogetherRole.Guest) {
-            service.requestTogetherControl(moe.koiverse.archivetune.together.ControlAction.SkipNext)
+        val state = service.togetherSessionState.value as? com.cct.music.lite.together.TogetherSessionState.Joined
+        if (state?.role is com.cct.music.lite.together.TogetherRole.Guest) {
+            service.requestTogetherControl(com.cct.music.lite.together.ControlAction.SkipNext)
             return
         }
         player.seekToNext()
         player.prepare()
         player.playWhenReady = true
         // Immediately restart the Discord presence updater so it picks up the new track without waiting
-        if (moe.koiverse.archivetune.ui.screens.settings.DiscordPresenceManager.isRunning()) {
+        if (com.cct.music.lite.ui.screens.settings.DiscordPresenceManager.isRunning()) {
             try {
-                moe.koiverse.archivetune.ui.screens.settings.DiscordPresenceManager.restart()
+                com.cct.music.lite.ui.screens.settings.DiscordPresenceManager.restart()
             } catch (_: Exception) {}
         }
     }
 
     fun seekToPrevious() {
-        val state = service.togetherSessionState.value as? moe.koiverse.archivetune.together.TogetherSessionState.Joined
-        if (state?.role is moe.koiverse.archivetune.together.TogetherRole.Guest) {
-            service.requestTogetherControl(moe.koiverse.archivetune.together.ControlAction.SkipPrevious)
+        val state = service.togetherSessionState.value as? com.cct.music.lite.together.TogetherSessionState.Joined
+        if (state?.role is com.cct.music.lite.together.TogetherRole.Guest) {
+            service.requestTogetherControl(com.cct.music.lite.together.ControlAction.SkipPrevious)
             return
         }
         player.seekToPrevious()
         player.prepare()
         player.playWhenReady = true
         // Immediately restart the Discord presence updater so it picks up the new track without waiting
-        if (moe.koiverse.archivetune.ui.screens.settings.DiscordPresenceManager.isRunning()) {
+        if (com.cct.music.lite.ui.screens.settings.DiscordPresenceManager.isRunning()) {
             try {
-                moe.koiverse.archivetune.ui.screens.settings.DiscordPresenceManager.restart()
+                com.cct.music.lite.ui.screens.settings.DiscordPresenceManager.restart()
             } catch (_: Exception) {}
         }
     }

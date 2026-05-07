@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.di
+package com.cct.music.lite.di
 
 import android.content.Context
 import androidx.media3.database.DatabaseProvider
@@ -20,11 +20,11 @@ import androidx.media3.datasource.cache.ContentMetadataMutations
 import androidx.media3.datasource.cache.LeastRecentlyUsedCacheEvictor
 import androidx.media3.datasource.cache.NoOpCacheEvictor
 import androidx.media3.datasource.cache.SimpleCache
-import moe.koiverse.archivetune.constants.MaxSongCacheSizeKey
-import moe.koiverse.archivetune.db.InternalDatabase
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.get
+import com.cct.music.lite.constants.MaxSongCacheSizeKey
+import com.cct.music.lite.db.InternalDatabase
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.get
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

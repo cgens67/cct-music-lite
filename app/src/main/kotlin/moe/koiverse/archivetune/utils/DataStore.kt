@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
 import android.content.Context
 import android.os.Looper
@@ -22,7 +22,7 @@ import androidx.datastore.preferences.core.MutablePreferences
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.preferencesDataStore
-import moe.koiverse.archivetune.extensions.toEnum
+import com.cct.music.lite.extensions.toEnum
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob

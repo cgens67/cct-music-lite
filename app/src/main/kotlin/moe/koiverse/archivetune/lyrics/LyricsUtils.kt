@@ -8,14 +8,14 @@
 
 
 
-package moe.koiverse.archivetune.lyrics
+package com.cct.music.lite.lyrics
 
 import android.icu.text.Transliterator
 import android.text.format.DateUtils
 import com.atilika.kuromoji.ipadic.Tokenizer
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import moe.koiverse.archivetune.betterlyrics.TTMLParser
+import com.cct.music.lite.betterlyrics.TTMLParser
 import java.lang.Character.UnicodeScript
 
 data class LyricsRomanizationPreferences(

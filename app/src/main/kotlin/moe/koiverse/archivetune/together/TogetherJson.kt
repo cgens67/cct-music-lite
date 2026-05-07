@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.together
+package com.cct.music.lite.together
 
 import kotlinx.serialization.json.Json
 

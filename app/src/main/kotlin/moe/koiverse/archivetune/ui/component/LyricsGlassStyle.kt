@@ -5,7 +5,7 @@
  * Don't remove this copyright holder!
  */
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.compose.runtime.Immutable
 import androidx.compose.ui.graphics.Color

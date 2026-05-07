@@ -10,7 +10,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import android.content.Intent
 import android.text.format.DateFormat
@@ -107,16 +107,16 @@ import androidx.navigation.NavController
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.PreferenceGroupTitle
-import moe.koiverse.archivetune.ui.component.SwitchPreference
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.GlobalLog
-import moe.koiverse.archivetune.utils.LogEntry
-import moe.koiverse.archivetune.utils.makeTimeString
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.PreferenceGroupTitle
+import com.cct.music.lite.ui.component.SwitchPreference
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.GlobalLog
+import com.cct.music.lite.utils.LogEntry
+import com.cct.music.lite.utils.makeTimeString
+import com.cct.music.lite.utils.rememberPreference
 import kotlin.math.floor
 import kotlin.math.roundToInt
 
@@ -845,7 +845,7 @@ private fun LogLevelBadge(level: Int, compact: Boolean = false) {
 }
 
 @Composable
-private fun NerdStatsSection(playerConnection: moe.koiverse.archivetune.playback.PlayerConnection?) {
+private fun NerdStatsSection(playerConnection: com.cct.music.lite.playback.PlayerConnection?) {
     if (playerConnection == null) return
 
     val currentFormat by playerConnection.currentFormat.collectAsState(initial = null)

@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.component.shimmer
+package com.cct.music.lite.ui.component.shimmer
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

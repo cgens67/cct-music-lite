@@ -8,13 +8,13 @@
 
 
 
-package moe.koiverse.archivetune.lyrics
+package com.cct.music.lite.lyrics
 
 import android.content.Context
-import moe.koiverse.archivetune.kugou.KuGou
-import moe.koiverse.archivetune.constants.EnableKugouKey
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.get
+import com.cct.music.lite.kugou.KuGou
+import com.cct.music.lite.constants.EnableKugouKey
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.get
 
 object KuGouLyricsProvider : LyricsProvider {
     override val name = "Kugou"

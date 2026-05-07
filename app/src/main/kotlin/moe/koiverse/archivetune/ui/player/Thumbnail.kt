@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.player
+package com.cct.music.lite.ui.player
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateFloatAsState
@@ -88,28 +88,28 @@ import androidx.media3.ui.AspectRatioFrameLayout
 import androidx.media3.ui.PlayerView
 import coil3.compose.AsyncImage
 import androidx.compose.material3.Icon
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.canvas.ArchiveTuneCanvas
-import moe.koiverse.archivetune.canvas.CanvasArtwork
-import moe.koiverse.archivetune.constants.PlayerBackgroundStyle
-import moe.koiverse.archivetune.constants.PlayerBackgroundStyleKey
-import moe.koiverse.archivetune.constants.PlayerDesignStyle
-import moe.koiverse.archivetune.constants.PlayerDesignStyleKey
-import moe.koiverse.archivetune.constants.PlayerHorizontalPadding
-import moe.koiverse.archivetune.constants.SeekExtraSeconds
-import moe.koiverse.archivetune.constants.SwipeThumbnailKey
-import moe.koiverse.archivetune.constants.ArchiveTuneCanvasKey
-import moe.koiverse.archivetune.constants.MaxCanvasCacheSizeKey
-import moe.koiverse.archivetune.constants.ThumbnailCornerRadiusKey
-import moe.koiverse.archivetune.constants.CropThumbnailToSquareKey
-import moe.koiverse.archivetune.constants.HidePlayerThumbnailKey
-import moe.koiverse.archivetune.extensions.metadata
-import moe.koiverse.archivetune.extensions.toMediaItem
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.YouTubeClient
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.canvas.ArchiveTuneCanvas
+import com.cct.music.lite.canvas.CanvasArtwork
+import com.cct.music.lite.constants.PlayerBackgroundStyle
+import com.cct.music.lite.constants.PlayerBackgroundStyleKey
+import com.cct.music.lite.constants.PlayerDesignStyle
+import com.cct.music.lite.constants.PlayerDesignStyleKey
+import com.cct.music.lite.constants.PlayerHorizontalPadding
+import com.cct.music.lite.constants.SeekExtraSeconds
+import com.cct.music.lite.constants.SwipeThumbnailKey
+import com.cct.music.lite.constants.ArchiveTuneCanvasKey
+import com.cct.music.lite.constants.MaxCanvasCacheSizeKey
+import com.cct.music.lite.constants.ThumbnailCornerRadiusKey
+import com.cct.music.lite.constants.CropThumbnailToSquareKey
+import com.cct.music.lite.constants.HidePlayerThumbnailKey
+import com.cct.music.lite.extensions.metadata
+import com.cct.music.lite.extensions.toMediaItem
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.YouTubeClient
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -406,13 +406,13 @@ fun Thumbnail(
 
         if (currentItem > currentMediaIndex && canSkipNext) {
             playerConnection.player.seekToNext()
-            if (moe.koiverse.archivetune.ui.screens.settings.DiscordPresenceManager.isRunning()) {
-                try { moe.koiverse.archivetune.ui.screens.settings.DiscordPresenceManager.restart() } catch (_: Exception) {}
+            if (com.cct.music.lite.ui.screens.settings.DiscordPresenceManager.isRunning()) {
+                try { com.cct.music.lite.ui.screens.settings.DiscordPresenceManager.restart() } catch (_: Exception) {}
             }
         } else if (currentItem < currentMediaIndex && canSkipPrevious) {
             playerConnection.player.seekToPreviousMediaItem()
-            if (moe.koiverse.archivetune.ui.screens.settings.DiscordPresenceManager.isRunning()) {
-                try { moe.koiverse.archivetune.ui.screens.settings.DiscordPresenceManager.restart() } catch (_: Exception) {}
+            if (com.cct.music.lite.ui.screens.settings.DiscordPresenceManager.isRunning()) {
+                try { com.cct.music.lite.ui.screens.settings.DiscordPresenceManager.restart() } catch (_: Exception) {}
             }
         }
     }
@@ -642,8 +642,8 @@ fun Thumbnail(
                                                     seekDirection = context.getString(R.string.seek_forward_dynamic, skipAmount / 1000)
                                                 }
                                                 // If a user double-tap skip lands on a new media item, restart presence manager to pick up artwork quickly
-                                                if (moe.koiverse.archivetune.ui.screens.settings.DiscordPresenceManager.isRunning()) {
-                                                    try { moe.koiverse.archivetune.ui.screens.settings.DiscordPresenceManager.restart() } catch (_: Exception) {}
+                                                if (com.cct.music.lite.ui.screens.settings.DiscordPresenceManager.isRunning()) {
+                                                    try { com.cct.music.lite.ui.screens.settings.DiscordPresenceManager.restart() } catch (_: Exception) {}
                                                 }
 
                                                 showSeekEffect = true

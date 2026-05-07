@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.theme
+package com.cct.music.lite.ui.theme
 
 import android.graphics.Bitmap
 import android.os.Build

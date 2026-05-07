@@ -7,7 +7,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.musicrecognition
+package com.cct.music.lite.ui.screens.musicrecognition
 
 import android.Manifest
 import android.content.Intent
@@ -113,12 +113,12 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.musicrecognition.MusicRecognitionAutoStartRequestKey
-import moe.koiverse.archivetune.musicrecognition.MusicRecognitionRoute
-import moe.koiverse.archivetune.shazamkit.Shazam
-import moe.koiverse.archivetune.shazamkit.ShazamSignatureGenerator
-import moe.koiverse.archivetune.shazamkit.models.RecognitionResult
+import com.cct.music.lite.R
+import com.cct.music.lite.musicrecognition.MusicRecognitionAutoStartRequestKey
+import com.cct.music.lite.musicrecognition.MusicRecognitionRoute
+import com.cct.music.lite.shazamkit.Shazam
+import com.cct.music.lite.shazamkit.ShazamSignatureGenerator
+import com.cct.music.lite.shazamkit.models.RecognitionResult
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

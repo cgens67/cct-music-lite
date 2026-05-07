@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens.search
+package com.cct.music.lite.ui.screens.search
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -37,17 +37,17 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.innertube.models.*
-import moe.koiverse.archivetune.LocalDatabase
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.extensions.togglePlayPause
-import moe.koiverse.archivetune.models.toMediaMetadata
-import moe.koiverse.archivetune.playback.queues.YouTubeQueue
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.YouTubeListItem
-import moe.koiverse.archivetune.ui.menu.*
-import moe.koiverse.archivetune.viewmodels.OnlineSearchSuggestionViewModel
+import com.cct.music.lite.innertube.models.*
+import com.cct.music.lite.LocalDatabase
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.extensions.togglePlayPause
+import com.cct.music.lite.models.toMediaMetadata
+import com.cct.music.lite.playback.queues.YouTubeQueue
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.YouTubeListItem
+import com.cct.music.lite.ui.menu.*
+import com.cct.music.lite.viewmodels.OnlineSearchSuggestionViewModel
 import kotlinx.coroutines.flow.drop
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

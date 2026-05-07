@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.ui.screens.library
+package com.cct.music.lite.ui.screens.library
 
 import androidx.annotation.DrawableRes
 import androidx.compose.animation.core.animateFloatAsState
@@ -67,27 +67,27 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import moe.koiverse.archivetune.LocalDatabase
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.PlaylistSortDescendingKey
-import moe.koiverse.archivetune.constants.PlaylistSortType
-import moe.koiverse.archivetune.constants.PlaylistSortTypeKey
-import moe.koiverse.archivetune.constants.PlaylistTagsFilterKey
-import moe.koiverse.archivetune.constants.ShowCachedPlaylistKey
-import moe.koiverse.archivetune.constants.ShowDownloadedPlaylistKey
-import moe.koiverse.archivetune.constants.ShowLikedPlaylistKey
-import moe.koiverse.archivetune.constants.ShowTopPlaylistKey
-import moe.koiverse.archivetune.constants.YtmSyncKey
-import moe.koiverse.archivetune.db.entities.Playlist
-import moe.koiverse.archivetune.db.entities.PlaylistEntity
-import moe.koiverse.archivetune.extensions.move
-import moe.koiverse.archivetune.ui.component.LibraryPinnedCollectionTile
-import moe.koiverse.archivetune.ui.component.LibraryPlaylistListItem
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.viewmodels.LibraryPlaylistsViewModel
+import com.cct.music.lite.LocalDatabase
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.PlaylistSortDescendingKey
+import com.cct.music.lite.constants.PlaylistSortType
+import com.cct.music.lite.constants.PlaylistSortTypeKey
+import com.cct.music.lite.constants.PlaylistTagsFilterKey
+import com.cct.music.lite.constants.ShowCachedPlaylistKey
+import com.cct.music.lite.constants.ShowDownloadedPlaylistKey
+import com.cct.music.lite.constants.ShowLikedPlaylistKey
+import com.cct.music.lite.constants.ShowTopPlaylistKey
+import com.cct.music.lite.constants.YtmSyncKey
+import com.cct.music.lite.db.entities.Playlist
+import com.cct.music.lite.db.entities.PlaylistEntity
+import com.cct.music.lite.extensions.move
+import com.cct.music.lite.ui.component.LibraryPinnedCollectionTile
+import com.cct.music.lite.ui.component.LibraryPlaylistListItem
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.viewmodels.LibraryPlaylistsViewModel
 import sh.calvin.reorderable.ReorderableItem
 import sh.calvin.reorderable.rememberReorderableLazyListState
 

@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.animateDpAsState
@@ -58,9 +58,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import androidx.core.graphics.toColorInt
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.db.entities.TagEntity
+import com.cct.music.lite.R
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.db.entities.TagEntity
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable

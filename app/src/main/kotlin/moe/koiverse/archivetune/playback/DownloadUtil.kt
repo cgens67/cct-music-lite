@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.playback
+package com.cct.music.lite.playback
 
 import android.content.Context
 import android.media.MediaCodecList
@@ -23,24 +23,24 @@ import androidx.media3.datasource.okhttp.OkHttpDataSource
 import androidx.media3.exoplayer.offline.Download
 import androidx.media3.exoplayer.offline.DownloadManager
 import androidx.media3.exoplayer.offline.DownloadNotificationHelper
-import moe.koiverse.archivetune.constants.AudioQuality
-import moe.koiverse.archivetune.constants.AudioQualityKey
-import moe.koiverse.archivetune.constants.NetworkMeteredKey
-import moe.koiverse.archivetune.constants.PlayerStreamClient
-import moe.koiverse.archivetune.constants.PlayerStreamClientKey
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.db.entities.FormatEntity
-import moe.koiverse.archivetune.db.entities.SongEntity
-import moe.koiverse.archivetune.di.DownloadCache
-import moe.koiverse.archivetune.di.PlayerCache
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.utils.AuthScopedCacheValue
-import moe.koiverse.archivetune.utils.StreamClientUtils
-import moe.koiverse.archivetune.utils.YTPlayerUtils
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.enumPreference
-import moe.koiverse.archivetune.utils.get
-import moe.koiverse.archivetune.utils.retryWithoutPlaybackLoginContext
+import com.cct.music.lite.constants.AudioQuality
+import com.cct.music.lite.constants.AudioQualityKey
+import com.cct.music.lite.constants.NetworkMeteredKey
+import com.cct.music.lite.constants.PlayerStreamClient
+import com.cct.music.lite.constants.PlayerStreamClientKey
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.db.entities.FormatEntity
+import com.cct.music.lite.db.entities.SongEntity
+import com.cct.music.lite.di.DownloadCache
+import com.cct.music.lite.di.PlayerCache
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.utils.AuthScopedCacheValue
+import com.cct.music.lite.utils.StreamClientUtils
+import com.cct.music.lite.utils.YTPlayerUtils
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.enumPreference
+import com.cct.music.lite.utils.get
+import com.cct.music.lite.utils.retryWithoutPlaybackLoginContext
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

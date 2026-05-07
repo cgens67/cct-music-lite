@@ -8,14 +8,14 @@
 
 
 
-package moe.koiverse.archivetune.viewmodels
+package com.cct.music.lite.viewmodels
 
 import android.content.Context
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import moe.koiverse.archivetune.constants.MyTopFilter
-import moe.koiverse.archivetune.db.MusicDatabase
+import com.cct.music.lite.constants.MyTopFilter
+import com.cct.music.lite.db.MusicDatabase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.ExperimentalCoroutinesApi

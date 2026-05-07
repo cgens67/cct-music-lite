@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune
+package com.cct.music.lite
 
 import android.annotation.SuppressLint
 import android.Manifest
@@ -162,105 +162,105 @@ import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
-import moe.koiverse.archivetune.utils.PreferenceStore
-import moe.koiverse.archivetune.utils.isLowRamDevice
+import com.cct.music.lite.utils.PreferenceStore
+import com.cct.music.lite.utils.isLowRamDevice
 import kotlinx.coroutines.withContext
-import moe.koiverse.archivetune.constants.AppBarHeight
-import moe.koiverse.archivetune.constants.AppLanguageKey
-import moe.koiverse.archivetune.constants.CustomThemeColorKey
-import moe.koiverse.archivetune.constants.DarkModeKey
-import moe.koiverse.archivetune.constants.DefaultOpenTabKey
-import moe.koiverse.archivetune.constants.DisableAnimationsKey
-import moe.koiverse.archivetune.constants.DisableScreenshotKey
-import moe.koiverse.archivetune.constants.DynamicThemeKey
-import moe.koiverse.archivetune.constants.FloatingToolbarBottomPadding
-import moe.koiverse.archivetune.constants.FloatingToolbarHeight
-import moe.koiverse.archivetune.constants.FloatingToolbarHorizontalPadding
-import moe.koiverse.archivetune.constants.HasPressedStarKey
-import moe.koiverse.archivetune.constants.LaunchCountKey
-import moe.koiverse.archivetune.constants.MiniPlayerBottomSpacing
-import moe.koiverse.archivetune.constants.MiniPlayerHeight
-import moe.koiverse.archivetune.constants.MiniPlayerLastAnchorKey
-import moe.koiverse.archivetune.constants.NavigationBarAnimationSpec
-import moe.koiverse.archivetune.constants.PauseSearchHistoryKey
-import moe.koiverse.archivetune.constants.PureBlackKey
-import moe.koiverse.archivetune.constants.RemindAfterKey
-import moe.koiverse.archivetune.constants.SYSTEM_DEFAULT
-import moe.koiverse.archivetune.constants.SearchSource
-import moe.koiverse.archivetune.constants.SearchSourceKey
-import moe.koiverse.archivetune.constants.StopMusicOnTaskClearKey
-import moe.koiverse.archivetune.constants.UseSystemFontKey
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.db.entities.SearchHistory
-import moe.koiverse.archivetune.db.entities.Album
-import moe.koiverse.archivetune.db.entities.Artist
-import moe.koiverse.archivetune.db.entities.Playlist
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.AlbumItem
-import moe.koiverse.archivetune.innertube.models.ArtistItem
-import moe.koiverse.archivetune.innertube.models.PlaylistItem
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.extensions.toMediaItem
-import moe.koiverse.archivetune.models.toMediaMetadata
-import moe.koiverse.archivetune.musicrecognition.ACTION_MUSIC_RECOGNITION
-import moe.koiverse.archivetune.musicrecognition.MusicRecognitionRoute
-import moe.koiverse.archivetune.musicrecognition.openMusicRecognition
-import moe.koiverse.archivetune.playback.DownloadUtil
-import moe.koiverse.archivetune.playback.MusicService
-import moe.koiverse.archivetune.playback.MusicService.MusicBinder
-import moe.koiverse.archivetune.playback.PlayerConnection
-import moe.koiverse.archivetune.playback.queues.LocalAlbumRadio
-import moe.koiverse.archivetune.playback.queues.ListQueue
-import moe.koiverse.archivetune.playback.queues.Queue
-import moe.koiverse.archivetune.playback.queues.YouTubeAlbumRadio
-import moe.koiverse.archivetune.playback.queues.YouTubeQueue
-import moe.koiverse.archivetune.ui.component.BottomSheetMenu
-import moe.koiverse.archivetune.ui.component.BottomSheetPage
-import moe.koiverse.archivetune.ui.component.COLLAPSED_ANCHOR
-import moe.koiverse.archivetune.ui.component.CreatePlaylistDialog
-import moe.koiverse.archivetune.ui.component.DISMISSED_ANCHOR
-import moe.koiverse.archivetune.ui.component.EXPANDED_ANCHOR
-import moe.koiverse.archivetune.ui.component.FloatingNavigationToolbar
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.LocalBottomSheetPageState
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.NetworkStatusBanner
-import moe.koiverse.archivetune.ui.component.StarDialog
-import moe.koiverse.archivetune.ui.component.TvNavigationRail
+import com.cct.music.lite.constants.AppBarHeight
+import com.cct.music.lite.constants.AppLanguageKey
+import com.cct.music.lite.constants.CustomThemeColorKey
+import com.cct.music.lite.constants.DarkModeKey
+import com.cct.music.lite.constants.DefaultOpenTabKey
+import com.cct.music.lite.constants.DisableAnimationsKey
+import com.cct.music.lite.constants.DisableScreenshotKey
+import com.cct.music.lite.constants.DynamicThemeKey
+import com.cct.music.lite.constants.FloatingToolbarBottomPadding
+import com.cct.music.lite.constants.FloatingToolbarHeight
+import com.cct.music.lite.constants.FloatingToolbarHorizontalPadding
+import com.cct.music.lite.constants.HasPressedStarKey
+import com.cct.music.lite.constants.LaunchCountKey
+import com.cct.music.lite.constants.MiniPlayerBottomSpacing
+import com.cct.music.lite.constants.MiniPlayerHeight
+import com.cct.music.lite.constants.MiniPlayerLastAnchorKey
+import com.cct.music.lite.constants.NavigationBarAnimationSpec
+import com.cct.music.lite.constants.PauseSearchHistoryKey
+import com.cct.music.lite.constants.PureBlackKey
+import com.cct.music.lite.constants.RemindAfterKey
+import com.cct.music.lite.constants.SYSTEM_DEFAULT
+import com.cct.music.lite.constants.SearchSource
+import com.cct.music.lite.constants.SearchSourceKey
+import com.cct.music.lite.constants.StopMusicOnTaskClearKey
+import com.cct.music.lite.constants.UseSystemFontKey
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.db.entities.SearchHistory
+import com.cct.music.lite.db.entities.Album
+import com.cct.music.lite.db.entities.Artist
+import com.cct.music.lite.db.entities.Playlist
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.AlbumItem
+import com.cct.music.lite.innertube.models.ArtistItem
+import com.cct.music.lite.innertube.models.PlaylistItem
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.extensions.toMediaItem
+import com.cct.music.lite.models.toMediaMetadata
+import com.cct.music.lite.musicrecognition.ACTION_MUSIC_RECOGNITION
+import com.cct.music.lite.musicrecognition.MusicRecognitionRoute
+import com.cct.music.lite.musicrecognition.openMusicRecognition
+import com.cct.music.lite.playback.DownloadUtil
+import com.cct.music.lite.playback.MusicService
+import com.cct.music.lite.playback.MusicService.MusicBinder
+import com.cct.music.lite.playback.PlayerConnection
+import com.cct.music.lite.playback.queues.LocalAlbumRadio
+import com.cct.music.lite.playback.queues.ListQueue
+import com.cct.music.lite.playback.queues.Queue
+import com.cct.music.lite.playback.queues.YouTubeAlbumRadio
+import com.cct.music.lite.playback.queues.YouTubeQueue
+import com.cct.music.lite.ui.component.BottomSheetMenu
+import com.cct.music.lite.ui.component.BottomSheetPage
+import com.cct.music.lite.ui.component.COLLAPSED_ANCHOR
+import com.cct.music.lite.ui.component.CreatePlaylistDialog
+import com.cct.music.lite.ui.component.DISMISSED_ANCHOR
+import com.cct.music.lite.ui.component.EXPANDED_ANCHOR
+import com.cct.music.lite.ui.component.FloatingNavigationToolbar
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.LocalBottomSheetPageState
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.NetworkStatusBanner
+import com.cct.music.lite.ui.component.StarDialog
+import com.cct.music.lite.ui.component.TvNavigationRail
 import com.mikepenz.markdown.m3.Markdown
-import moe.koiverse.archivetune.ui.component.TopSearch
-import moe.koiverse.archivetune.ui.component.rememberBottomSheetState
-import moe.koiverse.archivetune.ui.component.shimmer.ShimmerTheme
-import moe.koiverse.archivetune.ui.menu.YouTubeSongMenu
-import moe.koiverse.archivetune.ui.player.BottomSheetPlayer
-import moe.koiverse.archivetune.ui.screens.LOGIN_URL_ARGUMENT
-import moe.koiverse.archivetune.ui.screens.Screens
-import moe.koiverse.archivetune.ui.screens.buildLoginRoute
-import moe.koiverse.archivetune.ui.screens.navigationBuilder
-import moe.koiverse.archivetune.ui.screens.search.LocalSearchScreen
-import moe.koiverse.archivetune.ui.screens.search.OnlineSearchScreen
-import moe.koiverse.archivetune.ui.screens.settings.DarkMode
-import moe.koiverse.archivetune.ui.screens.settings.DiscordPresenceManager
-import moe.koiverse.archivetune.ui.screens.settings.NavigationTab
-import moe.koiverse.archivetune.ui.theme.ArchiveTuneTheme
-import moe.koiverse.archivetune.ui.theme.ColorSaver
-import moe.koiverse.archivetune.ui.theme.DefaultThemeColor
-import moe.koiverse.archivetune.ui.theme.extractThemeColor
-import moe.koiverse.archivetune.ui.utils.appBarScrollBehavior
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.ui.utils.resetHeightOffset
-import moe.koiverse.archivetune.utils.SyncUtils
-import moe.koiverse.archivetune.utils.Updater
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.get
-import moe.koiverse.archivetune.utils.getAsync
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.utils.reportException
-import moe.koiverse.archivetune.utils.setAppLocale
-import moe.koiverse.archivetune.viewmodels.HomeViewModel
-import moe.koiverse.archivetune.viewmodels.NetworkBannerViewModel
+import com.cct.music.lite.ui.component.TopSearch
+import com.cct.music.lite.ui.component.rememberBottomSheetState
+import com.cct.music.lite.ui.component.shimmer.ShimmerTheme
+import com.cct.music.lite.ui.menu.YouTubeSongMenu
+import com.cct.music.lite.ui.player.BottomSheetPlayer
+import com.cct.music.lite.ui.screens.LOGIN_URL_ARGUMENT
+import com.cct.music.lite.ui.screens.Screens
+import com.cct.music.lite.ui.screens.buildLoginRoute
+import com.cct.music.lite.ui.screens.navigationBuilder
+import com.cct.music.lite.ui.screens.search.LocalSearchScreen
+import com.cct.music.lite.ui.screens.search.OnlineSearchScreen
+import com.cct.music.lite.ui.screens.settings.DarkMode
+import com.cct.music.lite.ui.screens.settings.DiscordPresenceManager
+import com.cct.music.lite.ui.screens.settings.NavigationTab
+import com.cct.music.lite.ui.theme.ArchiveTuneTheme
+import com.cct.music.lite.ui.theme.ColorSaver
+import com.cct.music.lite.ui.theme.DefaultThemeColor
+import com.cct.music.lite.ui.theme.extractThemeColor
+import com.cct.music.lite.ui.utils.appBarScrollBehavior
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.ui.utils.resetHeightOffset
+import com.cct.music.lite.utils.SyncUtils
+import com.cct.music.lite.utils.Updater
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.get
+import com.cct.music.lite.utils.getAsync
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.utils.reportException
+import com.cct.music.lite.utils.setAppLocale
+import com.cct.music.lite.viewmodels.HomeViewModel
+import com.cct.music.lite.viewmodels.NetworkBannerViewModel
 import java.net.URLDecoder
 import java.net.URLEncoder
 import java.util.Locale
@@ -324,7 +324,7 @@ class MainActivity : ComponentActivity() {
         pendingTogetherJoinLink = null
         lifecycleScope.launch(Dispatchers.IO) {
             val displayName =
-                runCatching { dataStore.data.first()[moe.koiverse.archivetune.constants.TogetherDisplayNameKey] }
+                runCatching { dataStore.data.first()[com.cct.music.lite.constants.TogetherDisplayNameKey] }
                     .getOrNull()
                     ?.trim()
                     .orEmpty()
@@ -468,15 +468,15 @@ class MainActivity : ComponentActivity() {
                         latestVersionName = it
                     }
                 }
-                moe.koiverse.archivetune.utils.UpdateNotificationManager.checkForUpdates(this@MainActivity)
+                com.cct.music.lite.utils.UpdateNotificationManager.checkForUpdates(this@MainActivity)
             }
 
                     // Use remembered instances so the same state object is used everywhere
                     // (previously retrieving the composition local directly created different
                     // instances in different composition scopes which caused the update
                     // bottom sheet to not appear and overlay interactions to be blocked).
-                    val bottomSheetPageState = remember { moe.koiverse.archivetune.ui.component.BottomSheetPageState() }
-                    val menuState = remember { moe.koiverse.archivetune.ui.component.MenuState() }
+                    val bottomSheetPageState = remember { com.cct.music.lite.ui.component.BottomSheetPageState() }
+                    val menuState = remember { com.cct.music.lite.ui.component.MenuState() }
                     val uriHandler = LocalUriHandler.current
                     val releaseNotesState = remember { mutableStateOf<String?>(null) }
                     val updateSheetContent: @Composable ColumnScope.() -> Unit = { // receiver: ColumnScope
@@ -573,12 +573,12 @@ class MainActivity : ComponentActivity() {
                 if (customThemeColorValue.startsWith("#")) {
                     null
                 } else if (customThemeColorValue.startsWith("seedPalette:")) {
-                    moe.koiverse.archivetune.ui.theme.ThemeSeedPaletteCodec.decodeFromPreference(customThemeColorValue)
+                    com.cct.music.lite.ui.theme.ThemeSeedPaletteCodec.decodeFromPreference(customThemeColorValue)
                 } else {
-                    moe.koiverse.archivetune.ui.screens.settings.ThemePalettes
+                    com.cct.music.lite.ui.screens.settings.ThemePalettes
                         .findById(customThemeColorValue)
                         ?.let {
-                            moe.koiverse.archivetune.ui.theme.ThemeSeedPalette(
+                            com.cct.music.lite.ui.theme.ThemeSeedPalette(
                                 primary = it.primary,
                                 secondary = it.secondary,
                                 tertiary = it.tertiary,
@@ -1157,8 +1157,8 @@ class MainActivity : ComponentActivity() {
                         LocalDownloadUtil provides downloadUtil,
                         LocalShimmerTheme provides ShimmerTheme,
                         LocalSyncUtils provides syncUtils,
-                        moe.koiverse.archivetune.ui.component.LocalBottomSheetPageState provides bottomSheetPageState,
-                        moe.koiverse.archivetune.ui.component.LocalMenuState provides menuState,
+                        com.cct.music.lite.ui.component.LocalBottomSheetPageState provides bottomSheetPageState,
+                        com.cct.music.lite.ui.component.LocalMenuState provides menuState,
                     ) {
                         if (showCreatePlaylistDialog) {
                             CreatePlaylistDialog(
@@ -1864,7 +1864,7 @@ class MainActivity : ComponentActivity() {
         val mediaId = uri.toString()
         val title = resolveExternalAudioTitle(uri)
         val metadata =
-            moe.koiverse.archivetune.models.MediaMetadata(
+            com.cct.music.lite.models.MediaMetadata(
                 id = mediaId,
                 title = title,
                 artists = emptyList(),
@@ -2018,7 +2018,7 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun startMusicServiceSafely() {
-        runCatching { startService(Intent(this, moe.koiverse.archivetune.playback.MusicService::class.java)) }
+        runCatching { startService(Intent(this, com.cct.music.lite.playback.MusicService::class.java)) }
             .onFailure { reportException(it) }
     }
 
@@ -2039,8 +2039,8 @@ class MainActivity : ComponentActivity() {
     }
 
     companion object {
-        const val ACTION_SEARCH = "moe.koiverse.archivetune.action.SEARCH"
-        const val ACTION_LIBRARY = "moe.koiverse.archivetune.action.LIBRARY"
+        const val ACTION_SEARCH = "com.cct.music.lite.action.SEARCH"
+        const val ACTION_LIBRARY = "com.cct.music.lite.action.LIBRARY"
     }
 }
 

@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import android.widget.Toast
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -101,14 +101,14 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.CustomThemeColorKey
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.theme.ThemeSeedPalette
-import moe.koiverse.archivetune.ui.theme.ThemeSeedPaletteCodec
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.CustomThemeColorKey
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.theme.ThemeSeedPalette
+import com.cct.music.lite.ui.theme.ThemeSeedPaletteCodec
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.rememberPreference
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

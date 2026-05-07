@@ -8,9 +8,9 @@
 
 
 
-package moe.koiverse.archivetune.models
+package com.cct.music.lite.models
 
-import moe.koiverse.archivetune.innertube.models.YTItem
+import com.cct.music.lite.innertube.models.YTItem
 
 data class ItemsPage(
     val items: List<YTItem>,

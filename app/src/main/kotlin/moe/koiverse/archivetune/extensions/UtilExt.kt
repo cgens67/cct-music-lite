@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.extensions
+package com.cct.music.lite.extensions
 
 fun <T> tryOrNull(block: () -> T): T? =
     try {

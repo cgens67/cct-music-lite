@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.network
+package com.cct.music.lite.network
 
 import android.content.Context
 import android.net.ConnectivityManager

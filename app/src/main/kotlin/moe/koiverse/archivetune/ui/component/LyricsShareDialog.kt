@@ -7,7 +7,7 @@
  * Don't remove this copyright holder!
  */
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import android.content.Context
 import android.content.Intent
@@ -88,9 +88,9 @@ import coil3.toBitmap
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.models.MediaMetadata
-import moe.koiverse.archivetune.utils.ComposeToImage
+import com.cct.music.lite.R
+import com.cct.music.lite.models.MediaMetadata
+import com.cct.music.lite.utils.ComposeToImage
 
 fun shareLyricsAsText(
     context: Context,

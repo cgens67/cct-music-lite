@@ -8,11 +8,11 @@
 
 
 
-package moe.koiverse.archivetune.innertube.models.response
+package com.cct.music.lite.innertube.models.response
 
-import moe.koiverse.archivetune.innertube.models.Continuation
-import moe.koiverse.archivetune.innertube.models.MusicResponsiveListItemRenderer
-import moe.koiverse.archivetune.innertube.models.Tabs
+import com.cct.music.lite.innertube.models.Continuation
+import com.cct.music.lite.innertube.models.MusicResponsiveListItemRenderer
+import com.cct.music.lite.innertube.models.Tabs
 import kotlinx.serialization.Serializable
 
 @Serializable

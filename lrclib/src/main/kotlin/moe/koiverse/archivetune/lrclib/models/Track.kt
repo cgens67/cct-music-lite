@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.lrclib.models
+package com.cct.music.lite.lrclib.models
 
 import kotlinx.serialization.Serializable
 import kotlin.math.abs

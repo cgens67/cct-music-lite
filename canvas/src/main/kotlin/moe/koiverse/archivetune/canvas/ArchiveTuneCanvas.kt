@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.canvas
+package com.cct.music.lite.canvas
 
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body

@@ -8,28 +8,28 @@
 
 
 
-package moe.koiverse.archivetune.viewmodels
+package com.cct.music.lite.viewmodels
 
 import android.content.Context
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.media3.exoplayer.offline.Download
-import moe.koiverse.archivetune.constants.AutoPlaylistSongSortDescendingKey
-import moe.koiverse.archivetune.constants.AutoPlaylistSongSortType
-import moe.koiverse.archivetune.constants.AutoPlaylistSongSortTypeKey
-import moe.koiverse.archivetune.constants.HideExplicitKey
-import moe.koiverse.archivetune.constants.HideVideoKey
-import moe.koiverse.archivetune.constants.SongSortType
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.extensions.filterExplicit
-import moe.koiverse.archivetune.extensions.reversed
-import moe.koiverse.archivetune.extensions.toEnum
-import moe.koiverse.archivetune.playback.DownloadUtil
-import moe.koiverse.archivetune.utils.SyncUtils
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.get
-import moe.koiverse.archivetune.utils.reportException
+import com.cct.music.lite.constants.AutoPlaylistSongSortDescendingKey
+import com.cct.music.lite.constants.AutoPlaylistSongSortType
+import com.cct.music.lite.constants.AutoPlaylistSongSortTypeKey
+import com.cct.music.lite.constants.HideExplicitKey
+import com.cct.music.lite.constants.HideVideoKey
+import com.cct.music.lite.constants.SongSortType
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.extensions.filterExplicit
+import com.cct.music.lite.extensions.reversed
+import com.cct.music.lite.extensions.toEnum
+import com.cct.music.lite.playback.DownloadUtil
+import com.cct.music.lite.utils.SyncUtils
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.get
+import com.cct.music.lite.utils.reportException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers

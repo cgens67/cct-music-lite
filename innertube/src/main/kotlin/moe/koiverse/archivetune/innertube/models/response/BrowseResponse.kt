@@ -8,21 +8,21 @@
 
 
 
-package moe.koiverse.archivetune.innertube.models.response
+package com.cct.music.lite.innertube.models.response
 
-import moe.koiverse.archivetune.innertube.models.Button
-import moe.koiverse.archivetune.innertube.models.Continuation
-import moe.koiverse.archivetune.innertube.models.GridRenderer
-import moe.koiverse.archivetune.innertube.models.Menu
-import moe.koiverse.archivetune.innertube.models.MusicDetailHeaderRenderer
-import moe.koiverse.archivetune.innertube.models.MusicEditablePlaylistDetailHeaderRenderer
-import moe.koiverse.archivetune.innertube.models.MusicShelfRenderer
-import moe.koiverse.archivetune.innertube.models.ResponseContext
-import moe.koiverse.archivetune.innertube.models.Runs
-import moe.koiverse.archivetune.innertube.models.SectionListRenderer
-import moe.koiverse.archivetune.innertube.models.SubscriptionButton
-import moe.koiverse.archivetune.innertube.models.Tabs
-import moe.koiverse.archivetune.innertube.models.ThumbnailRenderer
+import com.cct.music.lite.innertube.models.Button
+import com.cct.music.lite.innertube.models.Continuation
+import com.cct.music.lite.innertube.models.GridRenderer
+import com.cct.music.lite.innertube.models.Menu
+import com.cct.music.lite.innertube.models.MusicDetailHeaderRenderer
+import com.cct.music.lite.innertube.models.MusicEditablePlaylistDetailHeaderRenderer
+import com.cct.music.lite.innertube.models.MusicShelfRenderer
+import com.cct.music.lite.innertube.models.ResponseContext
+import com.cct.music.lite.innertube.models.Runs
+import com.cct.music.lite.innertube.models.SectionListRenderer
+import com.cct.music.lite.innertube.models.SubscriptionButton
+import com.cct.music.lite.innertube.models.Tabs
+import com.cct.music.lite.innertube.models.ThumbnailRenderer
 import kotlinx.serialization.Serializable
 
 @Serializable

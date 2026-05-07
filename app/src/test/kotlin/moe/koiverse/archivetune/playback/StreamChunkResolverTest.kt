@@ -1,4 +1,4 @@
-package moe.koiverse.archivetune.playback
+package com.cct.music.lite.playback
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull

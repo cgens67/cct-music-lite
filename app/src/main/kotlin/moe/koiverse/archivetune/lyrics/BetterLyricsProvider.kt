@@ -8,15 +8,15 @@
 
 
 
-package moe.koiverse.archivetune.lyrics
+package com.cct.music.lite.lyrics
 
 import android.content.Context
-import moe.koiverse.archivetune.betterlyrics.BetterLyrics
-import moe.koiverse.archivetune.constants.EnableBetterLyricsKey
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.get
+import com.cct.music.lite.betterlyrics.BetterLyrics
+import com.cct.music.lite.constants.EnableBetterLyricsKey
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.get
 
-import moe.koiverse.archivetune.utils.GlobalLog
+import com.cct.music.lite.utils.GlobalLog
 import android.util.Log
 
 object BetterLyricsProvider : LyricsProvider {

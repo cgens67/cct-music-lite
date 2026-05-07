@@ -10,7 +10,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -48,11 +48,11 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import coil3.compose.AsyncImage
-import moe.koiverse.archivetune.BuildConfig
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.BuildConfig
+import com.cct.music.lite.R
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.foundation.layout.Arrangement
@@ -72,11 +72,11 @@ import io.ktor.client.request.headers
 import io.ktor.client.statement.HttpResponse
 import io.ktor.client.statement.bodyAsText
 import io.ktor.http.HttpStatusCode
-import moe.koiverse.archivetune.constants.GitHubContributorsEtagKey
-import moe.koiverse.archivetune.constants.GitHubContributorsJsonKey
-import moe.koiverse.archivetune.constants.GitHubContributorsLastCheckedAtKey
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.getAsync
+import com.cct.music.lite.constants.GitHubContributorsEtagKey
+import com.cct.music.lite.constants.GitHubContributorsJsonKey
+import com.cct.music.lite.constants.GitHubContributorsLastCheckedAtKey
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.getAsync
 import org.json.JSONArray
 
 data class TeamMember(
@@ -285,7 +285,7 @@ fun AboutScreen(
             return@LaunchedEffect
         }
 
-        moe.koiverse.archivetune.utils.PreferenceStore.launchEdit(context.dataStore) {
+        com.cct.music.lite.utils.PreferenceStore.launchEdit(context.dataStore) {
             this[GitHubContributorsLastCheckedAtKey] = now
             networkResult.etag?.let { this[GitHubContributorsEtagKey] = it }
             networkResult.body?.let { this[GitHubContributorsJsonKey] = it }

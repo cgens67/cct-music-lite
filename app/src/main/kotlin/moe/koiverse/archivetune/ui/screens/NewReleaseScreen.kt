@@ -10,7 +10,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens
+package com.cct.music.lite.ui.screens
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.combinedClickable
@@ -53,19 +53,19 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.GridThumbnailHeight
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.YouTubeGridItem
-import moe.koiverse.archivetune.ui.component.shimmer.GridItemPlaceHolder
-import moe.koiverse.archivetune.ui.component.shimmer.ShimmerHost
-import moe.koiverse.archivetune.ui.menu.YouTubeAlbumMenu
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.viewmodels.NewReleaseUiState
-import moe.koiverse.archivetune.viewmodels.NewReleaseViewModel
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.GridThumbnailHeight
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.YouTubeGridItem
+import com.cct.music.lite.ui.component.shimmer.GridItemPlaceHolder
+import com.cct.music.lite.ui.component.shimmer.ShimmerHost
+import com.cct.music.lite.ui.menu.YouTubeAlbumMenu
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.viewmodels.NewReleaseUiState
+import com.cct.music.lite.viewmodels.NewReleaseViewModel
 
 @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class)
 @Composable

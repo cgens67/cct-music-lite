@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune
+package com.cct.music.lite
 
 import androidx.compose.runtime.compositionLocalOf
 

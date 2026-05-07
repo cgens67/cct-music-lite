@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.utils
+package com.cct.music.lite.ui.utils
 
 fun String.resize(
     width: Int? = null,

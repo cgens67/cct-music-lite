@@ -5,7 +5,7 @@
  * Don't remove this copyright holder!
  */
 
-package moe.koiverse.archivetune.network
+package com.cct.music.lite.network
 
 sealed interface NetworkBannerUiState {
     data object Hidden : NetworkBannerUiState

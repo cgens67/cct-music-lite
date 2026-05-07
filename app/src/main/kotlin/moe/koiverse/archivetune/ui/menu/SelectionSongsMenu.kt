@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.menu
+package com.cct.music.lite.ui.menu
 
 import android.annotation.SuppressLint
 import android.widget.Toast
@@ -52,22 +52,22 @@ import androidx.media3.common.Timeline
 import androidx.media3.exoplayer.offline.Download
 import androidx.media3.exoplayer.offline.DownloadRequest
 import androidx.media3.exoplayer.offline.DownloadService
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.LocalDatabase
-import moe.koiverse.archivetune.LocalDownloadUtil
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.LocalSyncUtils
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.db.entities.PlaylistSongMap
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.extensions.toMediaItem
-import moe.koiverse.archivetune.models.MediaMetadata
-import moe.koiverse.archivetune.models.toMediaMetadata
-import moe.koiverse.archivetune.playback.ExoDownloadService
-import moe.koiverse.archivetune.playback.queues.ListQueue
-import moe.koiverse.archivetune.ui.component.DefaultDialog
-import moe.koiverse.archivetune.ui.component.NewAction
-import moe.koiverse.archivetune.ui.component.NewActionGrid
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.LocalDatabase
+import com.cct.music.lite.LocalDownloadUtil
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.LocalSyncUtils
+import com.cct.music.lite.R
+import com.cct.music.lite.db.entities.PlaylistSongMap
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.extensions.toMediaItem
+import com.cct.music.lite.models.MediaMetadata
+import com.cct.music.lite.models.toMediaMetadata
+import com.cct.music.lite.playback.ExoDownloadService
+import com.cct.music.lite.playback.queues.ListQueue
+import com.cct.music.lite.ui.component.DefaultDialog
+import com.cct.music.lite.ui.component.NewAction
+import com.cct.music.lite.ui.component.NewActionGrid
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -371,7 +371,7 @@ fun SelectionSongMenu(
                         val shouldAdd = !allInLibrary
                         val now = LocalDateTime.now()
                         val failed = LinkedHashSet<String>()
-                        val updatedSongs = ArrayList<moe.koiverse.archivetune.db.entities.SongEntity>()
+                        val updatedSongs = ArrayList<com.cct.music.lite.db.entities.SongEntity>()
                         for (song in songSelection.asSequence().map { it.song }.distinctBy { it.id }) {
                             val remoteResult = YouTube.likeVideo(song.id, shouldAdd)
                             if (remoteResult.isFailure) {

@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.utils
+package com.cct.music.lite.ui.utils
 
 import android.text.format.Formatter
 import android.widget.Toast
@@ -59,22 +59,22 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.DialogProperties
 import androidx.media3.common.util.UnstableApi
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.MediaInfo
-import moe.koiverse.archivetune.LocalDatabase
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.DarkModeKey
-import moe.koiverse.archivetune.constants.PureBlackKey
-import moe.koiverse.archivetune.db.entities.FormatEntity
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.MenuState
-import moe.koiverse.archivetune.ui.component.shimmer.ShimmerHost
-import moe.koiverse.archivetune.ui.component.shimmer.TextPlaceholder
-import moe.koiverse.archivetune.ui.screens.settings.DarkMode
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.MediaInfo
+import com.cct.music.lite.LocalDatabase
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.DarkModeKey
+import com.cct.music.lite.constants.PureBlackKey
+import com.cct.music.lite.db.entities.FormatEntity
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.MenuState
+import com.cct.music.lite.ui.component.shimmer.ShimmerHost
+import com.cct.music.lite.ui.component.shimmer.TextPlaceholder
+import com.cct.music.lite.ui.screens.settings.DarkMode
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
 import android.content.ClipData
 import android.content.ClipboardManager
 

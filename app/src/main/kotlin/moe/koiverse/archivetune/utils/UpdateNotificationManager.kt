@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -31,14 +31,14 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
-import moe.koiverse.archivetune.BuildConfig
-import moe.koiverse.archivetune.MainActivity
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.EnableUpdateNotificationKey
-import moe.koiverse.archivetune.constants.LastNotifiedVersionKey
-import moe.koiverse.archivetune.constants.LastUpdateCheckKey
-import moe.koiverse.archivetune.constants.UpdateChannel
-import moe.koiverse.archivetune.constants.UpdateChannelKey
+import com.cct.music.lite.BuildConfig
+import com.cct.music.lite.MainActivity
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.EnableUpdateNotificationKey
+import com.cct.music.lite.constants.LastNotifiedVersionKey
+import com.cct.music.lite.constants.LastUpdateCheckKey
+import com.cct.music.lite.constants.UpdateChannel
+import com.cct.music.lite.constants.UpdateChannelKey
 import java.util.concurrent.TimeUnit
 
 object UpdateNotificationManager {

@@ -6,11 +6,11 @@
  */
 
 
-package moe.koiverse.archivetune.ui.player
+package com.cct.music.lite.ui.player
 
 import androidx.media3.common.PlaybackException
 import androidx.media3.datasource.HttpDataSource
-import moe.koiverse.archivetune.utils.YTPlayerUtils
+import com.cct.music.lite.utils.YTPlayerUtils
 
 internal enum class PlaybackErrorKind {
     LoginRefreshRequired,

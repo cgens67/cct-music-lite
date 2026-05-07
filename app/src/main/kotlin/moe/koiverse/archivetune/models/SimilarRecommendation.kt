@@ -8,10 +8,10 @@
 
 
 
-package moe.koiverse.archivetune.models
+package com.cct.music.lite.models
 
-import moe.koiverse.archivetune.innertube.models.YTItem
-import moe.koiverse.archivetune.db.entities.LocalItem
+import com.cct.music.lite.innertube.models.YTItem
+import com.cct.music.lite.db.entities.LocalItem
 
 data class SimilarRecommendation(
     val title: LocalItem,

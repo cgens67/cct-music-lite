@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
 import android.content.Context
 import kotlinx.serialization.Serializable

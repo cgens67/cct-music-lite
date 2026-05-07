@@ -8,9 +8,9 @@
 
 
 
-package moe.koiverse.archivetune.constants
+package com.cct.music.lite.constants
 
-import moe.koiverse.archivetune.ui.screens.OptionStats
+import com.cct.music.lite.ui.screens.OptionStats
 import java.time.LocalDateTime
 import java.time.ZoneOffset
 

@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.menu
+package com.cct.music.lite.ui.menu
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateColorAsState
@@ -72,16 +72,16 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
-import moe.koiverse.archivetune.innertube.utils.parseCookieString
-import moe.koiverse.archivetune.LocalDatabase
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.InnerTubeCookieKey
-import moe.koiverse.archivetune.db.entities.Playlist
-import moe.koiverse.archivetune.ui.component.CreatePlaylistDialog
-import moe.koiverse.archivetune.ui.component.DefaultDialog
-import moe.koiverse.archivetune.ui.component.PlaylistListItem
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.innertube.YouTube
+import com.cct.music.lite.innertube.utils.parseCookieString
+import com.cct.music.lite.LocalDatabase
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.InnerTubeCookieKey
+import com.cct.music.lite.db.entities.Playlist
+import com.cct.music.lite.ui.component.CreatePlaylistDialog
+import com.cct.music.lite.ui.component.DefaultDialog
+import com.cct.music.lite.ui.component.PlaylistListItem
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.innertube.YouTube
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

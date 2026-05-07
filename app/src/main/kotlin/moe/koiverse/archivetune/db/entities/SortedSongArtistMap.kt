@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.db.entities
+package com.cct.music.lite.db.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.DatabaseView

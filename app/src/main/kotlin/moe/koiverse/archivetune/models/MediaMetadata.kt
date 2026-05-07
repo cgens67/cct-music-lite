@@ -8,13 +8,13 @@
 
 
 
-package moe.koiverse.archivetune.models
+package com.cct.music.lite.models
 
 import androidx.compose.runtime.Immutable
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.db.entities.SongEntity
-import moe.koiverse.archivetune.ui.utils.resize
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.db.entities.SongEntity
+import com.cct.music.lite.ui.utils.resize
 import java.io.Serializable
 import java.time.LocalDateTime
 

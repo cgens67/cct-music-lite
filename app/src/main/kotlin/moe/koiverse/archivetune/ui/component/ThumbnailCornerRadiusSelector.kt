@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -31,9 +31,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import kotlin.math.roundToInt
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.ThumbnailCornerRadiusKey
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.ThumbnailCornerRadiusKey
+import com.cct.music.lite.utils.rememberPreference
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.models
+package com.cct.music.lite.models
 
 import java.io.Serializable
 

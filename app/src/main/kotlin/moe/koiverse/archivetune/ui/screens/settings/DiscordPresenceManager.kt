@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import android.content.Context
 import kotlinx.coroutines.*
@@ -19,9 +19,9 @@ import kotlinx.coroutines.flow.asStateFlow
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.ProcessLifecycleOwner
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.utils.DiscordRPC
-import moe.koiverse.archivetune.utils.DiscordImageResolver
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.utils.DiscordRPC
+import com.cct.music.lite.utils.DiscordImageResolver
 import timber.log.Timber
 import java.util.concurrent.atomic.AtomicBoolean
 

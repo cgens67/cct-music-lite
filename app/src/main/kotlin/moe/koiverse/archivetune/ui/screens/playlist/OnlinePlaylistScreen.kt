@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.playlist
+package com.cct.music.lite.ui.screens.playlist
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -112,39 +112,39 @@ import coil3.toBitmap
 import com.valentinilk.shimmer.shimmer
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import moe.koiverse.archivetune.LocalDatabase
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.AppBarHeight
-import moe.koiverse.archivetune.constants.DisableBlurKey
-import moe.koiverse.archivetune.constants.HideExplicitKey
-import moe.koiverse.archivetune.db.entities.PlaylistEntity
-import moe.koiverse.archivetune.db.entities.PlaylistSongMap
-import moe.koiverse.archivetune.extensions.metadata
-import moe.koiverse.archivetune.extensions.toMediaItem
-import moe.koiverse.archivetune.extensions.togglePlayPause
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.innertube.models.WatchEndpoint
-import moe.koiverse.archivetune.models.toMediaMetadata
-import moe.koiverse.archivetune.playback.queues.YouTubeQueue
-import moe.koiverse.archivetune.ui.component.DraggableScrollbar
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.YouTubeListItem
-import moe.koiverse.archivetune.ui.component.shimmer.ButtonPlaceholder
-import moe.koiverse.archivetune.ui.component.shimmer.ListItemPlaceHolder
-import moe.koiverse.archivetune.ui.component.shimmer.ShimmerHost
-import moe.koiverse.archivetune.ui.component.shimmer.TextPlaceholder
-import moe.koiverse.archivetune.ui.menu.SelectionMediaMetadataMenu
-import moe.koiverse.archivetune.ui.menu.YouTubePlaylistMenu
-import moe.koiverse.archivetune.ui.menu.YouTubeSongMenu
-import moe.koiverse.archivetune.ui.theme.PlayerColorExtractor
-import moe.koiverse.archivetune.ui.utils.ItemWrapper
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.ui.utils.formatCompactCount
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.viewmodels.OnlinePlaylistViewModel
+import com.cct.music.lite.LocalDatabase
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.AppBarHeight
+import com.cct.music.lite.constants.DisableBlurKey
+import com.cct.music.lite.constants.HideExplicitKey
+import com.cct.music.lite.db.entities.PlaylistEntity
+import com.cct.music.lite.db.entities.PlaylistSongMap
+import com.cct.music.lite.extensions.metadata
+import com.cct.music.lite.extensions.toMediaItem
+import com.cct.music.lite.extensions.togglePlayPause
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.innertube.models.WatchEndpoint
+import com.cct.music.lite.models.toMediaMetadata
+import com.cct.music.lite.playback.queues.YouTubeQueue
+import com.cct.music.lite.ui.component.DraggableScrollbar
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.YouTubeListItem
+import com.cct.music.lite.ui.component.shimmer.ButtonPlaceholder
+import com.cct.music.lite.ui.component.shimmer.ListItemPlaceHolder
+import com.cct.music.lite.ui.component.shimmer.ShimmerHost
+import com.cct.music.lite.ui.component.shimmer.TextPlaceholder
+import com.cct.music.lite.ui.menu.SelectionMediaMetadataMenu
+import com.cct.music.lite.ui.menu.YouTubePlaylistMenu
+import com.cct.music.lite.ui.menu.YouTubeSongMenu
+import com.cct.music.lite.ui.theme.PlayerColorExtractor
+import com.cct.music.lite.ui.utils.ItemWrapper
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.ui.utils.formatCompactCount
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.viewmodels.OnlinePlaylistViewModel
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
 @Composable

@@ -8,10 +8,10 @@
 
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
-import moe.koiverse.archivetune.models.MediaMetadata
-import moe.koiverse.archivetune.lastfm.LastFM
+import com.cct.music.lite.models.MediaMetadata
+import com.cct.music.lite.lastfm.LastFM
 import kotlinx.coroutines.*
 import timber.log.Timber
 import kotlin.math.min

@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.constants
+package com.cct.music.lite.constants
 
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.floatPreferencesKey

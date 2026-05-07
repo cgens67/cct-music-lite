@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens
+package com.cct.music.lite.ui.screens
  
  import androidx.compose.foundation.ExperimentalFoundationApi
  import androidx.compose.foundation.combinedClickable
@@ -31,23 +31,23 @@ package moe.koiverse.archivetune.ui.screens
  import androidx.compose.ui.unit.dp
  import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
  import androidx.navigation.NavController
- import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
- import moe.koiverse.archivetune.LocalPlayerConnection
- import moe.koiverse.archivetune.R
- import moe.koiverse.archivetune.constants.GridThumbnailHeight
- import moe.koiverse.archivetune.ui.component.IconButton
- import moe.koiverse.archivetune.ui.component.LocalMenuState
- import moe.koiverse.archivetune.ui.component.YouTubeGridItem
- import moe.koiverse.archivetune.ui.component.shimmer.GridItemPlaceHolder
- import moe.koiverse.archivetune.ui.component.shimmer.ShimmerHost
- import moe.koiverse.archivetune.ui.menu.YouTubeAlbumMenu
- import moe.koiverse.archivetune.ui.menu.YouTubeArtistMenu
- import moe.koiverse.archivetune.ui.menu.YouTubePlaylistMenu
- import moe.koiverse.archivetune.ui.utils.backToMain
- import moe.koiverse.archivetune.viewmodels.BrowseViewModel
- import moe.koiverse.archivetune.innertube.models.AlbumItem
- import moe.koiverse.archivetune.innertube.models.ArtistItem
- import moe.koiverse.archivetune.innertube.models.PlaylistItem
+ import com.cct.music.lite.LocalPlayerAwareWindowInsets
+ import com.cct.music.lite.LocalPlayerConnection
+ import com.cct.music.lite.R
+ import com.cct.music.lite.constants.GridThumbnailHeight
+ import com.cct.music.lite.ui.component.IconButton
+ import com.cct.music.lite.ui.component.LocalMenuState
+ import com.cct.music.lite.ui.component.YouTubeGridItem
+ import com.cct.music.lite.ui.component.shimmer.GridItemPlaceHolder
+ import com.cct.music.lite.ui.component.shimmer.ShimmerHost
+ import com.cct.music.lite.ui.menu.YouTubeAlbumMenu
+ import com.cct.music.lite.ui.menu.YouTubeArtistMenu
+ import com.cct.music.lite.ui.menu.YouTubePlaylistMenu
+ import com.cct.music.lite.ui.utils.backToMain
+ import com.cct.music.lite.viewmodels.BrowseViewModel
+ import com.cct.music.lite.innertube.models.AlbumItem
+ import com.cct.music.lite.innertube.models.ArtistItem
+ import com.cct.music.lite.innertube.models.PlaylistItem
  
  @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class)
  @Composable

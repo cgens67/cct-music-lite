@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.menu
+package com.cct.music.lite.ui.menu
 
 import android.content.Intent
 import android.content.res.Configuration
@@ -48,23 +48,23 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import moe.koiverse.archivetune.LocalDatabase
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.ArtistSongSortType
-import moe.koiverse.archivetune.constants.SpeedDialSongIdsKey
-import moe.koiverse.archivetune.db.entities.Artist
-import moe.koiverse.archivetune.extensions.toMediaItem
-import moe.koiverse.archivetune.playback.queues.ListQueue
-import moe.koiverse.archivetune.ui.component.ArtistListItem
-import moe.koiverse.archivetune.ui.component.NewAction
-import moe.koiverse.archivetune.ui.component.NewActionGrid
-import moe.koiverse.archivetune.utils.SpeedDialPin
-import moe.koiverse.archivetune.utils.SpeedDialPinType
-import moe.koiverse.archivetune.utils.parseSpeedDialPins
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.utils.serializeSpeedDialPins
-import moe.koiverse.archivetune.utils.toggleSpeedDialPin
+import com.cct.music.lite.LocalDatabase
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.ArtistSongSortType
+import com.cct.music.lite.constants.SpeedDialSongIdsKey
+import com.cct.music.lite.db.entities.Artist
+import com.cct.music.lite.extensions.toMediaItem
+import com.cct.music.lite.playback.queues.ListQueue
+import com.cct.music.lite.ui.component.ArtistListItem
+import com.cct.music.lite.ui.component.NewAction
+import com.cct.music.lite.ui.component.NewActionGrid
+import com.cct.music.lite.utils.SpeedDialPin
+import com.cct.music.lite.utils.SpeedDialPinType
+import com.cct.music.lite.utils.parseSpeedDialPins
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.utils.serializeSpeedDialPins
+import com.cct.music.lite.utils.toggleSpeedDialPin
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.first

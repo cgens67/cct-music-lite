@@ -5,7 +5,7 @@
  * Don't remove this copyright holder!
  */
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.Animatable
@@ -45,8 +45,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.material3.adaptive.currentWindowAdaptiveInfo
 import androidx.window.core.layout.WindowSizeClass
-import moe.koiverse.archivetune.LocalAnimationsDisabled
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.LocalAnimationsDisabled
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
 
 enum class SettingsLayoutMode {
     COMPACT,

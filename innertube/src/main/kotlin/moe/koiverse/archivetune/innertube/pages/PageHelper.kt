@@ -8,10 +8,10 @@
 
 
 
-package moe.koiverse.archivetune.innertube.pages
+package com.cct.music.lite.innertube.pages
 
-import moe.koiverse.archivetune.innertube.models.MusicResponsiveListItemRenderer.FlexColumn
-import moe.koiverse.archivetune.innertube.models.Run
+import com.cct.music.lite.innertube.models.MusicResponsiveListItemRenderer.FlexColumn
+import com.cct.music.lite.innertube.models.Run
 
 object PageHelper {
     fun extractRuns(columns: List<FlexColumn>, typeLike: String): List<Run> {

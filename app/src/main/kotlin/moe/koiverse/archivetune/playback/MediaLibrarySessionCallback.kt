@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.playback
+package com.cct.music.lite.playback
 
 import android.content.ContentResolver
 import android.content.Context
@@ -29,18 +29,18 @@ import androidx.media3.session.SessionResult
 import com.google.common.collect.ImmutableList
 import com.google.common.util.concurrent.Futures
 import com.google.common.util.concurrent.ListenableFuture
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.MediaSessionConstants
-import moe.koiverse.archivetune.constants.SongSortType
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.db.entities.PlaylistEntity
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.extensions.toMediaItem
-import moe.koiverse.archivetune.extensions.toggleRepeatMode
-import moe.koiverse.archivetune.models.PersistQueue
-import moe.koiverse.archivetune.playback.MusicService.Companion.PERSISTENT_QUEUE_FILE
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.MediaSessionConstants
+import com.cct.music.lite.constants.SongSortType
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.db.entities.PlaylistEntity
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.extensions.toMediaItem
+import com.cct.music.lite.extensions.toggleRepeatMode
+import com.cct.music.lite.models.PersistQueue
+import com.cct.music.lite.playback.MusicService.Companion.PERSISTENT_QUEUE_FILE
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

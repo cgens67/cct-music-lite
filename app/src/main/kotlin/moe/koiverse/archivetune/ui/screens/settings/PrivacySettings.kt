@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -37,19 +37,19 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.LocalDatabase
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.DisableScreenshotKey
-import moe.koiverse.archivetune.constants.PauseListenHistoryKey
-import moe.koiverse.archivetune.constants.PauseSearchHistoryKey
-import moe.koiverse.archivetune.ui.component.DefaultDialog
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.PreferenceEntry
-import moe.koiverse.archivetune.ui.component.PreferenceGroupTitle
-import moe.koiverse.archivetune.ui.component.SwitchPreference
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.LocalDatabase
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.DisableScreenshotKey
+import com.cct.music.lite.constants.PauseListenHistoryKey
+import com.cct.music.lite.constants.PauseSearchHistoryKey
+import com.cct.music.lite.ui.component.DefaultDialog
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.PreferenceEntry
+import com.cct.music.lite.ui.component.PreferenceGroupTitle
+import com.cct.music.lite.ui.component.SwitchPreference
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.rememberPreference
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

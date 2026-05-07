@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens.search
+package com.cct.music.lite.ui.screens.search
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -59,37 +59,37 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.innertube.YouTube.SearchFilter.Companion.FILTER_ALBUM
-import moe.koiverse.archivetune.innertube.YouTube.SearchFilter.Companion.FILTER_ARTIST
-import moe.koiverse.archivetune.innertube.YouTube.SearchFilter.Companion.FILTER_COMMUNITY_PLAYLIST
-import moe.koiverse.archivetune.innertube.YouTube.SearchFilter.Companion.FILTER_FEATURED_PLAYLIST
-import moe.koiverse.archivetune.innertube.YouTube.SearchFilter.Companion.FILTER_SONG
-import moe.koiverse.archivetune.innertube.YouTube.SearchFilter.Companion.FILTER_VIDEO
-import moe.koiverse.archivetune.innertube.models.AlbumItem
-import moe.koiverse.archivetune.innertube.models.ArtistItem
-import moe.koiverse.archivetune.innertube.models.PlaylistItem
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.innertube.models.WatchEndpoint
-import moe.koiverse.archivetune.innertube.models.YTItem
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.AppBarHeight
-import moe.koiverse.archivetune.constants.SearchFilterHeight
-import moe.koiverse.archivetune.extensions.togglePlayPause
-import moe.koiverse.archivetune.models.toMediaMetadata
-import moe.koiverse.archivetune.playback.queues.YouTubeQueue
-import moe.koiverse.archivetune.ui.component.ChipsRow
-import moe.koiverse.archivetune.ui.component.EmptyPlaceholder
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.YouTubeListItem
-import moe.koiverse.archivetune.ui.component.shimmer.ListItemPlaceHolder
-import moe.koiverse.archivetune.ui.component.shimmer.ShimmerHost
-import moe.koiverse.archivetune.ui.menu.YouTubeAlbumMenu
-import moe.koiverse.archivetune.ui.menu.YouTubeArtistMenu
-import moe.koiverse.archivetune.ui.menu.YouTubePlaylistMenu
-import moe.koiverse.archivetune.ui.menu.YouTubeSongMenu
-import moe.koiverse.archivetune.viewmodels.OnlineSearchViewModel
+import com.cct.music.lite.innertube.YouTube.SearchFilter.Companion.FILTER_ALBUM
+import com.cct.music.lite.innertube.YouTube.SearchFilter.Companion.FILTER_ARTIST
+import com.cct.music.lite.innertube.YouTube.SearchFilter.Companion.FILTER_COMMUNITY_PLAYLIST
+import com.cct.music.lite.innertube.YouTube.SearchFilter.Companion.FILTER_FEATURED_PLAYLIST
+import com.cct.music.lite.innertube.YouTube.SearchFilter.Companion.FILTER_SONG
+import com.cct.music.lite.innertube.YouTube.SearchFilter.Companion.FILTER_VIDEO
+import com.cct.music.lite.innertube.models.AlbumItem
+import com.cct.music.lite.innertube.models.ArtistItem
+import com.cct.music.lite.innertube.models.PlaylistItem
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.innertube.models.WatchEndpoint
+import com.cct.music.lite.innertube.models.YTItem
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.AppBarHeight
+import com.cct.music.lite.constants.SearchFilterHeight
+import com.cct.music.lite.extensions.togglePlayPause
+import com.cct.music.lite.models.toMediaMetadata
+import com.cct.music.lite.playback.queues.YouTubeQueue
+import com.cct.music.lite.ui.component.ChipsRow
+import com.cct.music.lite.ui.component.EmptyPlaceholder
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.YouTubeListItem
+import com.cct.music.lite.ui.component.shimmer.ListItemPlaceHolder
+import com.cct.music.lite.ui.component.shimmer.ShimmerHost
+import com.cct.music.lite.ui.menu.YouTubeAlbumMenu
+import com.cct.music.lite.ui.menu.YouTubeArtistMenu
+import com.cct.music.lite.ui.menu.YouTubePlaylistMenu
+import com.cct.music.lite.ui.menu.YouTubeSongMenu
+import com.cct.music.lite.viewmodels.OnlineSearchViewModel
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class)

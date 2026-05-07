@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens.library
+package com.cct.music.lite.ui.screens.library
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Box
@@ -53,30 +53,30 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.ArtistFilter
-import moe.koiverse.archivetune.constants.ArtistFilterKey
-import moe.koiverse.archivetune.constants.ArtistSortDescendingKey
-import moe.koiverse.archivetune.constants.ArtistSortType
-import moe.koiverse.archivetune.constants.ArtistSortTypeKey
-import moe.koiverse.archivetune.constants.ArtistViewTypeKey
-import moe.koiverse.archivetune.constants.CONTENT_TYPE_ARTIST
-import moe.koiverse.archivetune.constants.CONTENT_TYPE_HEADER
-import moe.koiverse.archivetune.constants.GridItemSize
-import moe.koiverse.archivetune.constants.GridItemsSizeKey
-import moe.koiverse.archivetune.constants.GridThumbnailHeight
-import moe.koiverse.archivetune.constants.LibraryViewType
-import moe.koiverse.archivetune.constants.YtmSyncKey
-import moe.koiverse.archivetune.ui.component.ChipsRow
-import moe.koiverse.archivetune.ui.component.EmptyPlaceholder
-import moe.koiverse.archivetune.ui.component.LibraryArtistGridItem
-import moe.koiverse.archivetune.ui.component.LibraryArtistListItem
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.SortHeader
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.viewmodels.LibraryArtistsViewModel
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.ArtistFilter
+import com.cct.music.lite.constants.ArtistFilterKey
+import com.cct.music.lite.constants.ArtistSortDescendingKey
+import com.cct.music.lite.constants.ArtistSortType
+import com.cct.music.lite.constants.ArtistSortTypeKey
+import com.cct.music.lite.constants.ArtistViewTypeKey
+import com.cct.music.lite.constants.CONTENT_TYPE_ARTIST
+import com.cct.music.lite.constants.CONTENT_TYPE_HEADER
+import com.cct.music.lite.constants.GridItemSize
+import com.cct.music.lite.constants.GridItemsSizeKey
+import com.cct.music.lite.constants.GridThumbnailHeight
+import com.cct.music.lite.constants.LibraryViewType
+import com.cct.music.lite.constants.YtmSyncKey
+import com.cct.music.lite.ui.component.ChipsRow
+import com.cct.music.lite.ui.component.EmptyPlaceholder
+import com.cct.music.lite.ui.component.LibraryArtistGridItem
+import com.cct.music.lite.ui.component.LibraryArtistListItem
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.SortHeader
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.viewmodels.LibraryArtistsViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

@@ -8,10 +8,10 @@
 
 
 
-package moe.koiverse.archivetune.di
+package com.cct.music.lite.di
 
-import moe.koiverse.archivetune.lyrics.LyricsHelper
-import moe.koiverse.archivetune.lyrics.LyricsPreloadManager
+import com.cct.music.lite.lyrics.LyricsHelper
+import com.cct.music.lite.lyrics.LyricsPreloadManager
 import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent

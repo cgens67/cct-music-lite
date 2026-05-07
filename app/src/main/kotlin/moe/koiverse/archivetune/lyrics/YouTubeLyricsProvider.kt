@@ -8,11 +8,11 @@
 
 
 
-package moe.koiverse.archivetune.lyrics
+package com.cct.music.lite.lyrics
 
 import android.content.Context
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.WatchEndpoint
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.WatchEndpoint
 
 object YouTubeLyricsProvider : LyricsProvider {
     override val name = "YouTube Music"

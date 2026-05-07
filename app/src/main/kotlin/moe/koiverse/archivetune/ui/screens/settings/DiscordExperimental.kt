@@ -10,7 +10,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.clickable
@@ -27,13 +27,13 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.*
-import moe.koiverse.archivetune.ui.component.ListItem
-import moe.koiverse.archivetune.ui.component.PreferenceEntry
-import moe.koiverse.archivetune.ui.component.SwitchPreference
-import moe.koiverse.archivetune.utils.TranslatorLanguages
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.*
+import com.cct.music.lite.ui.component.ListItem
+import com.cct.music.lite.ui.component.PreferenceEntry
+import com.cct.music.lite.ui.component.SwitchPreference
+import com.cct.music.lite.utils.TranslatorLanguages
+import com.cct.music.lite.utils.rememberPreference
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

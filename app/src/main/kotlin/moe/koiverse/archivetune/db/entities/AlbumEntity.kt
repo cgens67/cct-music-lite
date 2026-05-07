@@ -8,13 +8,13 @@
 
 
 
-package moe.koiverse.archivetune.db.entities
+package com.cct.music.lite.db.entities
 
 import androidx.compose.runtime.Immutable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import moe.koiverse.archivetune.innertube.YouTube
+import com.cct.music.lite.innertube.YouTube
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel

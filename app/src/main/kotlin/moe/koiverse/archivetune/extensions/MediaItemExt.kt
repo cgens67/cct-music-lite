@@ -8,21 +8,21 @@
 
 
 
-package moe.koiverse.archivetune.extensions
+package com.cct.music.lite.extensions
 
 import android.os.Bundle
 import androidx.core.net.toUri
 import androidx.media3.common.MediaItem
 import androidx.media3.common.MediaMetadata.MEDIA_TYPE_MUSIC
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.innertube.models.WatchEndpoint.WatchEndpointMusicSupportedConfigs.WatchEndpointMusicConfig.Companion.MUSIC_VIDEO_TYPE_OMV
-import moe.koiverse.archivetune.innertube.models.WatchEndpoint.WatchEndpointMusicSupportedConfigs.WatchEndpointMusicConfig.Companion.MUSIC_VIDEO_TYPE_UGC
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.models.MediaMetadata
-import moe.koiverse.archivetune.models.toMediaMetadata
-import moe.koiverse.archivetune.ui.utils.resize
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.innertube.models.WatchEndpoint.WatchEndpointMusicSupportedConfigs.WatchEndpointMusicConfig.Companion.MUSIC_VIDEO_TYPE_OMV
+import com.cct.music.lite.innertube.models.WatchEndpoint.WatchEndpointMusicSupportedConfigs.WatchEndpointMusicConfig.Companion.MUSIC_VIDEO_TYPE_UGC
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.models.MediaMetadata
+import com.cct.music.lite.models.toMediaMetadata
+import com.cct.music.lite.ui.utils.resize
 
-const val ExtraIsMusicVideo = "moe.koiverse.archivetune.extra.IS_MUSIC_VIDEO"
+const val ExtraIsMusicVideo = "com.cct.music.lite.extra.IS_MUSIC_VIDEO"
 private const val NotificationArtworkSizePx = 544
 
 val MediaItem.metadata: MediaMetadata?

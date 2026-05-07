@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.db
+package com.cct.music.lite.db
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -31,27 +31,27 @@ import androidx.sqlite.db.SupportSQLiteOpenHelper
 import androidx.sqlite.db.framework.FrameworkSQLiteOpenHelperFactory
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.withTimeout
-import moe.koiverse.archivetune.db.entities.AlbumArtistMap
-import moe.koiverse.archivetune.db.entities.AlbumEntity
-import moe.koiverse.archivetune.db.entities.ArtistEntity
-import moe.koiverse.archivetune.db.entities.Event
-import moe.koiverse.archivetune.db.entities.FormatEntity
-import moe.koiverse.archivetune.db.entities.LyricsEntity
-import moe.koiverse.archivetune.db.entities.PlaylistEntity
-import moe.koiverse.archivetune.db.entities.PlayCountEntity
-import moe.koiverse.archivetune.db.entities.PlaylistSongMap
-import moe.koiverse.archivetune.db.entities.PlaylistSongMapPreview
-import moe.koiverse.archivetune.db.entities.RelatedSongMap
-import moe.koiverse.archivetune.db.entities.SearchHistory
-import moe.koiverse.archivetune.db.entities.SetVideoIdEntity
-import moe.koiverse.archivetune.db.entities.SongAlbumMap
-import moe.koiverse.archivetune.db.entities.SongArtistMap
-import moe.koiverse.archivetune.db.entities.SongEntity
-import moe.koiverse.archivetune.db.entities.SortedSongAlbumMap
-import moe.koiverse.archivetune.db.entities.SortedSongArtistMap
-import moe.koiverse.archivetune.db.entities.TagEntity
-import moe.koiverse.archivetune.db.entities.PlaylistTagMap
-import moe.koiverse.archivetune.extensions.toSQLiteQuery
+import com.cct.music.lite.db.entities.AlbumArtistMap
+import com.cct.music.lite.db.entities.AlbumEntity
+import com.cct.music.lite.db.entities.ArtistEntity
+import com.cct.music.lite.db.entities.Event
+import com.cct.music.lite.db.entities.FormatEntity
+import com.cct.music.lite.db.entities.LyricsEntity
+import com.cct.music.lite.db.entities.PlaylistEntity
+import com.cct.music.lite.db.entities.PlayCountEntity
+import com.cct.music.lite.db.entities.PlaylistSongMap
+import com.cct.music.lite.db.entities.PlaylistSongMapPreview
+import com.cct.music.lite.db.entities.RelatedSongMap
+import com.cct.music.lite.db.entities.SearchHistory
+import com.cct.music.lite.db.entities.SetVideoIdEntity
+import com.cct.music.lite.db.entities.SongAlbumMap
+import com.cct.music.lite.db.entities.SongArtistMap
+import com.cct.music.lite.db.entities.SongEntity
+import com.cct.music.lite.db.entities.SortedSongAlbumMap
+import com.cct.music.lite.db.entities.SortedSongArtistMap
+import com.cct.music.lite.db.entities.TagEntity
+import com.cct.music.lite.db.entities.PlaylistTagMap
+import com.cct.music.lite.extensions.toSQLiteQuery
 import java.time.Instant
 import java.time.LocalDateTime
 import java.time.ZoneOffset

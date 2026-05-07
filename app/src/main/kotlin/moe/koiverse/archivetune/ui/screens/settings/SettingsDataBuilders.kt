@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import android.content.ActivityNotFoundException
 import android.content.Context
@@ -21,8 +21,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.BuildConfig
-import moe.koiverse.archivetune.R
+import com.cct.music.lite.BuildConfig
+import com.cct.music.lite.R
 
 @Composable
 fun buildQuickActions(

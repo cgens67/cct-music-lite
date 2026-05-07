@@ -8,9 +8,9 @@
 
 
 
-package moe.koiverse.archivetune.innertube.models.response
+package com.cct.music.lite.innertube.models.response
 
-import moe.koiverse.archivetune.innertube.models.PlaylistPanelRenderer
+import com.cct.music.lite.innertube.models.PlaylistPanelRenderer
 import kotlinx.serialization.Serializable
 
 @Serializable

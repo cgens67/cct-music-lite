@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens.library
+package com.cct.music.lite.ui.screens.library
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -31,17 +31,17 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.LocalDatabase
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.ChipSortTypeKey
-import moe.koiverse.archivetune.constants.DisableBlurKey
-import moe.koiverse.archivetune.constants.LibraryFilter
-import moe.koiverse.archivetune.constants.PlaylistTagsFilterKey
-import moe.koiverse.archivetune.constants.ShowTagsInLibraryKey
-import moe.koiverse.archivetune.ui.component.ChipsRow
-import moe.koiverse.archivetune.ui.component.TagsFilterChips
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.LocalDatabase
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.ChipSortTypeKey
+import com.cct.music.lite.constants.DisableBlurKey
+import com.cct.music.lite.constants.LibraryFilter
+import com.cct.music.lite.constants.PlaylistTagsFilterKey
+import com.cct.music.lite.constants.ShowTagsInLibraryKey
+import com.cct.music.lite.ui.component.ChipsRow
+import com.cct.music.lite.ui.component.TagsFilterChips
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
 
 @Composable
 fun LibraryScreen(navController: NavController) {

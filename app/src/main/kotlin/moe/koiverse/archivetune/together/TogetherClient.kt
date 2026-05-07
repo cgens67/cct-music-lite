@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.together
+package com.cct.music.lite.together
 
 import androidx.compose.runtime.Immutable
 import io.ktor.client.HttpClient
@@ -43,7 +43,7 @@ sealed interface TogetherClientEvent {
     ) : TogetherClientEvent
 
     data class JoinDecision(
-        val decision: moe.koiverse.archivetune.together.JoinDecision,
+        val decision: com.cct.music.lite.together.JoinDecision,
     ) : TogetherClientEvent
 
     data class ServerIssue(
@@ -57,7 +57,7 @@ sealed interface TogetherClientEvent {
     ) : TogetherClientEvent
 
     data class HeartbeatPong(
-        val pong: moe.koiverse.archivetune.together.HeartbeatPong,
+        val pong: com.cct.music.lite.together.HeartbeatPong,
         val receivedAtElapsedRealtimeMs: Long,
     ) : TogetherClientEvent
 
@@ -315,7 +315,7 @@ class TogetherClient(
                                 }
                             }
 
-                            is moe.koiverse.archivetune.together.JoinDecision -> {
+                            is com.cct.music.lite.together.JoinDecision -> {
                                 if (message.sessionId == sessionId && message.participantId == selfParticipantId) {
                                     _events.tryEmit(TogetherClientEvent.JoinDecision(message))
                                 }

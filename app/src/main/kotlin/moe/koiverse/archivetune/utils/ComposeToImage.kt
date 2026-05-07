@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
 import android.content.ContentValues
 import android.content.Context
@@ -37,7 +37,7 @@ import coil3.toBitmap
 import android.view.View
 import android.view.PixelCopy
 import androidx.core.view.drawToBitmap
-import moe.koiverse.archivetune.R
+import com.cct.music.lite.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.suspendCancellableCoroutine
@@ -46,7 +46,7 @@ import java.io.FileOutputStream
 import kotlin.math.max
 import kotlin.math.roundToInt
 import kotlin.coroutines.resume
-import moe.koiverse.archivetune.ui.component.LyricsShareImageOptions
+import com.cct.music.lite.ui.component.LyricsShareImageOptions
 
 object ComposeToImage {
 
@@ -186,10 +186,10 @@ object ComposeToImage {
         backgroundColor: Int? = null,
         textColor: Int? = null,
         secondaryTextColor: Int? = null,
-        glassStyle: moe.koiverse.archivetune.ui.component.LyricsGlassStyle? = null,
+        glassStyle: com.cct.music.lite.ui.component.LyricsGlassStyle? = null,
         shareOptions: LyricsShareImageOptions = LyricsShareImageOptions(),
     ): Bitmap = withContext(Dispatchers.Default) {
-        val style = glassStyle ?: moe.koiverse.archivetune.ui.component.LyricsGlassStyle.FrostedDark
+        val style = glassStyle ?: com.cct.music.lite.ui.component.LyricsGlassStyle.FrostedDark
         val canvasWidth = width.coerceAtLeast(1)
         val canvasHeight = height.coerceAtLeast(1)
         val baseSize = minOf(canvasWidth, canvasHeight)

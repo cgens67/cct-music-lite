@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -30,18 +30,18 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.ui.component.PreferenceGroupTitle
-import moe.koiverse.archivetune.constants.ListenBrainzEnabledKey
-import moe.koiverse.archivetune.constants.ListenBrainzTokenKey
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.InfoLabel
-import moe.koiverse.archivetune.ui.component.PreferenceEntry
-import moe.koiverse.archivetune.ui.component.SwitchPreference
-import moe.koiverse.archivetune.ui.component.TextFieldDialog
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.R
+import com.cct.music.lite.ui.component.PreferenceGroupTitle
+import com.cct.music.lite.constants.ListenBrainzEnabledKey
+import com.cct.music.lite.constants.ListenBrainzTokenKey
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.InfoLabel
+import com.cct.music.lite.ui.component.PreferenceEntry
+import com.cct.music.lite.ui.component.SwitchPreference
+import com.cct.music.lite.ui.component.TextFieldDialog
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.rememberPreference
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

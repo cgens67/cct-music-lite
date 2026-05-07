@@ -8,13 +8,13 @@
 
 
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.painterResource
-import moe.koiverse.archivetune.R
+import com.cct.music.lite.R
 
 /**
  * Returns a `Material3SettingsItem` that can be placed inside a `Material3SettingsGroup`.

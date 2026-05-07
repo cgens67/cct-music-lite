@@ -8,15 +8,15 @@
 
 
 
-package moe.koiverse.archivetune.viewmodels
+package com.cct.music.lite.viewmodels
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.AlbumItem
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.utils.reportException
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.AlbumItem
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.utils.reportException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted

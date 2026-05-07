@@ -8,16 +8,16 @@
 
 
 
-package moe.koiverse.archivetune.innertube.pages
+package com.cct.music.lite.innertube.pages
 
-import moe.koiverse.archivetune.innertube.models.Album
-import moe.koiverse.archivetune.innertube.models.Artist
-import moe.koiverse.archivetune.innertube.models.MusicResponsiveListItemRenderer
-import moe.koiverse.archivetune.innertube.models.MusicShelfRenderer
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.innertube.models.getItems
-import moe.koiverse.archivetune.innertube.models.oddElements
-import moe.koiverse.archivetune.innertube.utils.parseTime
+import com.cct.music.lite.innertube.models.Album
+import com.cct.music.lite.innertube.models.Artist
+import com.cct.music.lite.innertube.models.MusicResponsiveListItemRenderer
+import com.cct.music.lite.innertube.models.MusicShelfRenderer
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.innertube.models.getItems
+import com.cct.music.lite.innertube.models.oddElements
+import com.cct.music.lite.innertube.utils.parseTime
 
 data class HistoryPage(
     val sections: List<HistorySection>?,

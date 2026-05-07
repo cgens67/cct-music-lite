@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.innertube.utils
+package com.cct.music.lite.innertube.utils
 
 import kotlin.io.encoding.Base64
 import kotlin.io.encoding.ExperimentalEncodingApi

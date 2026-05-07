@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.theme
+package com.cct.music.lite.ui.theme
 
 import androidx.compose.material3.SliderColors
 import androidx.compose.material3.SliderDefaults

@@ -8,12 +8,12 @@
 
 
 
-package moe.koiverse.archivetune.viewmodels
+package com.cct.music.lite.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.pages.ChartsPage
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.pages.ChartsPage
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

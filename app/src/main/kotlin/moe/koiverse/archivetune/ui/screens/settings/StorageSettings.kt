@@ -10,7 +10,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.layout.Column
@@ -50,26 +50,26 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import coil3.annotation.ExperimentalCoilApi
 import coil3.imageLoader
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.MaxCanvasCacheSizeKey
-import moe.koiverse.archivetune.constants.MaxImageCacheSizeKey
-import moe.koiverse.archivetune.constants.MaxSongCacheSizeKey
-import moe.koiverse.archivetune.constants.SmartTrimmerKey
-import moe.koiverse.archivetune.extensions.directorySizeBytes
-import moe.koiverse.archivetune.extensions.tryOrNull
-import moe.koiverse.archivetune.ui.component.ActionPromptDialog
-import moe.koiverse.archivetune.ui.component.DefaultDialog
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.ListPreference
-import moe.koiverse.archivetune.ui.component.PreferenceEntry
-import moe.koiverse.archivetune.ui.component.SwitchPreference
-import moe.koiverse.archivetune.ui.component.PreferenceGroupTitle
-import moe.koiverse.archivetune.ui.player.CanvasArtworkPlaybackCache
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.ui.utils.formatFileSize
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.MaxCanvasCacheSizeKey
+import com.cct.music.lite.constants.MaxImageCacheSizeKey
+import com.cct.music.lite.constants.MaxSongCacheSizeKey
+import com.cct.music.lite.constants.SmartTrimmerKey
+import com.cct.music.lite.extensions.directorySizeBytes
+import com.cct.music.lite.extensions.tryOrNull
+import com.cct.music.lite.ui.component.ActionPromptDialog
+import com.cct.music.lite.ui.component.DefaultDialog
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.ListPreference
+import com.cct.music.lite.ui.component.PreferenceEntry
+import com.cct.music.lite.ui.component.SwitchPreference
+import com.cct.music.lite.ui.component.PreferenceGroupTitle
+import com.cct.music.lite.ui.player.CanvasArtworkPlaybackCache
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.ui.utils.formatFileSize
+import com.cct.music.lite.utils.rememberPreference
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
@@ -153,7 +153,7 @@ fun StorageSettings(
         if (maxImageCacheSize == 0) {
             coroutineScope.launch(Dispatchers.IO) {
                 imageDiskCache.clear()
-                moe.koiverse.archivetune.utils.ArtworkStorage.clear(context)
+                com.cct.music.lite.utils.ArtworkStorage.clear(context)
             }
         }
     }
@@ -346,7 +346,7 @@ fun StorageSettings(
                 onConfirm = {
                     coroutineScope.launch(Dispatchers.IO) {
                         imageDiskCache.clear()
-                        moe.koiverse.archivetune.utils.ArtworkStorage.clear(context)
+                        com.cct.music.lite.utils.ArtworkStorage.clear(context)
                     }
                     clearImageCacheDialog = false
                 },

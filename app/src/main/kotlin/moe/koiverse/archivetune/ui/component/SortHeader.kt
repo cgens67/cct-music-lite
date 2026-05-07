@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.layout.Box
@@ -36,9 +36,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.PlaylistSortType
-import moe.koiverse.archivetune.constants.PlaylistSongSortType
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.PlaylistSortType
+import com.cct.music.lite.constants.PlaylistSongSortType
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable

@@ -11,7 +11,7 @@
     ExperimentalMaterial3ExpressiveApi::class,
 )
 
-package moe.koiverse.archivetune.ui.screens
+package com.cct.music.lite.ui.screens
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.AnimatedVisibility
@@ -92,37 +92,37 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.LocalAnimationsDisabled
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.HistorySource
-import moe.koiverse.archivetune.constants.InnerTubeCookieKey
-import moe.koiverse.archivetune.db.entities.EventWithSong
-import moe.koiverse.archivetune.extensions.metadata
-import moe.koiverse.archivetune.extensions.toMediaItem
-import moe.koiverse.archivetune.extensions.togglePlayPause
-import moe.koiverse.archivetune.innertube.pages.HistoryPage
-import moe.koiverse.archivetune.innertube.utils.parseCookieString
-import moe.koiverse.archivetune.models.toMediaMetadata
-import moe.koiverse.archivetune.playback.queues.ListQueue
-import moe.koiverse.archivetune.playback.queues.YouTubeQueue
-import moe.koiverse.archivetune.ui.component.HideOnScrollFAB
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.NavigationTitle
-import moe.koiverse.archivetune.ui.component.SongListItem
-import moe.koiverse.archivetune.ui.component.TopSearch
-import moe.koiverse.archivetune.ui.component.YouTubeListItem
-import moe.koiverse.archivetune.ui.component.IconButton as AppIconButton
-import moe.koiverse.archivetune.ui.menu.SelectionMediaMetadataMenu
-import moe.koiverse.archivetune.ui.menu.SongMenu
-import moe.koiverse.archivetune.ui.menu.YouTubeSongMenu
-import moe.koiverse.archivetune.ui.utils.appBarScrollBehavior
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.viewmodels.DateAgo
-import moe.koiverse.archivetune.viewmodels.HistoryViewModel
-import moe.koiverse.archivetune.viewmodels.RemoteHistoryUiState
+import com.cct.music.lite.LocalAnimationsDisabled
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.HistorySource
+import com.cct.music.lite.constants.InnerTubeCookieKey
+import com.cct.music.lite.db.entities.EventWithSong
+import com.cct.music.lite.extensions.metadata
+import com.cct.music.lite.extensions.toMediaItem
+import com.cct.music.lite.extensions.togglePlayPause
+import com.cct.music.lite.innertube.pages.HistoryPage
+import com.cct.music.lite.innertube.utils.parseCookieString
+import com.cct.music.lite.models.toMediaMetadata
+import com.cct.music.lite.playback.queues.ListQueue
+import com.cct.music.lite.playback.queues.YouTubeQueue
+import com.cct.music.lite.ui.component.HideOnScrollFAB
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.NavigationTitle
+import com.cct.music.lite.ui.component.SongListItem
+import com.cct.music.lite.ui.component.TopSearch
+import com.cct.music.lite.ui.component.YouTubeListItem
+import com.cct.music.lite.ui.component.IconButton as AppIconButton
+import com.cct.music.lite.ui.menu.SelectionMediaMetadataMenu
+import com.cct.music.lite.ui.menu.SongMenu
+import com.cct.music.lite.ui.menu.YouTubeSongMenu
+import com.cct.music.lite.ui.utils.appBarScrollBehavior
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.viewmodels.DateAgo
+import com.cct.music.lite.viewmodels.HistoryViewModel
+import com.cct.music.lite.viewmodels.RemoteHistoryUiState
 import java.time.format.DateTimeFormatter
 
 @Composable
@@ -697,8 +697,8 @@ private fun RemoteHistoryFeed(
     activeMediaId: String?,
     navController: NavController,
     onRetry: () -> Unit,
-    onSongMenu: (moe.koiverse.archivetune.innertube.models.SongItem) -> Unit,
-    onSongClick: (moe.koiverse.archivetune.innertube.models.SongItem) -> Unit,
+    onSongMenu: (com.cct.music.lite.innertube.models.SongItem) -> Unit,
+    onSongClick: (com.cct.music.lite.innertube.models.SongItem) -> Unit,
 ) {
     LazyColumn(
         state = listState,

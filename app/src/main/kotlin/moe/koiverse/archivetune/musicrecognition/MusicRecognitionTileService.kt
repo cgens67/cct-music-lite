@@ -5,7 +5,7 @@
  * Don't remove this copyright holder!
  */
 
-package moe.koiverse.archivetune.musicrecognition
+package com.cct.music.lite.musicrecognition
 
 import android.app.PendingIntent
 import android.content.Intent
@@ -13,8 +13,8 @@ import android.graphics.drawable.Icon
 import android.os.Build
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
-import moe.koiverse.archivetune.MainActivity
-import moe.koiverse.archivetune.R
+import com.cct.music.lite.MainActivity
+import com.cct.music.lite.R
 
 class MusicRecognitionTileService : TileService() {
     override fun onStartListening() {

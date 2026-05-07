@@ -8,21 +8,21 @@
 
 
 
-package moe.koiverse.archivetune.innertube.pages
+package com.cct.music.lite.innertube.pages
 
-import moe.koiverse.archivetune.innertube.models.Album
-import moe.koiverse.archivetune.innertube.models.AlbumItem
-import moe.koiverse.archivetune.innertube.models.Artist
-import moe.koiverse.archivetune.innertube.models.MusicResponsiveHeaderRenderer
-import moe.koiverse.archivetune.innertube.models.MusicResponsiveListItemRenderer
-import moe.koiverse.archivetune.innertube.models.SectionListRenderer
-import moe.koiverse.archivetune.innertube.models.getContinuation
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.innertube.models.getItems
-import moe.koiverse.archivetune.innertube.models.oddElements
-import moe.koiverse.archivetune.innertube.models.response.BrowseResponse
-import moe.koiverse.archivetune.innertube.models.splitBySeparator
-import moe.koiverse.archivetune.innertube.utils.parseTime
+import com.cct.music.lite.innertube.models.Album
+import com.cct.music.lite.innertube.models.AlbumItem
+import com.cct.music.lite.innertube.models.Artist
+import com.cct.music.lite.innertube.models.MusicResponsiveHeaderRenderer
+import com.cct.music.lite.innertube.models.MusicResponsiveListItemRenderer
+import com.cct.music.lite.innertube.models.SectionListRenderer
+import com.cct.music.lite.innertube.models.getContinuation
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.innertube.models.getItems
+import com.cct.music.lite.innertube.models.oddElements
+import com.cct.music.lite.innertube.models.response.BrowseResponse
+import com.cct.music.lite.innertube.models.splitBySeparator
+import com.cct.music.lite.innertube.utils.parseTime
 
 data class AlbumPage(
     val album: AlbumItem,

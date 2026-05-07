@@ -5,10 +5,10 @@
  * Don't remove this copyright holder!
  */
 
-package moe.koiverse.archivetune.ui.menu
+package com.cct.music.lite.ui.menu
 
-import moe.koiverse.archivetune.db.entities.PlaylistSongMap
-import moe.koiverse.archivetune.innertube.YouTube
+import com.cct.music.lite.db.entities.PlaylistSongMap
+import com.cct.music.lite.innertube.YouTube
 
 suspend fun removeSongFromRemotePlaylist(
     playlistBrowseId: String,

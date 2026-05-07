@@ -10,7 +10,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import android.content.Intent
 import android.net.Uri
@@ -91,8 +91,8 @@ import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import androidx.compose.ui.window.Popup
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.ui.screens.settings.AccountSettings
+import com.cct.music.lite.R
+import com.cct.music.lite.ui.screens.settings.AccountSettings
 import kotlinx.coroutines.delay
 import androidx.compose.ui.platform.LocalContext
 

@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -40,48 +40,48 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.ArtistSeparatorsKey
-import moe.koiverse.archivetune.constants.ExternalDownloaderEnabledKey
-import moe.koiverse.archivetune.constants.ExternalDownloaderPackageKey
-import moe.koiverse.archivetune.constants.AudioNormalizationKey
-import moe.koiverse.archivetune.constants.AudioOffload
-import moe.koiverse.archivetune.constants.AudioQuality
-import moe.koiverse.archivetune.constants.AudioQualityKey
-import moe.koiverse.archivetune.constants.NetworkMeteredKey
-import moe.koiverse.archivetune.constants.AutoDownloadOnLikeKey
-import moe.koiverse.archivetune.constants.AutoStartOnBluetoothKey
-import moe.koiverse.archivetune.constants.AutoSkipNextOnErrorKey
-import moe.koiverse.archivetune.constants.PauseOnDeviceMuteKey
-import moe.koiverse.archivetune.constants.PermanentShuffleKey
-import moe.koiverse.archivetune.constants.PersistentQueueKey
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.ArtistSeparatorsKey
+import com.cct.music.lite.constants.ExternalDownloaderEnabledKey
+import com.cct.music.lite.constants.ExternalDownloaderPackageKey
+import com.cct.music.lite.constants.AudioNormalizationKey
+import com.cct.music.lite.constants.AudioOffload
+import com.cct.music.lite.constants.AudioQuality
+import com.cct.music.lite.constants.AudioQualityKey
+import com.cct.music.lite.constants.NetworkMeteredKey
+import com.cct.music.lite.constants.AutoDownloadOnLikeKey
+import com.cct.music.lite.constants.AutoStartOnBluetoothKey
+import com.cct.music.lite.constants.AutoSkipNextOnErrorKey
+import com.cct.music.lite.constants.PauseOnDeviceMuteKey
+import com.cct.music.lite.constants.PermanentShuffleKey
+import com.cct.music.lite.constants.PersistentQueueKey
 
-import moe.koiverse.archivetune.constants.SkipSilenceKey
-import moe.koiverse.archivetune.constants.StopMusicOnTaskClearKey
-import moe.koiverse.archivetune.constants.WakelockKey
-import moe.koiverse.archivetune.constants.HistoryDuration
-import moe.koiverse.archivetune.constants.CrossfadeDurationKey
-import moe.koiverse.archivetune.constants.CrossfadeEnabledKey
-import moe.koiverse.archivetune.constants.CrossfadeGaplessKey
-import moe.koiverse.archivetune.constants.PlayerStreamClient
-import moe.koiverse.archivetune.constants.PlayerStreamClientKey
-import moe.koiverse.archivetune.constants.SeekExtraSeconds
-import moe.koiverse.archivetune.ui.component.ArtistSeparatorsDialog
-import moe.koiverse.archivetune.ui.component.TagsManagementDialog
-import moe.koiverse.archivetune.ui.component.TextFieldDialog
-import moe.koiverse.archivetune.ui.component.EnumListPreference
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.ListDialog
-import moe.koiverse.archivetune.ui.component.PreferenceEntry
-import moe.koiverse.archivetune.ui.component.PreferenceGroupTitle
-import moe.koiverse.archivetune.ui.component.SliderPreference
-import moe.koiverse.archivetune.ui.component.CrossfadeSliderPreference
-import moe.koiverse.archivetune.ui.component.SwitchPreference
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.LocalDatabase
+import com.cct.music.lite.constants.SkipSilenceKey
+import com.cct.music.lite.constants.StopMusicOnTaskClearKey
+import com.cct.music.lite.constants.WakelockKey
+import com.cct.music.lite.constants.HistoryDuration
+import com.cct.music.lite.constants.CrossfadeDurationKey
+import com.cct.music.lite.constants.CrossfadeEnabledKey
+import com.cct.music.lite.constants.CrossfadeGaplessKey
+import com.cct.music.lite.constants.PlayerStreamClient
+import com.cct.music.lite.constants.PlayerStreamClientKey
+import com.cct.music.lite.constants.SeekExtraSeconds
+import com.cct.music.lite.ui.component.ArtistSeparatorsDialog
+import com.cct.music.lite.ui.component.TagsManagementDialog
+import com.cct.music.lite.ui.component.TextFieldDialog
+import com.cct.music.lite.ui.component.EnumListPreference
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.ListDialog
+import com.cct.music.lite.ui.component.PreferenceEntry
+import com.cct.music.lite.ui.component.PreferenceGroupTitle
+import com.cct.music.lite.ui.component.SliderPreference
+import com.cct.music.lite.ui.component.CrossfadeSliderPreference
+import com.cct.music.lite.ui.component.SwitchPreference
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.LocalDatabase
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

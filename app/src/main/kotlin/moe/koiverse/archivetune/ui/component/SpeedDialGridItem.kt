@@ -5,7 +5,7 @@
  * Don't remove this copyright holder!
  */
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -30,11 +30,11 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import moe.koiverse.archivetune.innertube.models.ArtistItem
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.innertube.models.YTItem
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.ThumbnailCornerRadius
+import com.cct.music.lite.innertube.models.ArtistItem
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.innertube.models.YTItem
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.ThumbnailCornerRadius
 
 @Composable
 fun SpeedDialGridItem(

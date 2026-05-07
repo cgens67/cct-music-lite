@@ -8,6 +8,6 @@
 
 
 
-package moe.koiverse.archivetune.kugou.models
+package com.cct.music.lite.kugou.models
 
 data class Keyword(val title: String, val artist: String)

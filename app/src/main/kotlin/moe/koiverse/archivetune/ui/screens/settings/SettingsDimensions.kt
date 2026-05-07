@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import androidx.compose.animation.core.FiniteAnimationSpec
 import androidx.compose.animation.core.Spring
@@ -15,7 +15,7 @@ import androidx.compose.animation.core.snap
 import androidx.compose.animation.core.tween
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.unit.dp
-import moe.koiverse.archivetune.LocalAnimationsDisabled
+import com.cct.music.lite.LocalAnimationsDisabled
 
 object SettingsDimensions {
     val GroupCardCornerRadius = 16.dp

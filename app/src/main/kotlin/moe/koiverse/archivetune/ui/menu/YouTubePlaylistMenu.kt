@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.menu
+package com.cct.music.lite.ui.menu
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -69,32 +69,32 @@ import androidx.media3.exoplayer.offline.Download
 import androidx.media3.exoplayer.offline.DownloadRequest
 import androidx.media3.exoplayer.offline.DownloadService
 import coil3.compose.AsyncImage
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.PlaylistItem
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.innertube.utils.completed
-import moe.koiverse.archivetune.LocalDatabase
-import moe.koiverse.archivetune.LocalDownloadUtil
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.LocalSyncUtils
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.ListThumbnailSize
-import moe.koiverse.archivetune.constants.ThumbnailCornerRadius
-import moe.koiverse.archivetune.db.entities.PlaylistEntity
-import moe.koiverse.archivetune.db.entities.PlaylistSongMap
-import moe.koiverse.archivetune.extensions.toMediaItem
-import moe.koiverse.archivetune.models.MediaMetadata
-import moe.koiverse.archivetune.models.toMediaMetadata
-import moe.koiverse.archivetune.playback.ExoDownloadService
-import moe.koiverse.archivetune.playback.queues.YouTubeQueue
-import moe.koiverse.archivetune.ui.component.DefaultDialog
-import moe.koiverse.archivetune.ui.component.ListDialog
-import moe.koiverse.archivetune.ui.component.MenuSurfaceSection
-import moe.koiverse.archivetune.ui.component.NewAction
-import moe.koiverse.archivetune.ui.component.NewActionGrid
-import moe.koiverse.archivetune.ui.component.YouTubeListItem
-import moe.koiverse.archivetune.utils.joinByBullet
-import moe.koiverse.archivetune.utils.makeTimeString
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.PlaylistItem
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.innertube.utils.completed
+import com.cct.music.lite.LocalDatabase
+import com.cct.music.lite.LocalDownloadUtil
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.LocalSyncUtils
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.ListThumbnailSize
+import com.cct.music.lite.constants.ThumbnailCornerRadius
+import com.cct.music.lite.db.entities.PlaylistEntity
+import com.cct.music.lite.db.entities.PlaylistSongMap
+import com.cct.music.lite.extensions.toMediaItem
+import com.cct.music.lite.models.MediaMetadata
+import com.cct.music.lite.models.toMediaMetadata
+import com.cct.music.lite.playback.ExoDownloadService
+import com.cct.music.lite.playback.queues.YouTubeQueue
+import com.cct.music.lite.ui.component.DefaultDialog
+import com.cct.music.lite.ui.component.ListDialog
+import com.cct.music.lite.ui.component.MenuSurfaceSection
+import com.cct.music.lite.ui.component.NewAction
+import com.cct.music.lite.ui.component.NewActionGrid
+import com.cct.music.lite.ui.component.YouTubeListItem
+import com.cct.music.lite.utils.joinByBullet
+import com.cct.music.lite.utils.makeTimeString
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

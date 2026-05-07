@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.extensions
+package com.cct.music.lite.extensions
 
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope

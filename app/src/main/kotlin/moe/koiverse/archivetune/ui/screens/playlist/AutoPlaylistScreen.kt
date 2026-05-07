@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.playlist
+package com.cct.music.lite.ui.screens.playlist
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -109,37 +109,37 @@ import coil3.request.allowHardware
 import coil3.toBitmap
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import moe.koiverse.archivetune.LocalDownloadUtil
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.DisableBlurKey
-import moe.koiverse.archivetune.constants.HideExplicitKey
-import moe.koiverse.archivetune.constants.AutoPlaylistSongSortDescendingKey
-import moe.koiverse.archivetune.constants.AutoPlaylistSongSortType
-import moe.koiverse.archivetune.constants.AutoPlaylistSongSortTypeKey
-import moe.koiverse.archivetune.constants.YtmSyncKey
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.extensions.toMediaItem
-import moe.koiverse.archivetune.extensions.togglePlayPause
-import moe.koiverse.archivetune.playback.ExoDownloadService
-import moe.koiverse.archivetune.playback.queues.ListQueue
-import moe.koiverse.archivetune.ui.component.DefaultDialog
-import moe.koiverse.archivetune.ui.component.DraggableScrollbar
-import moe.koiverse.archivetune.ui.component.EmptyPlaceholder
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.SongListItem
-import moe.koiverse.archivetune.ui.component.SortHeader
-import moe.koiverse.archivetune.ui.menu.SelectionSongMenu
-import moe.koiverse.archivetune.ui.menu.SongMenu
-import moe.koiverse.archivetune.ui.theme.PlayerColorExtractor
-import moe.koiverse.archivetune.ui.utils.ItemWrapper
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.makeTimeString
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.viewmodels.AutoPlaylistViewModel
+import com.cct.music.lite.LocalDownloadUtil
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.DisableBlurKey
+import com.cct.music.lite.constants.HideExplicitKey
+import com.cct.music.lite.constants.AutoPlaylistSongSortDescendingKey
+import com.cct.music.lite.constants.AutoPlaylistSongSortType
+import com.cct.music.lite.constants.AutoPlaylistSongSortTypeKey
+import com.cct.music.lite.constants.YtmSyncKey
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.extensions.toMediaItem
+import com.cct.music.lite.extensions.togglePlayPause
+import com.cct.music.lite.playback.ExoDownloadService
+import com.cct.music.lite.playback.queues.ListQueue
+import com.cct.music.lite.ui.component.DefaultDialog
+import com.cct.music.lite.ui.component.DraggableScrollbar
+import com.cct.music.lite.ui.component.EmptyPlaceholder
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.SongListItem
+import com.cct.music.lite.ui.component.SortHeader
+import com.cct.music.lite.ui.menu.SelectionSongMenu
+import com.cct.music.lite.ui.menu.SongMenu
+import com.cct.music.lite.ui.theme.PlayerColorExtractor
+import com.cct.music.lite.ui.utils.ItemWrapper
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.makeTimeString
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.viewmodels.AutoPlaylistViewModel
 
 @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class)
 @Composable

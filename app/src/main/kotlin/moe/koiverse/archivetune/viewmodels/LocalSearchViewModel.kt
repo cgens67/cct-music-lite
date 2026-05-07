@@ -8,16 +8,16 @@
 
 
 
-package moe.koiverse.archivetune.viewmodels
+package com.cct.music.lite.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.db.entities.Album
-import moe.koiverse.archivetune.db.entities.Artist
-import moe.koiverse.archivetune.db.entities.LocalItem
-import moe.koiverse.archivetune.db.entities.Playlist
-import moe.koiverse.archivetune.db.entities.Song
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.db.entities.Album
+import com.cct.music.lite.db.entities.Artist
+import com.cct.music.lite.db.entities.LocalItem
+import com.cct.music.lite.db.entities.Playlist
+import com.cct.music.lite.db.entities.Song
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow

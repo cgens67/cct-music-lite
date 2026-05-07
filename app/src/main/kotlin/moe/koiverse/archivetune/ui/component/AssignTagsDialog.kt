@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -52,8 +52,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import kotlin.math.floor
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.db.MusicDatabase
+import com.cct.music.lite.R
+import com.cct.music.lite.db.MusicDatabase
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable

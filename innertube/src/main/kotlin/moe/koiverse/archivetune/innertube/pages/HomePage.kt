@@ -8,21 +8,21 @@
 
 
 
-package moe.koiverse.archivetune.innertube.pages
+package com.cct.music.lite.innertube.pages
 
-import moe.koiverse.archivetune.innertube.models.Album
-import moe.koiverse.archivetune.innertube.models.AlbumItem
-import moe.koiverse.archivetune.innertube.models.Artist
-import moe.koiverse.archivetune.innertube.models.ArtistItem
-import moe.koiverse.archivetune.innertube.models.BrowseEndpoint
-import moe.koiverse.archivetune.innertube.models.MusicCarouselShelfRenderer
-import moe.koiverse.archivetune.innertube.models.MusicTwoRowItemRenderer
-import moe.koiverse.archivetune.innertube.models.PlaylistItem
-import moe.koiverse.archivetune.innertube.models.SectionListRenderer
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.innertube.models.YTItem
-import moe.koiverse.archivetune.innertube.models.oddElements
-import moe.koiverse.archivetune.innertube.models.filterExplicit
+import com.cct.music.lite.innertube.models.Album
+import com.cct.music.lite.innertube.models.AlbumItem
+import com.cct.music.lite.innertube.models.Artist
+import com.cct.music.lite.innertube.models.ArtistItem
+import com.cct.music.lite.innertube.models.BrowseEndpoint
+import com.cct.music.lite.innertube.models.MusicCarouselShelfRenderer
+import com.cct.music.lite.innertube.models.MusicTwoRowItemRenderer
+import com.cct.music.lite.innertube.models.PlaylistItem
+import com.cct.music.lite.innertube.models.SectionListRenderer
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.innertube.models.YTItem
+import com.cct.music.lite.innertube.models.oddElements
+import com.cct.music.lite.innertube.models.filterExplicit
 
 data class HomePage(
     val chips: List<Chip>?,

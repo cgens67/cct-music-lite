@@ -8,12 +8,12 @@
 
 
 
-package moe.koiverse.archivetune.innertube.models.response
+package com.cct.music.lite.innertube.models.response
 
-import moe.koiverse.archivetune.innertube.models.AccountInfo
-import moe.koiverse.archivetune.innertube.models.Runs
-import moe.koiverse.archivetune.innertube.models.Thumbnails
-import moe.koiverse.archivetune.innertube.models.Thumbnail
+import com.cct.music.lite.innertube.models.AccountInfo
+import com.cct.music.lite.innertube.models.Runs
+import com.cct.music.lite.innertube.models.Thumbnails
+import com.cct.music.lite.innertube.models.Thumbnail
 import kotlinx.serialization.Serializable
 
 @Serializable

@@ -8,16 +8,16 @@
 
 
 
-package moe.koiverse.archivetune.extensions
+package com.cct.music.lite.extensions
 
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
-import moe.koiverse.archivetune.constants.InnerTubeCookieKey
-import moe.koiverse.archivetune.constants.YtmSyncKey
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.get
-import moe.koiverse.archivetune.innertube.utils.parseCookieString
+import com.cct.music.lite.constants.InnerTubeCookieKey
+import com.cct.music.lite.constants.YtmSyncKey
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.get
+import com.cct.music.lite.innertube.utils.parseCookieString
 
 fun Context.isSyncEnabled(): Boolean {
     return dataStore.get(YtmSyncKey, true) && isUserLoggedIn()

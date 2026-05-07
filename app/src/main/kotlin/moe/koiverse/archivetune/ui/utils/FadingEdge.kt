@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.utils
+package com.cct.music.lite.ui.utils
 
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawWithContent

@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.player
+package com.cct.music.lite.ui.player
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -25,9 +25,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.constants.SwipeSensitivityKey
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.constants.SwipeSensitivityKey
+import com.cct.music.lite.utils.rememberPreference
 import kotlin.math.roundToInt
 
 @Composable
@@ -56,7 +56,7 @@ private fun NewMiniPlayer(
     val layoutDirection = LocalLayoutDirection.current
     val coroutineScope = rememberCoroutineScope()
     val swipeSensitivity by rememberPreference(SwipeSensitivityKey, 0.73f)
-    val swipeThumbnail by rememberPreference(moe.koiverse.archivetune.constants.SwipeThumbnailKey, true)
+    val swipeThumbnail by rememberPreference(com.cct.music.lite.constants.SwipeThumbnailKey, true)
 
     SwipeableMiniPlayerBox(
         modifier = modifier,

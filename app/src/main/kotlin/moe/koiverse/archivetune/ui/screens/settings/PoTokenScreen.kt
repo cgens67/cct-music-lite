@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import android.app.Activity
 import android.content.Intent
@@ -76,22 +76,22 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.InnerTubeCookieKey
-import moe.koiverse.archivetune.constants.PoTokenGvsKey
-import moe.koiverse.archivetune.constants.PoTokenPlayerKey
-import moe.koiverse.archivetune.constants.PoTokenSourceUrlKey
-import moe.koiverse.archivetune.constants.UseVisitorDataKey
-import moe.koiverse.archivetune.constants.VisitorDataKey
-import moe.koiverse.archivetune.constants.WebClientPoTokenEnabledKey
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.PreferenceGroupTitle
-import moe.koiverse.archivetune.ui.component.SwitchPreference
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.viewmodels.PoTokenState
-import moe.koiverse.archivetune.viewmodels.PoTokenViewModel
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.InnerTubeCookieKey
+import com.cct.music.lite.constants.PoTokenGvsKey
+import com.cct.music.lite.constants.PoTokenPlayerKey
+import com.cct.music.lite.constants.PoTokenSourceUrlKey
+import com.cct.music.lite.constants.UseVisitorDataKey
+import com.cct.music.lite.constants.VisitorDataKey
+import com.cct.music.lite.constants.WebClientPoTokenEnabledKey
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.PreferenceGroupTitle
+import com.cct.music.lite.ui.component.SwitchPreference
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.viewmodels.PoTokenState
+import com.cct.music.lite.viewmodels.PoTokenViewModel
 
 private const val DEFAULT_EXTRACT_URL = "https://youtube.com/account"
 

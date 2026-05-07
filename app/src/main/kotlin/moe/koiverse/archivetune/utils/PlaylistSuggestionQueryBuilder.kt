@@ -7,11 +7,11 @@
 
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
-import moe.koiverse.archivetune.constants.PlaylistSuggestionSource
-import moe.koiverse.archivetune.models.PlaylistSuggestionQuery
-import moe.koiverse.archivetune.db.entities.PlaylistSong
+import com.cct.music.lite.constants.PlaylistSuggestionSource
+import com.cct.music.lite.models.PlaylistSuggestionQuery
+import com.cct.music.lite.db.entities.PlaylistSong
 import java.time.LocalDateTime
 import java.time.Year
 import java.time.format.DateTimeFormatter

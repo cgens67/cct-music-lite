@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.annotation.DrawableRes
 import androidx.compose.animation.AnimatedVisibility
@@ -33,9 +33,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import moe.koiverse.archivetune.LocalAnimationsDisabled
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.ui.utils.isScrollingUp
+import com.cct.music.lite.LocalAnimationsDisabled
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.ui.utils.isScrollingUp
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable

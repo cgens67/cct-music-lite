@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.playback
+package com.cct.music.lite.playback
 
 internal class PlaybackStreamRecoveryTracker {
     private var attemptedMediaId: String? = null

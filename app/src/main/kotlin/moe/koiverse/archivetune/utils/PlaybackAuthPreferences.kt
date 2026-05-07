@@ -6,25 +6,25 @@
  */
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
 import android.content.Context
 import androidx.datastore.preferences.core.MutablePreferences
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
-import moe.koiverse.archivetune.constants.AccountChannelHandleKey
-import moe.koiverse.archivetune.constants.AccountEmailKey
-import moe.koiverse.archivetune.constants.AccountNameKey
-import moe.koiverse.archivetune.constants.DataSyncIdKey
-import moe.koiverse.archivetune.constants.InnerTubeCookieKey
-import moe.koiverse.archivetune.constants.PoTokenGvsKey
-import moe.koiverse.archivetune.constants.PoTokenKey
-import moe.koiverse.archivetune.constants.PoTokenPlayerKey
-import moe.koiverse.archivetune.constants.PoTokenSourceUrlKey
-import moe.koiverse.archivetune.constants.VisitorDataKey
-import moe.koiverse.archivetune.constants.WebClientPoTokenEnabledKey
-import moe.koiverse.archivetune.innertube.PlaybackAuthState
-import moe.koiverse.archivetune.innertube.YouTube
+import com.cct.music.lite.constants.AccountChannelHandleKey
+import com.cct.music.lite.constants.AccountEmailKey
+import com.cct.music.lite.constants.AccountNameKey
+import com.cct.music.lite.constants.DataSyncIdKey
+import com.cct.music.lite.constants.InnerTubeCookieKey
+import com.cct.music.lite.constants.PoTokenGvsKey
+import com.cct.music.lite.constants.PoTokenKey
+import com.cct.music.lite.constants.PoTokenPlayerKey
+import com.cct.music.lite.constants.PoTokenSourceUrlKey
+import com.cct.music.lite.constants.VisitorDataKey
+import com.cct.music.lite.constants.WebClientPoTokenEnabledKey
+import com.cct.music.lite.innertube.PlaybackAuthState
+import com.cct.music.lite.innertube.YouTube
 import kotlinx.coroutines.flow.first
 
 fun Preferences.toPlaybackAuthState(): PlaybackAuthState =

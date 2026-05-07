@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.extensions
+package com.cct.music.lite.extensions
 
 import androidx.media3.common.C
 import androidx.media3.common.MediaItem
@@ -17,7 +17,7 @@ import androidx.media3.common.Player.REPEAT_MODE_ALL
 import androidx.media3.common.Player.REPEAT_MODE_OFF
 import androidx.media3.common.Player.REPEAT_MODE_ONE
 import androidx.media3.common.Timeline
-import moe.koiverse.archivetune.models.MediaMetadata
+import com.cct.music.lite.models.MediaMetadata
 import java.util.ArrayDeque
 
 fun Player.togglePlayPause() {

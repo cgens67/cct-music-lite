@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.betterlyrics
+package com.cct.music.lite.betterlyrics
 
 import org.w3c.dom.Element
 import org.w3c.dom.Node

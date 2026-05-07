@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.menu
+package com.cct.music.lite.ui.menu
 
 import android.app.SearchManager
 import android.content.Intent
@@ -70,8 +70,8 @@ import kotlinx.coroutines.withContext
 import kotlinx.coroutines.launch
 import me.bush.translator.Translator
 import me.bush.translator.Language
-import moe.koiverse.archivetune.utils.TranslatorLanguages
-import moe.koiverse.archivetune.utils.TranslatorLang
+import com.cct.music.lite.utils.TranslatorLanguages
+import com.cct.music.lite.utils.TranslatorLang
 import androidx.compose.runtime.produceState
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -81,21 +81,21 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
-import moe.koiverse.archivetune.LocalDatabase
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.LyricsSyncOffsetKey
-import moe.koiverse.archivetune.db.entities.LyricsEntity
-import moe.koiverse.archivetune.lyrics.LyricsUtils.isTtml
-import moe.koiverse.archivetune.lyrics.LyricsUtils.parseLyrics
-import moe.koiverse.archivetune.lyrics.LyricsUtils.parseTtml
-import moe.koiverse.archivetune.models.MediaMetadata
-import moe.koiverse.archivetune.ui.component.DefaultDialog
-import moe.koiverse.archivetune.ui.component.ListDialog
-import moe.koiverse.archivetune.ui.component.NewAction
-import moe.koiverse.archivetune.ui.component.NewActionGrid
-import moe.koiverse.archivetune.ui.component.TextFieldDialog
-import moe.koiverse.archivetune.viewmodels.LyricsMenuViewModel
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.LocalDatabase
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.LyricsSyncOffsetKey
+import com.cct.music.lite.db.entities.LyricsEntity
+import com.cct.music.lite.lyrics.LyricsUtils.isTtml
+import com.cct.music.lite.lyrics.LyricsUtils.parseLyrics
+import com.cct.music.lite.lyrics.LyricsUtils.parseTtml
+import com.cct.music.lite.models.MediaMetadata
+import com.cct.music.lite.ui.component.DefaultDialog
+import com.cct.music.lite.ui.component.ListDialog
+import com.cct.music.lite.ui.component.NewAction
+import com.cct.music.lite.ui.component.NewActionGrid
+import com.cct.music.lite.ui.component.TextFieldDialog
+import com.cct.music.lite.viewmodels.LyricsMenuViewModel
+import com.cct.music.lite.utils.rememberPreference
 import java.util.UUID
 import kotlin.math.roundToInt
 

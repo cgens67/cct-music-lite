@@ -8,17 +8,17 @@
 
 
 
-package moe.koiverse.archivetune.innertube.pages
+package com.cct.music.lite.innertube.pages
 
-import moe.koiverse.archivetune.innertube.models.Album
-import moe.koiverse.archivetune.innertube.models.Artist
-import moe.koiverse.archivetune.innertube.models.BrowseEndpoint
-import moe.koiverse.archivetune.innertube.models.PlaylistPanelVideoRenderer
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.innertube.models.WatchEndpoint
-import moe.koiverse.archivetune.innertube.models.oddElements
-import moe.koiverse.archivetune.innertube.models.splitBySeparator
-import moe.koiverse.archivetune.innertube.utils.parseTime
+import com.cct.music.lite.innertube.models.Album
+import com.cct.music.lite.innertube.models.Artist
+import com.cct.music.lite.innertube.models.BrowseEndpoint
+import com.cct.music.lite.innertube.models.PlaylistPanelVideoRenderer
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.innertube.models.WatchEndpoint
+import com.cct.music.lite.innertube.models.oddElements
+import com.cct.music.lite.innertube.models.splitBySeparator
+import com.cct.music.lite.innertube.utils.parseTime
 
 data class NextResult(
     val title: String? = null,

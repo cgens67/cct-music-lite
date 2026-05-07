@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.constants
+package com.cct.music.lite.constants
 
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring

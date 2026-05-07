@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -53,16 +53,16 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.core.content.ContextCompat
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.BuildConfig
-import moe.koiverse.archivetune.LocalAnimationsDisabled
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.AccountEmailKey
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.TopSearch
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.Updater
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.viewmodels.HomeViewModel
+import com.cct.music.lite.BuildConfig
+import com.cct.music.lite.LocalAnimationsDisabled
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.AccountEmailKey
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.TopSearch
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.Updater
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.viewmodels.HomeViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

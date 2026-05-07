@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.core.Animatable
@@ -55,10 +55,10 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.Velocity
 import androidx.compose.ui.unit.dp
-import moe.koiverse.archivetune.LocalAnimationsDisabled
-import moe.koiverse.archivetune.constants.BottomSheetAnimationSpec
-import moe.koiverse.archivetune.constants.BottomSheetSoftAnimationSpec
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.LocalAnimationsDisabled
+import com.cct.music.lite.constants.BottomSheetAnimationSpec
+import com.cct.music.lite.constants.BottomSheetSoftAnimationSpec
+import com.cct.music.lite.utils.rememberPreference
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.launch

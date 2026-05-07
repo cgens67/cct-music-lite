@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.constants
+package com.cct.music.lite.constants
 
 enum class HistorySource {
     LOCAL, REMOTE

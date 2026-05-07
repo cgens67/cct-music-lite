@@ -10,7 +10,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune
+package com.cct.music.lite
 
 import android.content.Intent
 import android.os.Build
@@ -58,7 +58,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.shape.RoundedCornerShape
-import moe.koiverse.archivetune.ui.theme.ArchiveTuneTheme
+import com.cct.music.lite.ui.theme.ArchiveTuneTheme
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

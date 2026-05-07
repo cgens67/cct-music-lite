@@ -8,13 +8,13 @@
 
 
 
-package moe.koiverse.archivetune.lyrics
+package com.cct.music.lite.lyrics
 
 import android.content.Context
-import moe.koiverse.archivetune.constants.EnableSimpMusicLyricsKey
-import moe.koiverse.archivetune.simpmusic.SimpMusicLyrics
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.get
+import com.cct.music.lite.constants.EnableSimpMusicLyricsKey
+import com.cct.music.lite.simpmusic.SimpMusicLyrics
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.get
 
 object SimpMusicLyricsProvider : LyricsProvider {
     override val name: String = "SimpMusic"

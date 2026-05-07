@@ -8,9 +8,9 @@
 
 
 
-package moe.koiverse.archivetune.innertube.pages
+package com.cct.music.lite.innertube.pages
 
-import moe.koiverse.archivetune.innertube.models.YTItem
+import com.cct.music.lite.innertube.models.YTItem
 
 data class ArtistItemsContinuationPage(
     val items: List<YTItem>,

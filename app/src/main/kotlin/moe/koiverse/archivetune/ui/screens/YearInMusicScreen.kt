@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens
+package com.cct.music.lite.ui.screens
 
 import android.content.Intent
 import android.view.View
@@ -110,27 +110,27 @@ import coil3.request.ImageRequest
 import coil3.request.allowHardware
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.suspendCancellableCoroutine
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.DisableBlurKey
-import moe.koiverse.archivetune.db.entities.Album
-import moe.koiverse.archivetune.db.entities.Artist
-import moe.koiverse.archivetune.db.entities.SongWithStats
-import moe.koiverse.archivetune.extensions.togglePlayPause
-import moe.koiverse.archivetune.innertube.models.WatchEndpoint
-import moe.koiverse.archivetune.models.toMediaMetadata
-import moe.koiverse.archivetune.playback.queues.YouTubeQueue
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.menu.ArtistMenu
-import moe.koiverse.archivetune.ui.menu.SongMenu
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.ComposeToImage
-import moe.koiverse.archivetune.utils.joinByBullet
-import moe.koiverse.archivetune.utils.makeTimeString
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.viewmodels.YearInMusicViewModel
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.DisableBlurKey
+import com.cct.music.lite.db.entities.Album
+import com.cct.music.lite.db.entities.Artist
+import com.cct.music.lite.db.entities.SongWithStats
+import com.cct.music.lite.extensions.togglePlayPause
+import com.cct.music.lite.innertube.models.WatchEndpoint
+import com.cct.music.lite.models.toMediaMetadata
+import com.cct.music.lite.playback.queues.YouTubeQueue
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.menu.ArtistMenu
+import com.cct.music.lite.ui.menu.SongMenu
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.ComposeToImage
+import com.cct.music.lite.utils.joinByBullet
+import com.cct.music.lite.utils.makeTimeString
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.viewmodels.YearInMusicViewModel
 import kotlin.coroutines.resume
 import kotlin.math.PI
 import kotlin.math.cos
@@ -934,15 +934,15 @@ private fun YearInMusicStoryPager(
     totalListeningTime: Long,
     totalSongsPlayed: Long,
     topSongsStats: List<SongWithStats>,
-    topSongs: List<moe.koiverse.archivetune.db.entities.Song>,
+    topSongs: List<com.cct.music.lite.db.entities.Song>,
     topArtists: List<Artist>,
     topAlbums: List<Album>,
     isPlaying: Boolean,
     mediaMetadataId: String?,
     navController: NavController,
-    menuState: moe.koiverse.archivetune.ui.component.MenuState,
+    menuState: com.cct.music.lite.ui.component.MenuState,
     haptic: androidx.compose.ui.hapticfeedback.HapticFeedback,
-    playerConnection: moe.koiverse.archivetune.playback.PlayerConnection,
+    playerConnection: com.cct.music.lite.playback.PlayerConnection,
     coroutineScope: kotlinx.coroutines.CoroutineScope,
     isShareCaptureMode: Boolean,
     onPagerStateChanged: (currentPage: Int, lastPage: Int) -> Unit,

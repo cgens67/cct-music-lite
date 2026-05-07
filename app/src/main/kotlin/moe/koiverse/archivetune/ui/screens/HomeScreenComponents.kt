@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens
+package com.cct.music.lite.ui.screens
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -74,53 +74,53 @@ import coil3.request.CachePolicy
 import coil3.request.ImageRequest
 import coil3.request.crossfade
 import kotlinx.coroutines.CoroutineScope
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.GridThumbnailHeight
-import moe.koiverse.archivetune.constants.ListItemHeight
-import moe.koiverse.archivetune.constants.ListThumbnailSize
-import moe.koiverse.archivetune.constants.ThumbnailCornerRadius
-import moe.koiverse.archivetune.db.entities.Album
-import moe.koiverse.archivetune.db.entities.Artist
-import moe.koiverse.archivetune.db.entities.LocalItem
-import moe.koiverse.archivetune.db.entities.Playlist
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.extensions.toMediaItem
-import moe.koiverse.archivetune.extensions.togglePlayPause
-import moe.koiverse.archivetune.innertube.models.AlbumItem
-import moe.koiverse.archivetune.innertube.models.ArtistItem
-import moe.koiverse.archivetune.innertube.models.PlaylistItem
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.innertube.models.WatchEndpoint
-import moe.koiverse.archivetune.innertube.models.YTItem
-import moe.koiverse.archivetune.innertube.pages.HomePage
-import moe.koiverse.archivetune.models.MediaMetadata
-import moe.koiverse.archivetune.models.toMediaMetadata
-import moe.koiverse.archivetune.playback.PlayerConnection
-import moe.koiverse.archivetune.playback.queues.ListQueue
-import moe.koiverse.archivetune.playback.queues.YouTubeQueue
-import moe.koiverse.archivetune.ui.component.AlbumGridItem
-import moe.koiverse.archivetune.ui.component.ArtistGridItem
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.MenuState
-import moe.koiverse.archivetune.ui.component.NavigationTitle
-import moe.koiverse.archivetune.ui.component.RandomizeGridItem
-import moe.koiverse.archivetune.ui.component.SongGridItem
-import moe.koiverse.archivetune.ui.component.SongListItem
-import moe.koiverse.archivetune.ui.component.SpeedDialGridItem
-import moe.koiverse.archivetune.ui.component.YouTubeGridItem
-import moe.koiverse.archivetune.ui.component.shimmer.GridItemPlaceHolder
-import moe.koiverse.archivetune.ui.component.shimmer.ShimmerHost
-import moe.koiverse.archivetune.ui.component.shimmer.TextPlaceholder
-import moe.koiverse.archivetune.ui.menu.AlbumMenu
-import moe.koiverse.archivetune.ui.menu.ArtistMenu
-import moe.koiverse.archivetune.ui.menu.PlaylistMenu
-import moe.koiverse.archivetune.ui.menu.SongMenu
-import moe.koiverse.archivetune.ui.menu.YouTubeAlbumMenu
-import moe.koiverse.archivetune.ui.menu.YouTubeArtistMenu
-import moe.koiverse.archivetune.ui.menu.YouTubePlaylistMenu
-import moe.koiverse.archivetune.ui.menu.YouTubeSongMenu
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.GridThumbnailHeight
+import com.cct.music.lite.constants.ListItemHeight
+import com.cct.music.lite.constants.ListThumbnailSize
+import com.cct.music.lite.constants.ThumbnailCornerRadius
+import com.cct.music.lite.db.entities.Album
+import com.cct.music.lite.db.entities.Artist
+import com.cct.music.lite.db.entities.LocalItem
+import com.cct.music.lite.db.entities.Playlist
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.extensions.toMediaItem
+import com.cct.music.lite.extensions.togglePlayPause
+import com.cct.music.lite.innertube.models.AlbumItem
+import com.cct.music.lite.innertube.models.ArtistItem
+import com.cct.music.lite.innertube.models.PlaylistItem
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.innertube.models.WatchEndpoint
+import com.cct.music.lite.innertube.models.YTItem
+import com.cct.music.lite.innertube.pages.HomePage
+import com.cct.music.lite.models.MediaMetadata
+import com.cct.music.lite.models.toMediaMetadata
+import com.cct.music.lite.playback.PlayerConnection
+import com.cct.music.lite.playback.queues.ListQueue
+import com.cct.music.lite.playback.queues.YouTubeQueue
+import com.cct.music.lite.ui.component.AlbumGridItem
+import com.cct.music.lite.ui.component.ArtistGridItem
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.MenuState
+import com.cct.music.lite.ui.component.NavigationTitle
+import com.cct.music.lite.ui.component.RandomizeGridItem
+import com.cct.music.lite.ui.component.SongGridItem
+import com.cct.music.lite.ui.component.SongListItem
+import com.cct.music.lite.ui.component.SpeedDialGridItem
+import com.cct.music.lite.ui.component.YouTubeGridItem
+import com.cct.music.lite.ui.component.shimmer.GridItemPlaceHolder
+import com.cct.music.lite.ui.component.shimmer.ShimmerHost
+import com.cct.music.lite.ui.component.shimmer.TextPlaceholder
+import com.cct.music.lite.ui.menu.AlbumMenu
+import com.cct.music.lite.ui.menu.ArtistMenu
+import com.cct.music.lite.ui.menu.PlaylistMenu
+import com.cct.music.lite.ui.menu.SongMenu
+import com.cct.music.lite.ui.menu.YouTubeAlbumMenu
+import com.cct.music.lite.ui.menu.YouTubeArtistMenu
+import com.cct.music.lite.ui.menu.YouTubePlaylistMenu
+import com.cct.music.lite.ui.menu.YouTubeSongMenu
 import androidx.compose.foundation.gestures.snapping.SnapLayoutInfoProvider
-import moe.koiverse.archivetune.models.SimilarRecommendation
+import com.cct.music.lite.models.SimilarRecommendation
 import kotlin.math.ceil
 import kotlin.random.Random
 import kotlin.math.min
@@ -130,7 +130,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
-import moe.koiverse.archivetune.viewmodels.HomeViewModel
+import com.cct.music.lite.viewmodels.HomeViewModel
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
 @Composable
@@ -309,7 +309,7 @@ fun SpeedDialSection(
                         id = localItem.id,
                         title = localItem.title,
                         artists = localItem.artists.map {
-                            moe.koiverse.archivetune.innertube.models.Artist(name = it.name, id = it.id)
+                            com.cct.music.lite.innertube.models.Artist(name = it.name, id = it.id)
                         },
                         thumbnail = localItem.song.thumbnailUrl.orEmpty(),
                         explicit = localItem.song.explicit,
@@ -319,7 +319,7 @@ fun SpeedDialSection(
                         playlistId = localItem.album.playlistId.orEmpty(),
                         title = localItem.title,
                         artists = localItem.artists.map {
-                            moe.koiverse.archivetune.innertube.models.Artist(name = it.name, id = it.id)
+                            com.cct.music.lite.innertube.models.Artist(name = it.name, id = it.id)
                         },
                         year = localItem.album.year,
                         thumbnail = localItem.album.thumbnailUrl.orEmpty(),

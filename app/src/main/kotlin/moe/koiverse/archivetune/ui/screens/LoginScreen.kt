@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens
+package com.cct.music.lite.ui.screens
 
 import android.annotation.SuppressLint
 import android.net.Uri
@@ -31,23 +31,23 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.AccountChannelHandleKey
-import moe.koiverse.archivetune.constants.AccountEmailKey
-import moe.koiverse.archivetune.constants.AccountNameKey
-import moe.koiverse.archivetune.constants.DataSyncIdKey
-import moe.koiverse.archivetune.constants.InnerTubeCookieKey
-import moe.koiverse.archivetune.constants.VisitorDataKey
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.PreferenceStore
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.putLegacyPoToken
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.utils.reportException
-import moe.koiverse.archivetune.utils.resetAuthWebViewSession
-import moe.koiverse.archivetune.innertube.YouTube
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.AccountChannelHandleKey
+import com.cct.music.lite.constants.AccountEmailKey
+import com.cct.music.lite.constants.AccountNameKey
+import com.cct.music.lite.constants.DataSyncIdKey
+import com.cct.music.lite.constants.InnerTubeCookieKey
+import com.cct.music.lite.constants.VisitorDataKey
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.PreferenceStore
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.putLegacyPoToken
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.utils.reportException
+import com.cct.music.lite.utils.resetAuthWebViewSession
+import com.cct.music.lite.innertube.YouTube
 import androidx.compose.runtime.rememberCoroutineScope
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.launch

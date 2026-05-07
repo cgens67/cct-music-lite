@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.db.entities
+package com.cct.music.lite.db.entities
 
 sealed class LocalItem {
     abstract val id: String

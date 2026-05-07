@@ -5,7 +5,7 @@
  * Don't remove this copyright holder!
  */
 
-package moe.koiverse.archivetune.together
+package com.cct.music.lite.together
 
 internal sealed interface TogetherGuestOp {
     data class Control(

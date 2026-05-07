@@ -8,10 +8,10 @@
 
 
 
-package moe.koiverse.archivetune.ui.utils
+package com.cct.music.lite.ui.utils
 
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.ui.screens.Screens
+import com.cct.music.lite.ui.screens.Screens
 
 fun NavController.backToMain() {
     val mainRoutes = Screens.MainScreens.map { it.route }

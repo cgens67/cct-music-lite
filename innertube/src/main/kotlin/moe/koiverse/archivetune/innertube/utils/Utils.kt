@@ -8,12 +8,12 @@
 
 
 
-package moe.koiverse.archivetune.innertube.utils
+package com.cct.music.lite.innertube.utils
 
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.pages.LibraryPage
-import moe.koiverse.archivetune.innertube.pages.PlaylistContinuationPage
-import moe.koiverse.archivetune.innertube.pages.PlaylistPage
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.pages.LibraryPage
+import com.cct.music.lite.innertube.pages.PlaylistContinuationPage
+import com.cct.music.lite.innertube.pages.PlaylistPage
 import java.security.MessageDigest
 
 @JvmName("completedLibrary")

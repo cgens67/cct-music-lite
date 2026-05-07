@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.player
+package com.cct.music.lite.ui.player
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.foundation.background
@@ -72,17 +72,17 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.media3.common.Player
 import coil3.compose.AsyncImage
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.db.entities.FormatEntity
-import moe.koiverse.archivetune.models.MediaMetadata
-import moe.koiverse.archivetune.ui.component.ActionPromptDialog
-import moe.koiverse.archivetune.ui.component.BottomSheetPageState
-import moe.koiverse.archivetune.ui.component.BottomSheetState
-import moe.koiverse.archivetune.ui.component.MenuState
-import moe.koiverse.archivetune.ui.component.bottomSheetDraggable
-import moe.koiverse.archivetune.ui.menu.PlayerMenu
-import moe.koiverse.archivetune.ui.utils.ShowMediaInfo
-import moe.koiverse.archivetune.utils.makeTimeString
+import com.cct.music.lite.R
+import com.cct.music.lite.db.entities.FormatEntity
+import com.cct.music.lite.models.MediaMetadata
+import com.cct.music.lite.ui.component.ActionPromptDialog
+import com.cct.music.lite.ui.component.BottomSheetPageState
+import com.cct.music.lite.ui.component.BottomSheetState
+import com.cct.music.lite.ui.component.MenuState
+import com.cct.music.lite.ui.component.bottomSheetDraggable
+import com.cct.music.lite.ui.menu.PlayerMenu
+import com.cct.music.lite.ui.utils.ShowMediaInfo
+import com.cct.music.lite.utils.makeTimeString
 import kotlin.math.roundToInt
 
 /**

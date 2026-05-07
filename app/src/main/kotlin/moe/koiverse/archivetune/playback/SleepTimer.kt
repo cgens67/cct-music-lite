@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.playback
+package com.cct.music.lite.playback
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

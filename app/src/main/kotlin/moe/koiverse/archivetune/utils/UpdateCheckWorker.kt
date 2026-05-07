@@ -8,17 +8,17 @@
 
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
 import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
-import moe.koiverse.archivetune.BuildConfig
-import moe.koiverse.archivetune.constants.EnableUpdateNotificationKey
-import moe.koiverse.archivetune.constants.UpdateChannel
-import moe.koiverse.archivetune.constants.UpdateChannelKey
+import com.cct.music.lite.BuildConfig
+import com.cct.music.lite.constants.EnableUpdateNotificationKey
+import com.cct.music.lite.constants.UpdateChannel
+import com.cct.music.lite.constants.UpdateChannelKey
 
 class UpdateCheckWorker(
     context: Context,

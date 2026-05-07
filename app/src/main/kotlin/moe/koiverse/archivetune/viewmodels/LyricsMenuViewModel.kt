@@ -8,16 +8,16 @@
 
 
 
-package moe.koiverse.archivetune.viewmodels
+package com.cct.music.lite.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.db.entities.LyricsEntity
-import moe.koiverse.archivetune.lyrics.LyricsHelper
-import moe.koiverse.archivetune.lyrics.LyricsResult
-import moe.koiverse.archivetune.models.MediaMetadata
-import moe.koiverse.archivetune.utils.NetworkConnectivityObserver
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.db.entities.LyricsEntity
+import com.cct.music.lite.lyrics.LyricsHelper
+import com.cct.music.lite.lyrics.LyricsResult
+import com.cct.music.lite.models.MediaMetadata
+import com.cct.music.lite.utils.NetworkConnectivityObserver
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job

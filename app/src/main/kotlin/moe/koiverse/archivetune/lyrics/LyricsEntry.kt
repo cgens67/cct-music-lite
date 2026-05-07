@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.lyrics
+package com.cct.music.lite.lyrics
 
 import kotlinx.coroutines.flow.MutableStateFlow
 

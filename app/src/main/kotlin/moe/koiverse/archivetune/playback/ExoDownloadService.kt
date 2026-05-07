@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.playback
+package com.cct.music.lite.playback
 
 import android.app.Notification
 import android.app.PendingIntent
@@ -23,7 +23,7 @@ import androidx.media3.exoplayer.offline.DownloadNotificationHelper
 import androidx.media3.exoplayer.offline.DownloadService
 import androidx.media3.exoplayer.scheduler.PlatformScheduler
 import androidx.media3.exoplayer.scheduler.Scheduler
-import moe.koiverse.archivetune.R
+import com.cct.music.lite.R
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

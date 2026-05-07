@@ -8,12 +8,12 @@
 
 
 
-package moe.koiverse.archivetune.innertube.pages
+package com.cct.music.lite.innertube.pages
 
-import moe.koiverse.archivetune.innertube.models.BrowseEndpoint
-import moe.koiverse.archivetune.innertube.models.GridRenderer
-import moe.koiverse.archivetune.innertube.models.MusicNavigationButtonRenderer
-import moe.koiverse.archivetune.innertube.models.SectionListRenderer
+import com.cct.music.lite.innertube.models.BrowseEndpoint
+import com.cct.music.lite.innertube.models.GridRenderer
+import com.cct.music.lite.innertube.models.MusicNavigationButtonRenderer
+import com.cct.music.lite.innertube.models.SectionListRenderer
 
 data class MoodAndGenres(
     val title: String,

@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.innertube.models
+package com.cct.music.lite.innertube.models
 
 data class AccountInfo(
     val name: String,

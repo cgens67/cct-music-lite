@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.menu
+package com.cct.music.lite.ui.menu
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -72,33 +72,33 @@ import androidx.media3.exoplayer.offline.DownloadRequest
 import androidx.media3.exoplayer.offline.DownloadService
 import androidx.navigation.NavController
 import coil3.compose.AsyncImage
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.LocalDatabase
-import moe.koiverse.archivetune.LocalDownloadUtil
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.ArtistSeparatorsKey
-import moe.koiverse.archivetune.constants.ListItemHeight
-import moe.koiverse.archivetune.constants.ListThumbnailSize
-import moe.koiverse.archivetune.constants.SpeedDialSongIdsKey
-import moe.koiverse.archivetune.db.entities.Album
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.extensions.toMediaItem
-import moe.koiverse.archivetune.playback.ExoDownloadService
-import moe.koiverse.archivetune.playback.queues.ListQueue
-import moe.koiverse.archivetune.playback.queues.LocalAlbumRadio
-import moe.koiverse.archivetune.ui.component.AlbumListItem
-import moe.koiverse.archivetune.ui.component.ListDialog
-import moe.koiverse.archivetune.ui.component.ListItem
-import moe.koiverse.archivetune.ui.component.NewAction
-import moe.koiverse.archivetune.ui.component.NewActionGrid
-import moe.koiverse.archivetune.ui.component.SongListItem
-import moe.koiverse.archivetune.utils.SpeedDialPin
-import moe.koiverse.archivetune.utils.SpeedDialPinType
-import moe.koiverse.archivetune.utils.parseSpeedDialPins
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.utils.serializeSpeedDialPins
-import moe.koiverse.archivetune.utils.toggleSpeedDialPin
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.LocalDatabase
+import com.cct.music.lite.LocalDownloadUtil
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.ArtistSeparatorsKey
+import com.cct.music.lite.constants.ListItemHeight
+import com.cct.music.lite.constants.ListThumbnailSize
+import com.cct.music.lite.constants.SpeedDialSongIdsKey
+import com.cct.music.lite.db.entities.Album
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.extensions.toMediaItem
+import com.cct.music.lite.playback.ExoDownloadService
+import com.cct.music.lite.playback.queues.ListQueue
+import com.cct.music.lite.playback.queues.LocalAlbumRadio
+import com.cct.music.lite.ui.component.AlbumListItem
+import com.cct.music.lite.ui.component.ListDialog
+import com.cct.music.lite.ui.component.ListItem
+import com.cct.music.lite.ui.component.NewAction
+import com.cct.music.lite.ui.component.NewActionGrid
+import com.cct.music.lite.ui.component.SongListItem
+import com.cct.music.lite.utils.SpeedDialPin
+import com.cct.music.lite.utils.SpeedDialPinType
+import com.cct.music.lite.utils.parseSpeedDialPins
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.utils.serializeSpeedDialPins
+import com.cct.music.lite.utils.toggleSpeedDialPin
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -172,7 +172,7 @@ fun AlbumMenu(
     // Split artists by configured separators
     data class SplitArtist(
         val name: String,
-        val originalArtist: moe.koiverse.archivetune.db.entities.ArtistEntity?
+        val originalArtist: com.cct.music.lite.db.entities.ArtistEntity?
     )
 
     val splitArtists = remember(album.artists, artistSeparators) {

@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.db.entities
+package com.cct.music.lite.db.entities
 
 data class PlaylistPlayCount(
     val playlistId: String,

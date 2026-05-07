@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.player
+package com.cct.music.lite.ui.player
 
 import androidx.activity.compose.BackHandler
 import android.annotation.SuppressLint
@@ -113,32 +113,32 @@ import androidx.media3.common.Player
 import androidx.media3.common.Timeline
 import androidx.media3.exoplayer.source.ShuffleOrder.DefaultShuffleOrder
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.ListItemHeight
-import moe.koiverse.archivetune.constants.PlayerDesignStyle
-import moe.koiverse.archivetune.constants.PlayerDesignStyleKey
-import moe.koiverse.archivetune.constants.PlayerButtonsStyle
-import moe.koiverse.archivetune.constants.PlayerButtonsStyleKey
-import moe.koiverse.archivetune.constants.QueueEditLockKey
-import moe.koiverse.archivetune.constants.AutoLoadMoreKey
-import moe.koiverse.archivetune.extensions.metadata
-import moe.koiverse.archivetune.extensions.move
-import moe.koiverse.archivetune.extensions.togglePlayPause
-import moe.koiverse.archivetune.extensions.toggleRepeatMode
-import moe.koiverse.archivetune.models.MediaMetadata
-import moe.koiverse.archivetune.ui.component.ActionPromptDialog
-import moe.koiverse.archivetune.ui.component.BottomSheet
-import moe.koiverse.archivetune.ui.component.BottomSheetState
-import moe.koiverse.archivetune.ui.component.LocalBottomSheetPageState
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.MediaMetadataListItem
-import moe.koiverse.archivetune.ui.menu.PlayerMenu
-import moe.koiverse.archivetune.ui.menu.SelectionMediaMetadataMenu
-import moe.koiverse.archivetune.ui.utils.ShowMediaInfo
-import moe.koiverse.archivetune.utils.makeTimeString
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.ListItemHeight
+import com.cct.music.lite.constants.PlayerDesignStyle
+import com.cct.music.lite.constants.PlayerDesignStyleKey
+import com.cct.music.lite.constants.PlayerButtonsStyle
+import com.cct.music.lite.constants.PlayerButtonsStyleKey
+import com.cct.music.lite.constants.QueueEditLockKey
+import com.cct.music.lite.constants.AutoLoadMoreKey
+import com.cct.music.lite.extensions.metadata
+import com.cct.music.lite.extensions.move
+import com.cct.music.lite.extensions.togglePlayPause
+import com.cct.music.lite.extensions.toggleRepeatMode
+import com.cct.music.lite.models.MediaMetadata
+import com.cct.music.lite.ui.component.ActionPromptDialog
+import com.cct.music.lite.ui.component.BottomSheet
+import com.cct.music.lite.ui.component.BottomSheetState
+import com.cct.music.lite.ui.component.LocalBottomSheetPageState
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.MediaMetadataListItem
+import com.cct.music.lite.ui.menu.PlayerMenu
+import com.cct.music.lite.ui.menu.SelectionMediaMetadataMenu
+import com.cct.music.lite.ui.utils.ShowMediaInfo
+import com.cct.music.lite.utils.makeTimeString
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -196,8 +196,8 @@ fun Queue(
     val infiniteQueueLoading by playerConnection.service.infiniteQueueLoading.collectAsState()
     val togetherSessionState by playerConnection.service.togetherSessionState.collectAsState()
     val togetherForcesLock =
-        togetherSessionState is moe.koiverse.archivetune.together.TogetherSessionState.Joined &&
-            (togetherSessionState as moe.koiverse.archivetune.together.TogetherSessionState.Joined).role is moe.koiverse.archivetune.together.TogetherRole.Guest
+        togetherSessionState is com.cct.music.lite.together.TogetherSessionState.Joined &&
+            (togetherSessionState as com.cct.music.lite.together.TogetherSessionState.Joined).role is com.cct.music.lite.together.TogetherRole.Guest
     val effectiveLocked = locked || togetherForcesLock
 
     val playerDesignStyle by rememberEnumPreference(
@@ -802,8 +802,8 @@ fun Queue(
                                                         playerConnection.player.togglePlayPause()
                                                     } else {
                                                         val joined =
-                                                            togetherSessionState as? moe.koiverse.archivetune.together.TogetherSessionState.Joined
-                                                        val isGuest = joined?.role is moe.koiverse.archivetune.together.TogetherRole.Guest
+                                                            togetherSessionState as? com.cct.music.lite.together.TogetherSessionState.Joined
+                                                        val isGuest = joined?.role is com.cct.music.lite.together.TogetherRole.Guest
                                                         if (isGuest) {
                                                             if (joined?.roomState?.settings?.allowGuestsToControlPlayback != true) {
                                                                 Toast.makeText(context, R.string.not_allowed, Toast.LENGTH_SHORT).show()
@@ -816,7 +816,7 @@ fun Queue(
                                                             if (trackId.isBlank()) return@combinedClickable
                                                             Toast.makeText(context, R.string.together_requesting_song_change, Toast.LENGTH_SHORT).show()
                                                             playerConnection.service.requestTogetherControl(
-                                                                moe.koiverse.archivetune.together.ControlAction.SeekToTrack(
+                                                                com.cct.music.lite.together.ControlAction.SeekToTrack(
                                                                     trackId = trackId,
                                                                     positionMs = 0L,
                                                                 ),

@@ -5,7 +5,7 @@
  * Don't remove this copyright holder!
  */
 
-import moe.koiverse.archivetune.betterlyrics.TTMLParser
+import com.cct.music.lite.betterlyrics.TTMLParser
 
 fun main(args: Array<String>) {
     val ttml = """

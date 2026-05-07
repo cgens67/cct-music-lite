@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.menu
+package com.cct.music.lite.ui.menu
 
 import android.content.Intent
 import android.content.res.Configuration
@@ -49,15 +49,15 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import moe.koiverse.archivetune.innertube.models.ArtistItem
-import moe.koiverse.archivetune.LocalDatabase
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.db.entities.ArtistEntity
-import moe.koiverse.archivetune.playback.queues.YouTubeQueue
-import moe.koiverse.archivetune.ui.component.NewAction
-import moe.koiverse.archivetune.ui.component.NewActionGrid
-import moe.koiverse.archivetune.ui.component.YouTubeListItem
+import com.cct.music.lite.innertube.models.ArtistItem
+import com.cct.music.lite.LocalDatabase
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.db.entities.ArtistEntity
+import com.cct.music.lite.playback.queues.YouTubeQueue
+import com.cct.music.lite.ui.component.NewAction
+import com.cct.music.lite.ui.component.NewActionGrid
+import com.cct.music.lite.ui.component.YouTubeListItem
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.viewmodels
+package com.cct.music.lite.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -15,8 +15,8 @@ import javax.inject.Inject
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
-import moe.koiverse.archivetune.network.NetworkBannerUiState
-import moe.koiverse.archivetune.network.ObserveNetworkBannerStateUseCase
+import com.cct.music.lite.network.NetworkBannerUiState
+import com.cct.music.lite.network.ObserveNetworkBannerStateUseCase
 
 @HiltViewModel
 class NetworkBannerViewModel

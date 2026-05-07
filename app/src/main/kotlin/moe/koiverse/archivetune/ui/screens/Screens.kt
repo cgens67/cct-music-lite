@@ -8,12 +8,12 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens
+package com.cct.music.lite.ui.screens
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.compose.runtime.Immutable
-import moe.koiverse.archivetune.R
+import com.cct.music.lite.R
 
 @Immutable
 sealed class Screens(

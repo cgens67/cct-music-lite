@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
@@ -33,13 +33,13 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.LocalDatabase
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.db.entities.PlaylistEntity
-import moe.koiverse.archivetune.constants.InnerTubeCookieKey
-import moe.koiverse.archivetune.extensions.isSyncEnabled
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.LocalDatabase
+import com.cct.music.lite.R
+import com.cct.music.lite.db.entities.PlaylistEntity
+import com.cct.music.lite.constants.InnerTubeCookieKey
+import com.cct.music.lite.extensions.isSyncEnabled
+import com.cct.music.lite.utils.rememberPreference
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.time.LocalDateTime

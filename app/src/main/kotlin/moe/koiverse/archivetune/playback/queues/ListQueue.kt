@@ -8,10 +8,10 @@
 
 
 
-package moe.koiverse.archivetune.playback.queues
+package com.cct.music.lite.playback.queues
 
 import androidx.media3.common.MediaItem
-import moe.koiverse.archivetune.models.MediaMetadata
+import com.cct.music.lite.models.MediaMetadata
 
 class ListQueue(
     val title: String? = null,

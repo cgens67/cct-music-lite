@@ -8,9 +8,9 @@
 
 
 
-package moe.koiverse.archivetune.di
+package com.cct.music.lite.di
 
-import moe.koiverse.archivetune.utils.NetworkConnectivityObserver
+import com.cct.music.lite.utils.NetworkConnectivityObserver
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

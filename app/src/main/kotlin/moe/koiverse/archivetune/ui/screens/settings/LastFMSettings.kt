@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -58,23 +58,23 @@ import androidx.navigation.NavController
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.EnableLastFMScrobblingKey
-import moe.koiverse.archivetune.constants.LastFMSessionKey
-import moe.koiverse.archivetune.constants.LastFMUsernameKey
-import moe.koiverse.archivetune.constants.LastFMUseNowPlaying
-import moe.koiverse.archivetune.constants.ScrobbleDelayPercentKey
-import moe.koiverse.archivetune.constants.ScrobbleMinSongDurationKey
-import moe.koiverse.archivetune.constants.ScrobbleDelaySecondsKey
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.PreferenceEntry
-import moe.koiverse.archivetune.ui.component.PreferenceGroupTitle
-import moe.koiverse.archivetune.ui.component.SwitchPreference
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.utils.reportException
-import moe.koiverse.archivetune.lastfm.LastFM
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.EnableLastFMScrobblingKey
+import com.cct.music.lite.constants.LastFMSessionKey
+import com.cct.music.lite.constants.LastFMUsernameKey
+import com.cct.music.lite.constants.LastFMUseNowPlaying
+import com.cct.music.lite.constants.ScrobbleDelayPercentKey
+import com.cct.music.lite.constants.ScrobbleMinSongDurationKey
+import com.cct.music.lite.constants.ScrobbleDelaySecondsKey
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.PreferenceEntry
+import com.cct.music.lite.ui.component.PreferenceGroupTitle
+import com.cct.music.lite.ui.component.SwitchPreference
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.utils.reportException
+import com.cct.music.lite.lastfm.LastFM
 import timber.log.Timber
 import kotlin.math.roundToInt
 

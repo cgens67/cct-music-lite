@@ -6,9 +6,9 @@
         android:shortcutId="search"
         android:shortcutShortLabel="@string/search">
         <intent
-            android:action="moe.koiverse.archivetune.action.SEARCH"
-            android:targetClass="moe.koiverse.archivetune.MainActivity"
-            android:targetPackage="moe.koiverse.archivetune.debug" />
+            android:action="com.cct.music.lite.action.SEARCH"
+            android:targetClass="com.cct.music.lite.MainActivity"
+            android:targetPackage="com.cct.music.lite.debug" />
     </shortcut>
     <shortcut
         android:enabled="true"
@@ -16,8 +16,8 @@
         android:shortcutId="library"
         android:shortcutShortLabel="@string/filter_library">
         <intent
-            android:action="moe.koiverse.archivetune.action.LIBRARY"
-            android:targetClass="moe.koiverse.archivetune.MainActivity"
-            android:targetPackage="moe.koiverse.archivetune.debug" />
+            android:action="com.cct.music.lite.action.LIBRARY"
+            android:targetClass="com.cct.music.lite.MainActivity"
+            android:targetPackage="com.cct.music.lite.debug" />
     </shortcut>
 </shortcuts>

@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -84,20 +84,20 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.BuildConfig
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.EnableUpdateNotificationKey
-import moe.koiverse.archivetune.constants.UpdateChannel
-import moe.koiverse.archivetune.constants.UpdateChannelKey
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.PreferenceGroupTitle
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.GitCommit
-import moe.koiverse.archivetune.utils.UpdateNotificationManager
-import moe.koiverse.archivetune.utils.Updater
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.BuildConfig
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.EnableUpdateNotificationKey
+import com.cct.music.lite.constants.UpdateChannel
+import com.cct.music.lite.constants.UpdateChannelKey
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.PreferenceGroupTitle
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.GitCommit
+import com.cct.music.lite.utils.UpdateNotificationManager
+import com.cct.music.lite.utils.Updater
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
 import java.text.SimpleDateFormat
 import java.util.Locale
 import java.util.TimeZone

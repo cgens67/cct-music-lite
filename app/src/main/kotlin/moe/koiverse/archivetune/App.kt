@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune
+package com.cct.music.lite
 
 import android.app.Application
 import android.app.ActivityManager
@@ -25,24 +25,24 @@ import coil3.disk.directory
 import coil3.request.CachePolicy
 import coil3.request.allowHardware
 import coil3.request.crossfade
-import moe.koiverse.archivetune.constants.*
-import moe.koiverse.archivetune.extensions.*
-import moe.koiverse.archivetune.ui.screens.settings.ThemePalettes
-import moe.koiverse.archivetune.ui.theme.ThemeSeedPalette
-import moe.koiverse.archivetune.ui.theme.ThemeSeedPaletteCodec
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.PreferenceStore
-import moe.koiverse.archivetune.utils.YTPlayerUtils
-import moe.koiverse.archivetune.utils.get
-import moe.koiverse.archivetune.utils.reportException
-import moe.koiverse.archivetune.utils.clearPlaybackWebAuthSession
-import moe.koiverse.archivetune.utils.clearPlaybackAuthSession
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.YouTubeLocale
-import moe.koiverse.archivetune.kugou.KuGou
-import moe.koiverse.archivetune.lastfm.LastFM
-import moe.koiverse.archivetune.canvas.ArchiveTuneCanvas
-import moe.koiverse.archivetune.ui.player.CanvasArtworkPlaybackCache
+import com.cct.music.lite.constants.*
+import com.cct.music.lite.extensions.*
+import com.cct.music.lite.ui.screens.settings.ThemePalettes
+import com.cct.music.lite.ui.theme.ThemeSeedPalette
+import com.cct.music.lite.ui.theme.ThemeSeedPaletteCodec
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.PreferenceStore
+import com.cct.music.lite.utils.YTPlayerUtils
+import com.cct.music.lite.utils.get
+import com.cct.music.lite.utils.reportException
+import com.cct.music.lite.utils.clearPlaybackWebAuthSession
+import com.cct.music.lite.utils.clearPlaybackAuthSession
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.YouTubeLocale
+import com.cct.music.lite.kugou.KuGou
+import com.cct.music.lite.lastfm.LastFM
+import com.cct.music.lite.canvas.ArchiveTuneCanvas
+import com.cct.music.lite.ui.player.CanvasArtworkPlaybackCache
 import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
@@ -63,7 +63,7 @@ import timber.log.Timber
 import java.net.Proxy
 import java.util.*
 import java.util.concurrent.atomic.AtomicBoolean
-import moe.koiverse.archivetune.utils.toPlaybackAuthState
+import com.cct.music.lite.utils.toPlaybackAuthState
 
 @HiltAndroidApp
 class App : Application(), SingletonImageLoader.Factory {
@@ -94,7 +94,7 @@ class App : Application(), SingletonImageLoader.Factory {
         PreferenceStore.start(this)
         Timber.plant(Timber.DebugTree())
         try {
-            Timber.plant(moe.koiverse.archivetune.utils.GlobalLogTree())
+            Timber.plant(com.cct.music.lite.utils.GlobalLogTree())
         } catch (_: Exception) {}
 
         initializeCriticalSync()

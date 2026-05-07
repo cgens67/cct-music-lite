@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens.library
+package com.cct.music.lite.ui.screens.library
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Box
@@ -53,32 +53,32 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.AlbumFilter
-import moe.koiverse.archivetune.constants.AlbumFilterKey
-import moe.koiverse.archivetune.constants.AlbumSortDescendingKey
-import moe.koiverse.archivetune.constants.AlbumSortType
-import moe.koiverse.archivetune.constants.AlbumSortTypeKey
-import moe.koiverse.archivetune.constants.AlbumViewTypeKey
-import moe.koiverse.archivetune.constants.CONTENT_TYPE_ALBUM
-import moe.koiverse.archivetune.constants.CONTENT_TYPE_HEADER
-import moe.koiverse.archivetune.constants.GridItemSize
-import moe.koiverse.archivetune.constants.GridItemsSizeKey
-import moe.koiverse.archivetune.constants.GridThumbnailHeight
-import moe.koiverse.archivetune.constants.HideExplicitKey
-import moe.koiverse.archivetune.constants.LibraryViewType
-import moe.koiverse.archivetune.constants.YtmSyncKey
-import moe.koiverse.archivetune.ui.component.ChipsRow
-import moe.koiverse.archivetune.ui.component.EmptyPlaceholder
-import moe.koiverse.archivetune.ui.component.LibraryAlbumGridItem
-import moe.koiverse.archivetune.ui.component.LibraryAlbumListItem
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.SortHeader
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.viewmodels.LibraryAlbumsViewModel
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.AlbumFilter
+import com.cct.music.lite.constants.AlbumFilterKey
+import com.cct.music.lite.constants.AlbumSortDescendingKey
+import com.cct.music.lite.constants.AlbumSortType
+import com.cct.music.lite.constants.AlbumSortTypeKey
+import com.cct.music.lite.constants.AlbumViewTypeKey
+import com.cct.music.lite.constants.CONTENT_TYPE_ALBUM
+import com.cct.music.lite.constants.CONTENT_TYPE_HEADER
+import com.cct.music.lite.constants.GridItemSize
+import com.cct.music.lite.constants.GridItemsSizeKey
+import com.cct.music.lite.constants.GridThumbnailHeight
+import com.cct.music.lite.constants.HideExplicitKey
+import com.cct.music.lite.constants.LibraryViewType
+import com.cct.music.lite.constants.YtmSyncKey
+import com.cct.music.lite.ui.component.ChipsRow
+import com.cct.music.lite.ui.component.EmptyPlaceholder
+import com.cct.music.lite.ui.component.LibraryAlbumGridItem
+import com.cct.music.lite.ui.component.LibraryAlbumListItem
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.SortHeader
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.viewmodels.LibraryAlbumsViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

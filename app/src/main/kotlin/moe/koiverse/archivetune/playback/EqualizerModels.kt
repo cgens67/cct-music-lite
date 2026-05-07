@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.playback
+package com.cct.music.lite.playback
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

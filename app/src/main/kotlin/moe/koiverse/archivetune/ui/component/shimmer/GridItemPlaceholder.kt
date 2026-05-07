@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.component.shimmer
+package com.cct.music.lite.ui.component.shimmer
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -25,8 +25,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.dp
-import moe.koiverse.archivetune.constants.GridThumbnailCornerRadius
-import moe.koiverse.archivetune.constants.GridThumbnailHeight
+import com.cct.music.lite.constants.GridThumbnailCornerRadius
+import com.cct.music.lite.constants.GridThumbnailHeight
 
 @Composable
 fun GridItemPlaceHolder(

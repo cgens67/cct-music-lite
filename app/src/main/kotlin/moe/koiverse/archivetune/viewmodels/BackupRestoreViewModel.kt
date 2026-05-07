@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.viewmodels
+package com.cct.music.lite.viewmodels
 
 import android.content.Context
 import android.content.Intent
@@ -23,21 +23,21 @@ import androidx.datastore.preferences.core.stringSetPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import moe.koiverse.archivetune.MainActivity
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.db.InternalDatabase
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.db.entities.ArtistEntity
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.db.entities.SongEntity
-import moe.koiverse.archivetune.extensions.div
-import moe.koiverse.archivetune.extensions.tryOrNull
-import moe.koiverse.archivetune.extensions.zipInputStream
-import moe.koiverse.archivetune.extensions.zipOutputStream
-import moe.koiverse.archivetune.playback.MusicService
-import moe.koiverse.archivetune.playback.MusicService.Companion.PERSISTENT_QUEUE_FILE
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.reportException
+import com.cct.music.lite.MainActivity
+import com.cct.music.lite.R
+import com.cct.music.lite.db.InternalDatabase
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.db.entities.ArtistEntity
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.db.entities.SongEntity
+import com.cct.music.lite.extensions.div
+import com.cct.music.lite.extensions.tryOrNull
+import com.cct.music.lite.extensions.zipInputStream
+import com.cct.music.lite.extensions.zipOutputStream
+import com.cct.music.lite.playback.MusicService
+import com.cct.music.lite.playback.MusicService.Companion.PERSISTENT_QUEUE_FILE
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.reportException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow

@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.player
+package com.cct.music.lite.ui.player
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.AnimatedContent
@@ -96,38 +96,38 @@ import coil3.request.ImageRequest
 import coil3.request.allowHardware
 import coil3.size.Size
 import coil3.toBitmap
-import moe.koiverse.archivetune.LocalDatabase
+import com.cct.music.lite.LocalDatabase
 import android.net.Uri
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.ColorMatrix
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.PlayerBackgroundStyle
-import moe.koiverse.archivetune.constants.PlayerBackgroundStyleKey
-import moe.koiverse.archivetune.constants.SliderStyle
-import moe.koiverse.archivetune.constants.SliderStyleKey
-import moe.koiverse.archivetune.constants.ThumbnailCornerRadius
-import moe.koiverse.archivetune.db.entities.LyricsEntity
-import moe.koiverse.archivetune.extensions.togglePlayPause
-import moe.koiverse.archivetune.extensions.toggleRepeatMode
-import moe.koiverse.archivetune.lyrics.LyricsHelper
-import moe.koiverse.archivetune.models.MediaMetadata
-import moe.koiverse.archivetune.ui.component.Lyrics
-import moe.koiverse.archivetune.ui.component.LyricsV2
-import moe.koiverse.archivetune.constants.UseLyricsV2Key
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.BigSeekBar
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.PlayerBackgroundStyle
+import com.cct.music.lite.constants.PlayerBackgroundStyleKey
+import com.cct.music.lite.constants.SliderStyle
+import com.cct.music.lite.constants.SliderStyleKey
+import com.cct.music.lite.constants.ThumbnailCornerRadius
+import com.cct.music.lite.db.entities.LyricsEntity
+import com.cct.music.lite.extensions.togglePlayPause
+import com.cct.music.lite.extensions.toggleRepeatMode
+import com.cct.music.lite.lyrics.LyricsHelper
+import com.cct.music.lite.models.MediaMetadata
+import com.cct.music.lite.ui.component.Lyrics
+import com.cct.music.lite.ui.component.LyricsV2
+import com.cct.music.lite.constants.UseLyricsV2Key
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.BigSeekBar
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.ui.menu.LyricsMenu
-import moe.koiverse.archivetune.ui.theme.PlayerColorExtractor
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.constants.PlayerCustomImageUriKey
-import moe.koiverse.archivetune.constants.PlayerCustomBlurKey
-import moe.koiverse.archivetune.constants.PlayerCustomContrastKey
-import moe.koiverse.archivetune.constants.PlayerCustomBrightnessKey
-import moe.koiverse.archivetune.constants.DisableBlurKey
-import moe.koiverse.archivetune.constants.BlurRadiusKey
+import com.cct.music.lite.ui.menu.LyricsMenu
+import com.cct.music.lite.ui.theme.PlayerColorExtractor
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.constants.PlayerCustomImageUriKey
+import com.cct.music.lite.constants.PlayerCustomBlurKey
+import com.cct.music.lite.constants.PlayerCustomContrastKey
+import com.cct.music.lite.constants.PlayerCustomBrightnessKey
+import com.cct.music.lite.constants.DisableBlurKey
+import com.cct.music.lite.constants.BlurRadiusKey
 import dagger.hilt.android.EntryPointAccessors
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -135,7 +135,7 @@ import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlin.runCatching
-import moe.koiverse.archivetune.utils.makeTimeString
+import com.cct.music.lite.utils.makeTimeString
 import androidx.compose.ui.text.style.TextAlign
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -175,7 +175,7 @@ fun LyricsScreen(
                     // Get LyricsHelper from Hilt
                     val entryPoint = EntryPointAccessors.fromApplication(
                         context.applicationContext,
-                        moe.koiverse.archivetune.di.LyricsHelperEntryPoint::class.java
+                        com.cct.music.lite.di.LyricsHelperEntryPoint::class.java
                     )
                     val lyricsHelper = entryPoint.lyricsHelper()
                     

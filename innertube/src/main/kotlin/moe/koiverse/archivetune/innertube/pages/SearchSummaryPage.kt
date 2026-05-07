@@ -8,26 +8,26 @@
 
 
 
-package moe.koiverse.archivetune.innertube.pages
+package com.cct.music.lite.innertube.pages
 
-import moe.koiverse.archivetune.innertube.models.Album
-import moe.koiverse.archivetune.innertube.models.AlbumItem
-import moe.koiverse.archivetune.innertube.models.Artist
-import moe.koiverse.archivetune.innertube.models.ArtistItem
-import moe.koiverse.archivetune.innertube.models.BrowseEndpoint.BrowseEndpointContextSupportedConfigs.BrowseEndpointContextMusicConfig.Companion.MUSIC_PAGE_TYPE_ALBUM
-import moe.koiverse.archivetune.innertube.models.BrowseEndpoint.BrowseEndpointContextSupportedConfigs.BrowseEndpointContextMusicConfig.Companion.MUSIC_PAGE_TYPE_ARTIST
-import moe.koiverse.archivetune.innertube.models.BrowseEndpoint.BrowseEndpointContextSupportedConfigs.BrowseEndpointContextMusicConfig.Companion.MUSIC_PAGE_TYPE_USER_CHANNEL
-import moe.koiverse.archivetune.innertube.models.MusicCardShelfRenderer
-import moe.koiverse.archivetune.innertube.models.MusicResponsiveListItemRenderer
-import moe.koiverse.archivetune.innertube.models.PlaylistItem
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.innertube.models.YTItem
-import moe.koiverse.archivetune.innertube.models.clean
-import moe.koiverse.archivetune.innertube.models.filterExplicit
-import moe.koiverse.archivetune.innertube.models.filterVideo
-import moe.koiverse.archivetune.innertube.models.oddElements
-import moe.koiverse.archivetune.innertube.models.splitBySeparator
-import moe.koiverse.archivetune.innertube.utils.parseTime
+import com.cct.music.lite.innertube.models.Album
+import com.cct.music.lite.innertube.models.AlbumItem
+import com.cct.music.lite.innertube.models.Artist
+import com.cct.music.lite.innertube.models.ArtistItem
+import com.cct.music.lite.innertube.models.BrowseEndpoint.BrowseEndpointContextSupportedConfigs.BrowseEndpointContextMusicConfig.Companion.MUSIC_PAGE_TYPE_ALBUM
+import com.cct.music.lite.innertube.models.BrowseEndpoint.BrowseEndpointContextSupportedConfigs.BrowseEndpointContextMusicConfig.Companion.MUSIC_PAGE_TYPE_ARTIST
+import com.cct.music.lite.innertube.models.BrowseEndpoint.BrowseEndpointContextSupportedConfigs.BrowseEndpointContextMusicConfig.Companion.MUSIC_PAGE_TYPE_USER_CHANNEL
+import com.cct.music.lite.innertube.models.MusicCardShelfRenderer
+import com.cct.music.lite.innertube.models.MusicResponsiveListItemRenderer
+import com.cct.music.lite.innertube.models.PlaylistItem
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.innertube.models.YTItem
+import com.cct.music.lite.innertube.models.clean
+import com.cct.music.lite.innertube.models.filterExplicit
+import com.cct.music.lite.innertube.models.filterVideo
+import com.cct.music.lite.innertube.models.oddElements
+import com.cct.music.lite.innertube.models.splitBySeparator
+import com.cct.music.lite.innertube.utils.parseTime
 
 data class SearchSummary(
     val title: String,

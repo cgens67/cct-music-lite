@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.component.shimmer
+package com.cct.music.lite.ui.component.shimmer
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -25,9 +25,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.dp
-import moe.koiverse.archivetune.constants.ListItemHeight
-import moe.koiverse.archivetune.constants.ListThumbnailSize
-import moe.koiverse.archivetune.constants.ThumbnailCornerRadius
+import com.cct.music.lite.constants.ListItemHeight
+import com.cct.music.lite.constants.ListThumbnailSize
+import com.cct.music.lite.constants.ThumbnailCornerRadius
 
 @Composable
 fun ListItemPlaceHolder(

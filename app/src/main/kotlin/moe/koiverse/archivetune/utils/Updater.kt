@@ -8,15 +8,15 @@
 
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
 import androidx.datastore.preferences.core.edit
-import moe.koiverse.archivetune.BuildConfig
-import moe.koiverse.archivetune.App
-import moe.koiverse.archivetune.constants.GitHubReleasesEtagKey
-import moe.koiverse.archivetune.constants.GitHubReleasesFingerprintKey
-import moe.koiverse.archivetune.constants.GitHubReleasesJsonKey
-import moe.koiverse.archivetune.constants.GitHubReleasesLastCheckedAtKey
+import com.cct.music.lite.BuildConfig
+import com.cct.music.lite.App
+import com.cct.music.lite.constants.GitHubReleasesEtagKey
+import com.cct.music.lite.constants.GitHubReleasesFingerprintKey
+import com.cct.music.lite.constants.GitHubReleasesJsonKey
+import com.cct.music.lite.constants.GitHubReleasesLastCheckedAtKey
 import io.ktor.client.HttpClient
 import io.ktor.client.request.get
 import io.ktor.client.request.headers

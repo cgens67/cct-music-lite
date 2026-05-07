@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.viewmodels
+package com.cct.music.lite.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -17,11 +17,11 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
-import moe.koiverse.archivetune.localmedia.LocalSongScanConfig
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.localmedia.LocalSongScanSummary
-import moe.koiverse.archivetune.localmedia.LocalSongScanner
-import moe.koiverse.archivetune.utils.reportException
+import com.cct.music.lite.localmedia.LocalSongScanConfig
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.localmedia.LocalSongScanSummary
+import com.cct.music.lite.localmedia.LocalSongScanner
+import com.cct.music.lite.utils.reportException
 import javax.inject.Inject
 
 @HiltViewModel

@@ -8,22 +8,22 @@
 
 
 
-package moe.koiverse.archivetune.viewmodels
+package com.cct.music.lite.viewmodels
 
 import android.content.Context
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.BrowseEndpoint
-import moe.koiverse.archivetune.innertube.models.filterExplicit
-import moe.koiverse.archivetune.innertube.models.filterVideo
-import moe.koiverse.archivetune.constants.HideExplicitKey
-import moe.koiverse.archivetune.constants.HideVideoKey
-import moe.koiverse.archivetune.models.ItemsPage
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.get
-import moe.koiverse.archivetune.utils.reportException
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.BrowseEndpoint
+import com.cct.music.lite.innertube.models.filterExplicit
+import com.cct.music.lite.innertube.models.filterVideo
+import com.cct.music.lite.constants.HideExplicitKey
+import com.cct.music.lite.constants.HideVideoKey
+import com.cct.music.lite.models.ItemsPage
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.get
+import com.cct.music.lite.utils.reportException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow

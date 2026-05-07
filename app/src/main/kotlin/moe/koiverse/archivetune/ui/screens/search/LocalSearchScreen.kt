@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens.search
+package com.cct.music.lite.ui.screens.search
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -33,20 +33,20 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.CONTENT_TYPE_LIST
-import moe.koiverse.archivetune.db.entities.Album
-import moe.koiverse.archivetune.db.entities.Artist
-import moe.koiverse.archivetune.db.entities.Playlist
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.extensions.toMediaItem
-import moe.koiverse.archivetune.extensions.togglePlayPause
-import moe.koiverse.archivetune.playback.queues.ListQueue
-import moe.koiverse.archivetune.ui.component.*
-import moe.koiverse.archivetune.ui.menu.SongMenu
-import moe.koiverse.archivetune.viewmodels.LocalFilter
-import moe.koiverse.archivetune.viewmodels.LocalSearchViewModel
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.CONTENT_TYPE_LIST
+import com.cct.music.lite.db.entities.Album
+import com.cct.music.lite.db.entities.Artist
+import com.cct.music.lite.db.entities.Playlist
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.extensions.toMediaItem
+import com.cct.music.lite.extensions.togglePlayPause
+import com.cct.music.lite.playback.queues.ListQueue
+import com.cct.music.lite.ui.component.*
+import com.cct.music.lite.ui.menu.SongMenu
+import com.cct.music.lite.viewmodels.LocalFilter
+import com.cct.music.lite.viewmodels.LocalSearchViewModel
 import kotlinx.coroutines.flow.drop
 import kotlinx.coroutines.flow.collect
 

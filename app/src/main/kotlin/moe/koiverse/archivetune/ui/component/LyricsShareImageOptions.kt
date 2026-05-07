@@ -5,12 +5,12 @@
  * Don't remove this copyright holder!
  */
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.annotation.StringRes
 import androidx.compose.runtime.Immutable
 import kotlin.math.roundToInt
-import moe.koiverse.archivetune.R
+import com.cct.music.lite.R
 
 enum class LyricsShareAspectRatio(
     @StringRes val labelRes: Int,

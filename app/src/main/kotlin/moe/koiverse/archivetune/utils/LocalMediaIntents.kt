@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
 import android.content.ClipData
 import android.content.Context

@@ -10,7 +10,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import android.content.Intent
 import android.net.Uri
@@ -41,7 +41,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import moe.koiverse.archivetune.R
+import com.cct.music.lite.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

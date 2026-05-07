@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.menu
+package com.cct.music.lite.ui.menu
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -47,20 +47,20 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.TextUnitType
 import androidx.compose.ui.unit.dp
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.LocalDatabase
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.ListThumbnailSize
-import moe.koiverse.archivetune.db.entities.Playlist
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.models.toMediaMetadata
-import moe.koiverse.archivetune.ui.component.CreatePlaylistDialog
-import moe.koiverse.archivetune.ui.component.DefaultDialog
-import moe.koiverse.archivetune.ui.component.ListDialog
-import moe.koiverse.archivetune.ui.component.ListItem
-import moe.koiverse.archivetune.ui.component.PlaylistListItem
-import moe.koiverse.archivetune.utils.reportException
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.LocalDatabase
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.ListThumbnailSize
+import com.cct.music.lite.db.entities.Playlist
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.models.toMediaMetadata
+import com.cct.music.lite.ui.component.CreatePlaylistDialog
+import com.cct.music.lite.ui.component.DefaultDialog
+import com.cct.music.lite.ui.component.ListDialog
+import com.cct.music.lite.ui.component.ListItem
+import com.cct.music.lite.ui.component.PlaylistListItem
+import com.cct.music.lite.utils.reportException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

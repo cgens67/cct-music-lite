@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens.artist
+package com.cct.music.lite.ui.screens.artist
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.combinedClickable
@@ -43,27 +43,27 @@ import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.ArtistSongSortDescendingKey
-import moe.koiverse.archivetune.constants.ArtistSongSortType
-import moe.koiverse.archivetune.constants.ArtistSongSortTypeKey
-import moe.koiverse.archivetune.constants.CONTENT_TYPE_HEADER
-import moe.koiverse.archivetune.constants.HideExplicitKey
-import moe.koiverse.archivetune.extensions.toMediaItem
-import moe.koiverse.archivetune.extensions.togglePlayPause
-import moe.koiverse.archivetune.playback.queues.ListQueue
-import moe.koiverse.archivetune.ui.component.HideOnScrollFAB
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.SongListItem
-import moe.koiverse.archivetune.ui.component.SortHeader
-import moe.koiverse.archivetune.ui.menu.SongMenu
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.rememberEnumPreference
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.viewmodels.ArtistSongsViewModel
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.ArtistSongSortDescendingKey
+import com.cct.music.lite.constants.ArtistSongSortType
+import com.cct.music.lite.constants.ArtistSongSortTypeKey
+import com.cct.music.lite.constants.CONTENT_TYPE_HEADER
+import com.cct.music.lite.constants.HideExplicitKey
+import com.cct.music.lite.extensions.toMediaItem
+import com.cct.music.lite.extensions.togglePlayPause
+import com.cct.music.lite.playback.queues.ListQueue
+import com.cct.music.lite.ui.component.HideOnScrollFAB
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.SongListItem
+import com.cct.music.lite.ui.component.SortHeader
+import com.cct.music.lite.ui.menu.SongMenu
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.rememberEnumPreference
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.viewmodels.ArtistSongsViewModel
 
 @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class)
 @Composable

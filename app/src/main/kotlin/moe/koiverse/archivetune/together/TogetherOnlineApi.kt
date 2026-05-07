@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.together
+package com.cct.music.lite.together
 
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.okhttp.OkHttp

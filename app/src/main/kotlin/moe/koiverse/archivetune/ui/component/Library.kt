@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.clickable
@@ -20,16 +20,16 @@ import androidx.compose.foundation.layout.RowScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.innertube.models.PlaylistItem
-import moe.koiverse.archivetune.innertube.models.WatchEndpoint
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.db.entities.Album
-import moe.koiverse.archivetune.db.entities.Artist
-import moe.koiverse.archivetune.db.entities.Playlist
-import moe.koiverse.archivetune.ui.menu.AlbumMenu
-import moe.koiverse.archivetune.ui.menu.ArtistMenu
-import moe.koiverse.archivetune.ui.menu.PlaylistMenu
-import moe.koiverse.archivetune.ui.menu.YouTubePlaylistMenu
+import com.cct.music.lite.innertube.models.PlaylistItem
+import com.cct.music.lite.innertube.models.WatchEndpoint
+import com.cct.music.lite.R
+import com.cct.music.lite.db.entities.Album
+import com.cct.music.lite.db.entities.Artist
+import com.cct.music.lite.db.entities.Playlist
+import com.cct.music.lite.ui.menu.AlbumMenu
+import com.cct.music.lite.ui.menu.ArtistMenu
+import com.cct.music.lite.ui.menu.PlaylistMenu
+import com.cct.music.lite.ui.menu.YouTubePlaylistMenu
 import kotlinx.coroutines.CoroutineScope
 
 @Composable

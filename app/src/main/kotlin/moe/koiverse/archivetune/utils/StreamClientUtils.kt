@@ -6,9 +6,9 @@
  */
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
-import moe.koiverse.archivetune.innertube.models.YouTubeClient
+import com.cct.music.lite.innertube.models.YouTubeClient
 import okhttp3.HttpUrl
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import okhttp3.Request

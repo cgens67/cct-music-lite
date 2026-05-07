@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens
+package com.cct.music.lite.ui.screens
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -46,20 +46,20 @@ import androidx.compose.material3.MaterialTheme
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import moe.koiverse.archivetune.innertube.utils.parseCookieString
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.InnerTubeCookieKey
-import moe.koiverse.archivetune.constants.DisableBlurKey
-import moe.koiverse.archivetune.constants.ShowHomeCategoryChipsKey
-import moe.koiverse.archivetune.ui.component.ChipsRow
-import moe.koiverse.archivetune.ui.component.LocalBottomSheetPageState
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.component.NavigationTitle
-import moe.koiverse.archivetune.ui.utils.SnapLayoutInfoProvider
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.viewmodels.HomeViewModel
+import com.cct.music.lite.innertube.utils.parseCookieString
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.InnerTubeCookieKey
+import com.cct.music.lite.constants.DisableBlurKey
+import com.cct.music.lite.constants.ShowHomeCategoryChipsKey
+import com.cct.music.lite.ui.component.ChipsRow
+import com.cct.music.lite.ui.component.LocalBottomSheetPageState
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.component.NavigationTitle
+import com.cct.music.lite.ui.utils.SnapLayoutInfoProvider
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.viewmodels.HomeViewModel
 import kotlinx.coroutines.launch
 
 

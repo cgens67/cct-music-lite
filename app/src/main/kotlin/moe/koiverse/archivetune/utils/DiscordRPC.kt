@@ -8,13 +8,13 @@
 
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
 import android.content.Context
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.constants.*
-import moe.koiverse.archivetune.utils.dataStore
+import com.cct.music.lite.R
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.constants.*
+import com.cct.music.lite.utils.dataStore
 import com.my.kizzy.rpc.KizzyRPC
 import com.my.kizzy.rpc.RpcImage
 import timber.log.Timber
@@ -421,7 +421,7 @@ class DiscordRPC(
         } catch (ex: Exception) {
             val msg = ex.message ?: ex.toString()
             Timber.tag("DiscordRPC").e("refreshActivity updateSong failed: %s", msg)
-            moe.koiverse.archivetune.utils.GlobalLog.append(
+            com.cct.music.lite.utils.GlobalLog.append(
                 android.util.Log.ERROR,
                 "DiscordRPC",
                 "refreshActivity updateSong failed: $msg\n${ex.stackTraceToString()}"

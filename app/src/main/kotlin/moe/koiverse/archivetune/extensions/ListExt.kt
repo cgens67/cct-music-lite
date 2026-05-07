@@ -8,10 +8,10 @@
 
 
 
-package moe.koiverse.archivetune.extensions
+package com.cct.music.lite.extensions
 
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.db.entities.Album
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.db.entities.Album
 
 fun <T> List<T>.reversed(reversed: Boolean) = if (reversed) asReversed() else this
 

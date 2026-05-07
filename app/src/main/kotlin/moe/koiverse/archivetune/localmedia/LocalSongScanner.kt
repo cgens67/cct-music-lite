@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.localmedia
+package com.cct.music.lite.localmedia
 
 import android.content.ContentUris
 import android.content.Context
@@ -16,16 +16,16 @@ import android.provider.MediaStore
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.db.entities.AlbumArtistMap
-import moe.koiverse.archivetune.db.entities.AlbumEntity
-import moe.koiverse.archivetune.db.entities.ArtistEntity
-import moe.koiverse.archivetune.db.entities.FormatEntity
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.db.entities.SongAlbumMap
-import moe.koiverse.archivetune.db.entities.SongArtistMap
-import moe.koiverse.archivetune.db.entities.SongEntity
+import com.cct.music.lite.R
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.db.entities.AlbumArtistMap
+import com.cct.music.lite.db.entities.AlbumEntity
+import com.cct.music.lite.db.entities.ArtistEntity
+import com.cct.music.lite.db.entities.FormatEntity
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.db.entities.SongAlbumMap
+import com.cct.music.lite.db.entities.SongArtistMap
+import com.cct.music.lite.db.entities.SongEntity
 import java.nio.charset.StandardCharsets
 import java.time.Instant
 import java.time.LocalDateTime

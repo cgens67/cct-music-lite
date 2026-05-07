@@ -8,13 +8,13 @@
 
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
 import android.content.Context
 import androidx.datastore.preferences.core.stringPreferencesKey
-import moe.koiverse.archivetune.constants.DiscordPresenceIntervalUnitKey
-import moe.koiverse.archivetune.constants.DiscordPresenceIntervalValueKey
-import moe.koiverse.archivetune.utils.dataStore
+import com.cct.music.lite.constants.DiscordPresenceIntervalUnitKey
+import com.cct.music.lite.constants.DiscordPresenceIntervalValueKey
+import com.cct.music.lite.utils.dataStore
 
 fun getPresenceIntervalMillis(context: Context): Long {
     val intervalPreset = context.dataStore[stringPreferencesKey("discordPresenceIntervalPreset")] ?: "20s"

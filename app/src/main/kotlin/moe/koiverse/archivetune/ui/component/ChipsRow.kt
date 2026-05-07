@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import android.annotation.SuppressLint
 import androidx.compose.animation.AnimatedContent
@@ -53,8 +53,8 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.ui.screens.OptionStats
+import com.cct.music.lite.R
+import com.cct.music.lite.ui.screens.OptionStats
 
 @Composable
 fun <E> ChipsRow(

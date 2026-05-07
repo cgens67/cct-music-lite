@@ -8,13 +8,13 @@
 
 
 
-package moe.koiverse.archivetune.lyrics
+package com.cct.music.lite.lyrics
 
 import android.content.Context
-import moe.koiverse.archivetune.lrclib.LrcLib
-import moe.koiverse.archivetune.constants.EnableLrcLibKey
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.get
+import com.cct.music.lite.lrclib.LrcLib
+import com.cct.music.lite.constants.EnableLrcLibKey
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.get
 
 object LrcLibLyricsProvider : LyricsProvider {
     override val name = "LrcLib"

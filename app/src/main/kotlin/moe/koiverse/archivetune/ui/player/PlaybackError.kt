@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.player
+package com.cct.music.lite.ui.player
 
 import android.content.Intent
 import android.net.Uri
@@ -40,8 +40,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.media3.common.PlaybackException
 import android.widget.Toast
-import moe.koiverse.archivetune.MainActivity
-import moe.koiverse.archivetune.R
+import com.cct.music.lite.MainActivity
+import com.cct.music.lite.R
 
 @Composable
 fun PlaybackError(

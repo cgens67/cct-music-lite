@@ -8,36 +8,36 @@
 
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
 import android.net.ConnectivityManager
 import androidx.media3.common.PlaybackException
 import io.ktor.client.plugins.ClientRequestException
 import io.ktor.http.HttpStatusCode
-import moe.koiverse.archivetune.constants.AudioQuality
-import moe.koiverse.archivetune.constants.PlayerStreamClient
-import moe.koiverse.archivetune.innertube.NewPipeUtils
-import moe.koiverse.archivetune.innertube.PlaybackAuthState
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.YouTubeClient
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.IOS
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.TVHTML5_SIMPLY_EMBEDDED_PLAYER
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.WEB_REMIX
-import moe.koiverse.archivetune.innertube.models.response.PlayerResponse
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.ANDROID_CREATOR
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.ANDROID_MUSIC
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.ANDROID_TESTSUITE
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.ANDROID_UNPLUGGED
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.ANDROID_VR_1_43_32
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.ANDROID_VR_1_61_48
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.ANDROID_VR_NO_AUTH
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.IPADOS
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.IOS_MUSIC
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.MOBILE
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.TVHTML5
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.VISIONOS
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.WEB
-import moe.koiverse.archivetune.innertube.models.YouTubeClient.Companion.WEB_CREATOR
+import com.cct.music.lite.constants.AudioQuality
+import com.cct.music.lite.constants.PlayerStreamClient
+import com.cct.music.lite.innertube.NewPipeUtils
+import com.cct.music.lite.innertube.PlaybackAuthState
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.YouTubeClient
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.IOS
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.TVHTML5_SIMPLY_EMBEDDED_PLAYER
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.WEB_REMIX
+import com.cct.music.lite.innertube.models.response.PlayerResponse
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.ANDROID_CREATOR
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.ANDROID_MUSIC
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.ANDROID_TESTSUITE
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.ANDROID_UNPLUGGED
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.ANDROID_VR_1_43_32
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.ANDROID_VR_1_61_48
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.ANDROID_VR_NO_AUTH
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.IPADOS
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.IOS_MUSIC
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.MOBILE
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.TVHTML5
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.VISIONOS
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.WEB
+import com.cct.music.lite.innertube.models.YouTubeClient.Companion.WEB_CREATOR
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import okhttp3.OkHttpClient
 import timber.log.Timber
@@ -106,7 +106,7 @@ object YTPlayerUtils {
      * Do not use other clients for this because it can result in inconsistent metadata.
      * For example other clients can have different normalization targets (loudnessDb).
      *
-     * [moe.koiverse.archivetune.innertube.models.YouTubeClient.WEB_REMIX] should be preferred here because currently it is the only client which provides:
+     * [com.cct.music.lite.innertube.models.YouTubeClient.WEB_REMIX] should be preferred here because currently it is the only client which provides:
      * - the correct metadata (like loudnessDb)
      * - premium formats
      */

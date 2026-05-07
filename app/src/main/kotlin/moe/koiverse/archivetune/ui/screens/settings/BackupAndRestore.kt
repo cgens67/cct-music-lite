@@ -7,7 +7,7 @@
 
 @file:OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -77,14 +77,14 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.db.entities.Song
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.menu.AddToPlaylistDialogOnline
-import moe.koiverse.archivetune.ui.menu.LoadingScreen
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.viewmodels.BackupRestoreViewModel
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.R
+import com.cct.music.lite.db.entities.Song
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.menu.AddToPlaylistDialogOnline
+import com.cct.music.lite.ui.menu.LoadingScreen
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.viewmodels.BackupRestoreViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import java.time.LocalDateTime

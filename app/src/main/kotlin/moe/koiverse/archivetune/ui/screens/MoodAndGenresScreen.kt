@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens
+package com.cct.music.lite.ui.screens
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.spring
@@ -62,14 +62,14 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import coil3.compose.AsyncImage
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.BrowseEndpoint
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.ui.component.NavigationTitle
-import moe.koiverse.archivetune.ui.component.shimmer.ShimmerHost
-import moe.koiverse.archivetune.ui.component.shimmer.TextPlaceholder
-import moe.koiverse.archivetune.viewmodels.MoodAndGenresViewModel
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.BrowseEndpoint
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.R
+import com.cct.music.lite.ui.component.NavigationTitle
+import com.cct.music.lite.ui.component.shimmer.ShimmerHost
+import com.cct.music.lite.ui.component.shimmer.TextPlaceholder
+import com.cct.music.lite.viewmodels.MoodAndGenresViewModel
 import java.util.concurrent.ConcurrentHashMap
 
 @OptIn(ExperimentalFoundationApi::class)

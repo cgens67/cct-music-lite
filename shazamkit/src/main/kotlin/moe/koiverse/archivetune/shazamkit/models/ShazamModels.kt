@@ -5,7 +5,7 @@
  * Don't remove this copyright holder!
  */
 
-package moe.koiverse.archivetune.shazamkit.models
+package com.cct.music.lite.shazamkit.models
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

@@ -7,7 +7,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.animateContentSize
@@ -56,8 +56,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.ui.screens.Screens
+import com.cct.music.lite.R
+import com.cct.music.lite.ui.screens.Screens
 
 @Composable
 fun FloatingNavigationToolbar(

@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.utils
+package com.cct.music.lite.utils
 
 import android.content.Context
 import com.my.kizzy.repository.KizzyRepository
@@ -16,7 +16,7 @@ import com.my.kizzy.rpc.RpcImage
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.withTimeoutOrNull
-import moe.koiverse.archivetune.db.entities.Song
+import com.cct.music.lite.db.entities.Song
 import timber.log.Timber
 
 data class ResolvedDiscordImages(

@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.BorderStroke
@@ -41,9 +41,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.core.graphics.toColorInt
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.db.entities.TagEntity
+import com.cct.music.lite.R
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.db.entities.TagEntity
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable

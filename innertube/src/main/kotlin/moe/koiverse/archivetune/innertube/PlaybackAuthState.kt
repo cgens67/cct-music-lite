@@ -6,11 +6,11 @@
  */
 
 
-package moe.koiverse.archivetune.innertube
+package com.cct.music.lite.innertube
 
-import moe.koiverse.archivetune.innertube.models.YouTubeClient
-import moe.koiverse.archivetune.innertube.utils.parseCookieString
-import moe.koiverse.archivetune.innertube.utils.sha1
+import com.cct.music.lite.innertube.models.YouTubeClient
+import com.cct.music.lite.innertube.utils.parseCookieString
+import com.cct.music.lite.innertube.utils.sha1
 import java.util.Locale
 
 data class PlaybackAuthState(

@@ -8,12 +8,12 @@
 
 
 
-package moe.koiverse.archivetune.playback.queues
+package com.cct.music.lite.playback.queues
 
 import androidx.media3.common.MediaItem
-import moe.koiverse.archivetune.extensions.ExtraIsMusicVideo
-import moe.koiverse.archivetune.extensions.metadata
-import moe.koiverse.archivetune.models.MediaMetadata
+import com.cct.music.lite.extensions.ExtraIsMusicVideo
+import com.cct.music.lite.extensions.metadata
+import com.cct.music.lite.models.MediaMetadata
 
 interface Queue {
     val preloadItem: MediaMetadata?

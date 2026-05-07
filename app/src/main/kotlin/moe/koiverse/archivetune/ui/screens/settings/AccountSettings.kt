@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.settings
+package com.cct.music.lite.ui.screens.settings
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.AnimatedVisibility
@@ -116,34 +116,34 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
 import coil3.compose.AsyncImage
-import moe.koiverse.archivetune.App.Companion.forgetAccount
-import moe.koiverse.archivetune.BuildConfig
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.AccountChannelHandleKey
-import moe.koiverse.archivetune.constants.AccountEmailKey
-import moe.koiverse.archivetune.constants.AccountNameKey
-import moe.koiverse.archivetune.constants.DataSyncIdKey
-import moe.koiverse.archivetune.constants.InnerTubeCookieKey
-import moe.koiverse.archivetune.constants.SelectedYtmPlaylistsKey
-import moe.koiverse.archivetune.constants.UseLoginForBrowse
-import moe.koiverse.archivetune.constants.VisitorDataKey
-import moe.koiverse.archivetune.constants.YtmSyncKey
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.PlaylistItem
-import moe.koiverse.archivetune.innertube.utils.completed
-import moe.koiverse.archivetune.innertube.utils.parseCookieString
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.InfoLabel
-import moe.koiverse.archivetune.ui.component.TextFieldDialog
-import moe.koiverse.archivetune.ui.screens.buildLoginRoute
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.utils.PreferenceStore
-import moe.koiverse.archivetune.utils.Updater
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.putLegacyPoToken
-import moe.koiverse.archivetune.utils.rememberPreference
-import moe.koiverse.archivetune.viewmodels.HomeViewModel
+import com.cct.music.lite.App.Companion.forgetAccount
+import com.cct.music.lite.BuildConfig
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.AccountChannelHandleKey
+import com.cct.music.lite.constants.AccountEmailKey
+import com.cct.music.lite.constants.AccountNameKey
+import com.cct.music.lite.constants.DataSyncIdKey
+import com.cct.music.lite.constants.InnerTubeCookieKey
+import com.cct.music.lite.constants.SelectedYtmPlaylistsKey
+import com.cct.music.lite.constants.UseLoginForBrowse
+import com.cct.music.lite.constants.VisitorDataKey
+import com.cct.music.lite.constants.YtmSyncKey
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.PlaylistItem
+import com.cct.music.lite.innertube.utils.completed
+import com.cct.music.lite.innertube.utils.parseCookieString
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.InfoLabel
+import com.cct.music.lite.ui.component.TextFieldDialog
+import com.cct.music.lite.ui.screens.buildLoginRoute
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.utils.PreferenceStore
+import com.cct.music.lite.utils.Updater
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.putLegacyPoToken
+import com.cct.music.lite.utils.rememberPreference
+import com.cct.music.lite.viewmodels.HomeViewModel
 import kotlin.math.floor
 
 private val CardShape = RoundedCornerShape(28.dp)

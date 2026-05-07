@@ -6,7 +6,7 @@
  */
 
 
-package moe.koiverse.archivetune.lyrics
+package com.cct.music.lite.lyrics
 
 import android.util.Log
 import androidx.datastore.preferences.core.booleanPreferencesKey
@@ -19,14 +19,14 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
-import moe.koiverse.archivetune.constants.PreloadQueueLyricsEnabledKey
-import moe.koiverse.archivetune.constants.QueueLyricsPreloadCountKey
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.db.entities.LyricsEntity
-import moe.koiverse.archivetune.models.MediaMetadata
-import moe.koiverse.archivetune.utils.NetworkConnectivityObserver
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.reportException
+import com.cct.music.lite.constants.PreloadQueueLyricsEnabledKey
+import com.cct.music.lite.constants.QueueLyricsPreloadCountKey
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.db.entities.LyricsEntity
+import com.cct.music.lite.models.MediaMetadata
+import com.cct.music.lite.utils.NetworkConnectivityObserver
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.reportException
 import javax.inject.Inject
 
 /**

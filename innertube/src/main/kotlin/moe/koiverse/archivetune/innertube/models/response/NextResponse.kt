@@ -8,12 +8,12 @@
 
 
 
-package moe.koiverse.archivetune.innertube.models.response
+package com.cct.music.lite.innertube.models.response
 
-import moe.koiverse.archivetune.innertube.models.NavigationEndpoint
-import moe.koiverse.archivetune.innertube.models.PlaylistPanelRenderer
-import moe.koiverse.archivetune.innertube.models.Tabs
-import moe.koiverse.archivetune.innertube.models.YouTubeDataPage
+import com.cct.music.lite.innertube.models.NavigationEndpoint
+import com.cct.music.lite.innertube.models.PlaylistPanelRenderer
+import com.cct.music.lite.innertube.models.Tabs
+import com.cct.music.lite.innertube.models.YouTubeDataPage
 import kotlinx.serialization.Serializable
 
 @Serializable

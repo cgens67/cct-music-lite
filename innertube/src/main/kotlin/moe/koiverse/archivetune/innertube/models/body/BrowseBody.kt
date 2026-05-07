@@ -8,10 +8,10 @@
 
 
 
-package moe.koiverse.archivetune.innertube.models.body
+package com.cct.music.lite.innertube.models.body
 
-import moe.koiverse.archivetune.innertube.models.Context
-import moe.koiverse.archivetune.innertube.models.Continuation
+import com.cct.music.lite.innertube.models.Context
+import com.cct.music.lite.innertube.models.Continuation
 import kotlinx.serialization.Serializable
 
 @Serializable

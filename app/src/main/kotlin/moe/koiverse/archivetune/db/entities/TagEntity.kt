@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.db.entities
+package com.cct.music.lite.db.entities
 
 import androidx.compose.runtime.Immutable
 import androidx.room.ColumnInfo

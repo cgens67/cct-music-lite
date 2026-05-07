@@ -5,7 +5,7 @@
  * Don't remove this copyright holder!
  */
 
-package moe.koiverse.archivetune.playback
+package com.cct.music.lite.playback
 
 internal fun resolveStreamChunkLength(
     requestedLength: Long,

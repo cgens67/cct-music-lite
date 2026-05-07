@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.ui.screens.artist
+package com.cct.music.lite.ui.screens.artist
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -50,17 +50,17 @@ import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavController
-import moe.koiverse.archivetune.LocalPlayerAwareWindowInsets
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.CONTENT_TYPE_ALBUM
-import moe.koiverse.archivetune.constants.CONTENT_TYPE_HEADER
-import moe.koiverse.archivetune.constants.GridThumbnailHeight
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.LibraryAlbumGridItem
-import moe.koiverse.archivetune.ui.component.LocalMenuState
-import moe.koiverse.archivetune.ui.utils.backToMain
-import moe.koiverse.archivetune.viewmodels.ArtistAlbumsViewModel
+import com.cct.music.lite.LocalPlayerAwareWindowInsets
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.CONTENT_TYPE_ALBUM
+import com.cct.music.lite.constants.CONTENT_TYPE_HEADER
+import com.cct.music.lite.constants.GridThumbnailHeight
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.LibraryAlbumGridItem
+import com.cct.music.lite.ui.component.LocalMenuState
+import com.cct.music.lite.ui.utils.backToMain
+import com.cct.music.lite.viewmodels.ArtistAlbumsViewModel
 
 @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class)
 @Composable

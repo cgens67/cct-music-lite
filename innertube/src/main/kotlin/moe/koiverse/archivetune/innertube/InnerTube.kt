@@ -8,17 +8,17 @@
 
 
 
-package moe.koiverse.archivetune.innertube
+package com.cct.music.lite.innertube
 
-import moe.koiverse.archivetune.innertube.models.Context
-import moe.koiverse.archivetune.innertube.models.MediaInfo
-import moe.koiverse.archivetune.innertube.models.ReturnYouTubeDislikeResponse
-import moe.koiverse.archivetune.innertube.models.YouTubeClient
-import moe.koiverse.archivetune.innertube.models.YouTubeLocale
-import moe.koiverse.archivetune.innertube.models.body.*
-import moe.koiverse.archivetune.innertube.models.response.NextResponse
-import moe.koiverse.archivetune.innertube.utils.parseCookieString
-import moe.koiverse.archivetune.innertube.utils.sha1
+import com.cct.music.lite.innertube.models.Context
+import com.cct.music.lite.innertube.models.MediaInfo
+import com.cct.music.lite.innertube.models.ReturnYouTubeDislikeResponse
+import com.cct.music.lite.innertube.models.YouTubeClient
+import com.cct.music.lite.innertube.models.YouTubeLocale
+import com.cct.music.lite.innertube.models.body.*
+import com.cct.music.lite.innertube.models.response.NextResponse
+import com.cct.music.lite.innertube.utils.parseCookieString
+import com.cct.music.lite.innertube.utils.sha1
 import io.ktor.client.*
 import io.ktor.client.call.body
 import io.ktor.client.engine.okhttp.*

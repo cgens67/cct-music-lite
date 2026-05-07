@@ -8,14 +8,14 @@
 
 
 
-package moe.koiverse.archivetune.extensions
+package com.cct.music.lite.extensions
 
-import moe.koiverse.archivetune.models.PersistQueue
-import moe.koiverse.archivetune.models.QueueData
-import moe.koiverse.archivetune.models.QueueType
-import moe.koiverse.archivetune.models.MediaMetadata
-import moe.koiverse.archivetune.playback.queues.*
-import moe.koiverse.archivetune.db.entities.AlbumEntity
+import com.cct.music.lite.models.PersistQueue
+import com.cct.music.lite.models.QueueData
+import com.cct.music.lite.models.QueueType
+import com.cct.music.lite.models.MediaMetadata
+import com.cct.music.lite.playback.queues.*
+import com.cct.music.lite.db.entities.AlbumEntity
 
 fun Queue.toPersistQueue(
     title: String?,

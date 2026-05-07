@@ -5,7 +5,7 @@
  * Don't remove this copyright holder!
  */
 
-package moe.koiverse.archivetune.ui.component
+package com.cct.music.lite.ui.component
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.Image
@@ -64,9 +64,9 @@ import coil3.request.ImageRequest
 import coil3.request.crossfade
 import com.skydoves.cloudy.cloudy
 import com.skydoves.cloudy.liquidGlass
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.constants.UseSystemFontKey
-import moe.koiverse.archivetune.utils.rememberPreference
+import com.cct.music.lite.R
+import com.cct.music.lite.constants.UseSystemFontKey
+import com.cct.music.lite.utils.rememberPreference
 
 @Composable
 fun rememberAdjustedFontSize(

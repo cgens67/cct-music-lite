@@ -8,14 +8,14 @@
 
 
 
-package moe.koiverse.archivetune.playback.queues
+package com.cct.music.lite.playback.queues
 
 import androidx.media3.common.MediaItem
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.extensions.toMediaItem
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.WatchEndpoint
-import moe.koiverse.archivetune.models.MediaMetadata
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.extensions.toMediaItem
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.WatchEndpoint
+import com.cct.music.lite.models.MediaMetadata
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.flow.first

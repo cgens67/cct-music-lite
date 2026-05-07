@@ -8,7 +8,7 @@
 
 
 
-package moe.koiverse.archivetune.viewmodels
+package com.cct.music.lite.viewmodels
 
 import android.content.Context
 import androidx.lifecycle.SavedStateHandle
@@ -34,34 +34,34 @@ import kotlinx.coroutines.sync.withPermit
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.Dispatchers
-import moe.koiverse.archivetune.constants.PlaylistSongSortDescendingKey
-import moe.koiverse.archivetune.constants.PlaylistSuggestionSource
-import moe.koiverse.archivetune.constants.PlaylistSuggestionSourceKey
-import moe.koiverse.archivetune.constants.PlaylistSongSortType
-import moe.koiverse.archivetune.constants.PlaylistSongSortTypeKey
-import moe.koiverse.archivetune.constants.HideExplicitKey
-import moe.koiverse.archivetune.constants.HideVideoKey
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.db.MusicDatabase
-import moe.koiverse.archivetune.db.entities.PlaylistSong
-import moe.koiverse.archivetune.extensions.reversed
-import moe.koiverse.archivetune.extensions.toEnum
-import moe.koiverse.archivetune.innertube.YouTube
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.innertube.models.YTItem
-import moe.koiverse.archivetune.innertube.models.filterExplicit
-import moe.koiverse.archivetune.innertube.models.filterVideo
-import moe.koiverse.archivetune.innertube.pages.SearchResult
-import moe.koiverse.archivetune.models.PlaylistSuggestion
-import moe.koiverse.archivetune.models.PlaylistSuggestionPage
-import moe.koiverse.archivetune.models.PlaylistSuggestionQuery
-import moe.koiverse.archivetune.utils.PlaylistSuggestionQueryBuilder
-import moe.koiverse.archivetune.utils.SyncUtils
-import moe.koiverse.archivetune.utils.dataStore
-import moe.koiverse.archivetune.utils.reportException
+import com.cct.music.lite.constants.PlaylistSongSortDescendingKey
+import com.cct.music.lite.constants.PlaylistSuggestionSource
+import com.cct.music.lite.constants.PlaylistSuggestionSourceKey
+import com.cct.music.lite.constants.PlaylistSongSortType
+import com.cct.music.lite.constants.PlaylistSongSortTypeKey
+import com.cct.music.lite.constants.HideExplicitKey
+import com.cct.music.lite.constants.HideVideoKey
+import com.cct.music.lite.R
+import com.cct.music.lite.db.MusicDatabase
+import com.cct.music.lite.db.entities.PlaylistSong
+import com.cct.music.lite.extensions.reversed
+import com.cct.music.lite.extensions.toEnum
+import com.cct.music.lite.innertube.YouTube
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.innertube.models.YTItem
+import com.cct.music.lite.innertube.models.filterExplicit
+import com.cct.music.lite.innertube.models.filterVideo
+import com.cct.music.lite.innertube.pages.SearchResult
+import com.cct.music.lite.models.PlaylistSuggestion
+import com.cct.music.lite.models.PlaylistSuggestionPage
+import com.cct.music.lite.models.PlaylistSuggestionQuery
+import com.cct.music.lite.utils.PlaylistSuggestionQueryBuilder
+import com.cct.music.lite.utils.SyncUtils
+import com.cct.music.lite.utils.dataStore
+import com.cct.music.lite.utils.reportException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
-import moe.koiverse.archivetune.models.toMediaMetadata
+import com.cct.music.lite.models.toMediaMetadata
 import java.text.Collator
 import java.util.Locale
 import javax.inject.Inject
@@ -368,7 +368,7 @@ constructor(
         }
     }
     
-    suspend fun addSongToPlaylist(song: moe.koiverse.archivetune.innertube.models.SongItem, browseId: String?): Boolean {
+    suspend fun addSongToPlaylist(song: com.cct.music.lite.innertube.models.SongItem, browseId: String?): Boolean {
         return try {
             val playlistSetVideoId =
                 if (browseId != null) {
@@ -385,8 +385,8 @@ constructor(
                 if (p == null) {
                     // If not found, we can't add to it.
                     // This might happen if it's a special playlist that hasn't been created yet.
-                    if (playlistId == moe.koiverse.archivetune.db.entities.PlaylistEntity.LIKED_PLAYLIST_ID) {
-                        insert(moe.koiverse.archivetune.db.entities.PlaylistEntity(id = playlistId, name = context.getString(R.string.liked_songs), isEditable = false, bookmarkedAt = java.time.LocalDateTime.now()))
+                    if (playlistId == com.cct.music.lite.db.entities.PlaylistEntity.LIKED_PLAYLIST_ID) {
+                        insert(com.cct.music.lite.db.entities.PlaylistEntity(id = playlistId, name = context.getString(R.string.liked_songs), isEditable = false, bookmarkedAt = java.time.LocalDateTime.now()))
                     } else {
                         return@withTransaction false
                     }
@@ -399,7 +399,7 @@ constructor(
                 val maxPosition = maxPlaylistSongPosition(playlistId)
                 val position = (maxPosition ?: -1) + 1
                 insert(
-                    moe.koiverse.archivetune.db.entities.PlaylistSongMap(
+                    com.cct.music.lite.db.entities.PlaylistSongMap(
                         songId = song.id,
                         playlistId = playlistId,
                         position = position,

@@ -8,7 +8,7 @@
 
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
-package moe.koiverse.archivetune.ui.screens.playlist
+package com.cct.music.lite.ui.screens.playlist
 
 import android.widget.Toast
 import androidx.compose.foundation.clickable
@@ -45,18 +45,18 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import moe.koiverse.archivetune.LocalDatabase
-import moe.koiverse.archivetune.LocalPlayerConnection
-import moe.koiverse.archivetune.R
-import moe.koiverse.archivetune.extensions.toMediaItem
-import moe.koiverse.archivetune.extensions.togglePlayPause
-import moe.koiverse.archivetune.innertube.models.SongItem
-import moe.koiverse.archivetune.playback.queues.ListQueue
-import moe.koiverse.archivetune.ui.component.DefaultDialog
-import moe.koiverse.archivetune.ui.component.IconButton
-import moe.koiverse.archivetune.ui.component.NavigationTitle
-import moe.koiverse.archivetune.ui.component.YouTubeListItem
-import moe.koiverse.archivetune.viewmodels.LocalPlaylistViewModel
+import com.cct.music.lite.LocalDatabase
+import com.cct.music.lite.LocalPlayerConnection
+import com.cct.music.lite.R
+import com.cct.music.lite.extensions.toMediaItem
+import com.cct.music.lite.extensions.togglePlayPause
+import com.cct.music.lite.innertube.models.SongItem
+import com.cct.music.lite.playback.queues.ListQueue
+import com.cct.music.lite.ui.component.DefaultDialog
+import com.cct.music.lite.ui.component.IconButton
+import com.cct.music.lite.ui.component.NavigationTitle
+import com.cct.music.lite.ui.component.YouTubeListItem
+import com.cct.music.lite.viewmodels.LocalPlaylistViewModel
 
 @Composable
 fun PlaylistSuggestionsSection(

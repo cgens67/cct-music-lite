@@ -8,15 +8,15 @@
 
 
 
-package moe.koiverse.archivetune.innertube.models.response
+package com.cct.music.lite.innertube.models.response
 
-import moe.koiverse.archivetune.innertube.models.ResponseContext
-import moe.koiverse.archivetune.innertube.models.Thumbnails
+import com.cct.music.lite.innertube.models.ResponseContext
+import com.cct.music.lite.innertube.models.Thumbnails
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 /**
- * PlayerResponse with [moe.koiverse.archivetune.innertube.models.YouTubeClient.WEB_REMIX] client
+ * PlayerResponse with [com.cct.music.lite.innertube.models.YouTubeClient.WEB_REMIX] client
  */
 @Serializable
 data class PlayerResponse(
