@@ -575,13 +575,13 @@ fun CrossfadeSliderPreference(
             },
             onDismiss = { showDialog = false },
             onConfirm = {
-                val rounded =
-                    ((sliderValue * 2f).roundToInt().toFloat() / 2f)
-                        .coerceIn(0f, 10f)
-                sliderValue = rounded
-                showDialog = false
-                onValueChange.invoke(rounded)
-            },
+            val rounded =
+                ((sliderValue * 10f).roundToInt().toFloat() / 10f)
+                    .coerceIn(0f, 10f)
+            sliderValue = rounded
+            showDialog = false
+            onValueChange.invoke(rounded)
+        },
             onCancel = {
                 sliderValue = valueSeconds.coerceIn(0f, 10f)
                 showDialog = false
@@ -592,7 +592,7 @@ fun CrossfadeSliderPreference(
             content = {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     val rounded =
-                        ((sliderValue * 2f).roundToInt().toFloat() / 2f)
+                        ((sliderValue * 10f).roundToInt().toFloat() / 10f)
                             .coerceIn(0f, 10f)
                     val isWhole = (rounded - rounded.roundToInt().toFloat()).let { delta ->
                         kotlin.math.abs(delta) < 0.001f
@@ -621,7 +621,7 @@ fun CrossfadeSliderPreference(
 
                     val crossfadeSliderState = rememberSliderState(
                         value = sliderValue,
-                        steps = 19,
+                        steps = 99,
                         valueRange = 0f..10f,
                         onValueChangeFinished = {},
                     )
@@ -644,7 +644,7 @@ fun CrossfadeSliderPreference(
     }
 
     val rounded =
-        ((valueSeconds * 2f).roundToInt().toFloat() / 2f)
+        ((valueSeconds * 10f).roundToInt().toFloat() / 10f)
             .coerceIn(0f, 10f)
     val isWhole = (rounded - rounded.roundToInt().toFloat()).let { delta ->
         kotlin.math.abs(delta) < 0.001f

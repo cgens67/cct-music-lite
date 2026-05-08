@@ -6,6 +6,7 @@
  */
 
 
+
 @file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
 
 package com.cct.music.lite.ui.screens.settings
@@ -16,6 +17,8 @@ import androidx.compose.animation.EnterTransition
 import androidx.compose.animation.ExitTransition
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
+import androidx.compose.animation.expandVertically
+import androidx.compose.animation.shrinkVertically
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -125,6 +128,7 @@ import com.cct.music.lite.utils.isLowRamDevice
 import com.cct.music.lite.utils.rememberEnumPreference
 import com.cct.music.lite.utils.rememberPreference
 import kotlin.math.roundToInt
+import androidx.compose.animation.core.tween
 
 private val NoEnterTransition = EnterTransition.None
 private val NoExitTransition = ExitTransition.None
@@ -341,8 +345,8 @@ fun AppearanceSettings(
 
         AnimatedVisibility(
             visible = !dynamicTheme || Build.VERSION.SDK_INT < Build.VERSION_CODES.S,
-            enter = if (disableAnimations) NoEnterTransition else fadeIn(),
-            exit = if (disableAnimations) NoExitTransition else fadeOut(),
+            enter = if (disableAnimations) NoEnterTransition else expandVertically(animationSpec = tween(durationMillis = 220)) + fadeIn(animationSpec = tween(200)),
+            exit = if (disableAnimations) NoExitTransition else shrinkVertically(animationSpec = tween(durationMillis = 180)) + fadeOut(animationSpec = tween(180)),
         ) {
             SwitchPreference(
                 title = { Text(stringResource(R.string.random_theme_on_startup)) },
@@ -355,8 +359,8 @@ fun AppearanceSettings(
 
         AnimatedVisibility(
             visible = !dynamicTheme || Build.VERSION.SDK_INT < Build.VERSION_CODES.S,
-            enter = if (disableAnimations) NoEnterTransition else fadeIn(),
-            exit = if (disableAnimations) NoExitTransition else fadeOut(),
+            enter = if (disableAnimations) NoEnterTransition else expandVertically(animationSpec = tween(durationMillis = 220)) + fadeIn(animationSpec = tween(200)),
+            exit = if (disableAnimations) NoExitTransition else shrinkVertically(animationSpec = tween(durationMillis = 180)) + fadeOut(animationSpec = tween(180)),
         ) {
             PreferenceEntry(
                 title = { Text(stringResource(R.string.color_palette)) },
@@ -382,8 +386,8 @@ fun AppearanceSettings(
 
         AnimatedVisibility(
             visible = useDarkTheme,
-            enter = if (disableAnimations) NoEnterTransition else fadeIn(),
-            exit = if (disableAnimations) NoExitTransition else fadeOut(),
+            enter = if (disableAnimations) NoEnterTransition else expandVertically(animationSpec = tween(durationMillis = 220)) + fadeIn(animationSpec = tween(200)),
+            exit = if (disableAnimations) NoExitTransition else shrinkVertically(animationSpec = tween(durationMillis = 180)) + fadeOut(animationSpec = tween(180)),
         ) {
             SwitchPreference(
                 title = { Text(stringResource(R.string.pure_black)) },
@@ -505,7 +509,8 @@ fun AppearanceSettings(
             onCheckedChange = onArchiveTuneCanvasEnabledChange,
             isEnabled = isArchiveTuneCanvasAvailable,
         )
-      
+
+
 
         ThumbnailCornerRadiusSelectorButton(
             onRadiusSelected = {}
@@ -551,44 +556,44 @@ fun AppearanceSettings(
 
         AnimatedVisibility(
             visible = swipeThumbnail,
-            enter = if (disableAnimations) NoEnterTransition else fadeIn(),
-            exit = if (disableAnimations) NoExitTransition else fadeOut(),
+            enter = if (disableAnimations) NoEnterTransition else expandVertically(animationSpec = tween(durationMillis = 220)) + fadeIn(animationSpec = tween(200)),
+            exit = if (disableAnimations) NoExitTransition else shrinkVertically(animationSpec = tween(durationMillis = 180)) + fadeOut(animationSpec = tween(180)),
         ) {
             var showSensitivityDialog by rememberSaveable { mutableStateOf(false) }
-            
+
             if (showSensitivityDialog) {
                 var tempSensitivity by remember { mutableFloatStateOf(swipeSensitivity) }
-                
+
                 DefaultDialog(
-                    onDismiss = { 
+                    onDismiss = {
                         tempSensitivity = swipeSensitivity
-                        showSensitivityDialog = false 
+                        showSensitivityDialog = false
                     },
                     buttons = {
                         TextButton(
-                            onClick = { 
+                            onClick = {
                                 tempSensitivity = 0.73f
                             },
                             shapes = ButtonDefaults.shapes(),
                         ) {
                             Text(stringResource(R.string.reset))
                         }
-                        
+
                         Spacer(modifier = Modifier.weight(1f))
-                        
+
                         TextButton(
-                            onClick = { 
+                            onClick = {
                                 tempSensitivity = swipeSensitivity
-                                showSensitivityDialog = false 
+                                showSensitivityDialog = false
                             },
                             shapes = ButtonDefaults.shapes(),
                         ) {
                             Text(stringResource(android.R.string.cancel))
                         }
                         TextButton(
-                            onClick = { 
+                            onClick = {
                                 onSwipeSensitivityChange(tempSensitivity)
-                                showSensitivityDialog = false 
+                                showSensitivityDialog = false
                             },
                             shapes = ButtonDefaults.shapes(),
                         ) {
@@ -605,13 +610,13 @@ fun AppearanceSettings(
                             style = MaterialTheme.typography.headlineSmall,
                             modifier = Modifier.padding(bottom = 16.dp)
                         )
-    
+
                         Text(
                             text = stringResource(R.string.sensitivity_percentage, (tempSensitivity * 100).roundToInt()),
                             style = MaterialTheme.typography.bodyLarge,
                             modifier = Modifier.padding(bottom = 16.dp)
                         )
-    
+
                         Slider(
                             value = tempSensitivity,
                             onValueChange = { tempSensitivity = it },
@@ -621,7 +626,7 @@ fun AppearanceSettings(
                     }
                 }
             }
-            
+
             PreferenceEntry(
                 title = { Text(stringResource(R.string.swipe_sensitivity)) },
                 description = stringResource(R.string.sensitivity_percentage, (swipeSensitivity * 100).roundToInt()),
@@ -688,40 +693,40 @@ fun AppearanceSettings(
         )
 
         var showLyricsTextSizeDialog by rememberSaveable { mutableStateOf(false) }
-        
+
         if (showLyricsTextSizeDialog) {
             var tempTextSize by remember { mutableFloatStateOf(lyricsTextSize) }
-            
+
             DefaultDialog(
-                onDismiss = { 
+                onDismiss = {
                     tempTextSize = lyricsTextSize
-                    showLyricsTextSizeDialog = false 
+                    showLyricsTextSizeDialog = false
                 },
                 buttons = {
                     TextButton(
-                        onClick = { 
+                        onClick = {
                             tempTextSize = 24f
                         },
                         shapes = ButtonDefaults.shapes(),
                     ) {
                         Text(stringResource(R.string.reset))
                     }
-                    
+
                     Spacer(modifier = Modifier.weight(1f))
-                    
+
                     TextButton(
-                        onClick = { 
+                        onClick = {
                             tempTextSize = lyricsTextSize
-                            showLyricsTextSizeDialog = false 
+                            showLyricsTextSizeDialog = false
                         },
                         shapes = ButtonDefaults.shapes(),
                     ) {
                         Text(stringResource(android.R.string.cancel))
                     }
                     TextButton(
-                        onClick = { 
+                        onClick = {
                             onLyricsTextSizeChange(tempTextSize)
-                            showLyricsTextSizeDialog = false 
+                            showLyricsTextSizeDialog = false
                         },
                         shapes = ButtonDefaults.shapes(),
                     ) {
@@ -755,49 +760,49 @@ fun AppearanceSettings(
                 }
             }
         }
-        
+
         PreferenceEntry(
             title = { Text(stringResource(R.string.lyrics_text_size)) },
             description = "${lyricsTextSize.roundToInt()} sp",
             icon = { Icon(painterResource(R.drawable.text_fields), null) },
             onClick = { showLyricsTextSizeDialog = true }
         )
-        
+
         var showLyricsLineSpacingDialog by rememberSaveable { mutableStateOf(false) }
-        
+
         if (showLyricsLineSpacingDialog) {
             var tempLineSpacing by remember { mutableFloatStateOf(lyricsLineSpacing) }
-            
+
             DefaultDialog(
-                onDismiss = { 
+                onDismiss = {
                     tempLineSpacing = lyricsLineSpacing
-                    showLyricsLineSpacingDialog = false 
+                    showLyricsLineSpacingDialog = false
                 },
                 buttons = {
                     TextButton(
-                        onClick = { 
+                        onClick = {
                             tempLineSpacing = 1.3f
                         },
                         shapes = ButtonDefaults.shapes(),
                     ) {
                         Text(stringResource(R.string.reset))
                     }
-                    
+
                     Spacer(modifier = Modifier.weight(1f))
-                    
+
                     TextButton(
-                        onClick = { 
+                        onClick = {
                             tempLineSpacing = lyricsLineSpacing
-                            showLyricsLineSpacingDialog = false 
+                            showLyricsLineSpacingDialog = false
                         },
                         shapes = ButtonDefaults.shapes(),
                     ) {
                         Text(stringResource(android.R.string.cancel))
                     }
                     TextButton(
-                        onClick = { 
+                        onClick = {
                             onLyricsLineSpacingChange(tempLineSpacing)
-                            showLyricsLineSpacingDialog = false 
+                            showLyricsLineSpacingDialog = false
                         },
                         shapes = ButtonDefaults.shapes(),
                     ) {
@@ -831,7 +836,7 @@ fun AppearanceSettings(
                 }
             }
         }
-        
+
         PreferenceEntry(
             title = { Text(stringResource(R.string.lyrics_line_spacing)) },
             description = "${String.format("%.1f", lyricsLineSpacing)}x",
@@ -975,7 +980,6 @@ fun AppearanceSettings(
             checked = swipeToSong,
             onCheckedChange = onSwipeToSongChange
         )
-
 
         EnumListPreference(
             title = { Text(stringResource(R.string.grid_cell_size)) },
