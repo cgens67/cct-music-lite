@@ -155,14 +155,37 @@ jobs:
           find app/build/outputs/apk -maxdepth 8 -type d -print || true
           exit 1
 
+      - name: Generate temporary keystore
+        id: generate_keystore
+        shell: bash
+        run: |
+          set -euo pipefail
+          KEYSTORE_FILE="$RUNNER_TEMP/ci_keystore.jks"
+          KEYSTORE_PASSWORD="android"
+          KEY_PASSWORD="android"
+          KEY_ALIAS="ci-releases"
+
+          # Generate keystore for signing
+          keytool -genkeypair -v -keystore "$KEYSTORE_FILE" \
+            -storepass "$KEYSTORE_PASSWORD" -keypass "$KEY_PASSWORD" \
+            -alias "$KEY_ALIAS" -keyalg RSA -keysize 2048 -validity 10000 \
+            -dname "CN=CI,O=CI,OU=CI,C=US"
+
+          # Base64 encode keystore so it can be passed to the signing action
+          KEYSTORE_BASE64=$(base64 "$KEYSTORE_FILE" | tr -d '\n')
+          echo "keystore_base64=$KEYSTORE_BASE64" >> "$GITHUB_OUTPUT"
+          echo "keystore_password=$KEYSTORE_PASSWORD" >> "$GITHUB_OUTPUT"
+          echo "key_password=$KEY_PASSWORD" >> "$GITHUB_OUTPUT"
+          echo "key_alias=$KEY_ALIAS" >> "$GITHUB_OUTPUT"
+
       - name: Sign APK
         uses: ilharp/sign-android-release@v2.0.0
         with:
           releaseDir: ${{ steps.release_dir.outputs.release_dir }}/
-          signingKey: ${{ secrets.KEYSTORE }}
-          keyAlias: ${{ secrets.KEY_ALIAS }}
-          keyStorePassword: ${{ secrets.KEYSTORE_PASSWORD }}
-          keyPassword: ${{ secrets.KEY_PASSWORD }}
+          signingKey: ${{ secrets.KEYSTORE != '' && secrets.KEYSTORE || steps.generate_keystore.outputs.keystore_base64 }}
+          keyAlias: ${{ secrets.KEY_ALIAS != '' && secrets.KEY_ALIAS || steps.generate_keystore.outputs.key_alias }}
+          keyStorePassword: ${{ secrets.KEYSTORE_PASSWORD != '' && secrets.KEYSTORE_PASSWORD || steps.generate_keystore.outputs.keystore_password }}
+          keyPassword: ${{ secrets.KEY_PASSWORD != '' && secrets.KEY_PASSWORD || steps.generate_keystore.outputs.key_password }}
           buildToolsVersion: 35.0.0
 
       - name: Move signed APK
