@@ -562,7 +562,7 @@ fun KeepListeningSection(
     ) {
         items(
             items = keepListening,
-            key = { item ->
+            key = { item -> 
                 when (item) {
                     is Song -> "song_${item.id}"
                     is Album -> "album_${item.id}"
@@ -605,7 +605,7 @@ fun ForgottenFavoritesSection(
 ) {
     val rows = min(4, forgottenFavorites.size)
     val distinctForgottenFavorites = remember(forgottenFavorites) { forgottenFavorites.distinctBy { it.id } }
-
+    
     LazyHorizontalGrid(
         state = lazyGridState,
         rows = GridCells.Fixed(rows),
@@ -691,7 +691,7 @@ fun AccountPlaylistsSection(
     modifier: Modifier = Modifier
 ) {
     val distinctPlaylists = remember(accountPlaylists) { accountPlaylists.distinctBy { it.id } }
-
+    
     LazyRow(
         contentPadding = WindowInsets.systemBars
             .only(WindowInsetsSides.Horizontal)
@@ -772,28 +772,27 @@ fun HomePageSectionContent(
     scope: CoroutineScope,
     modifier: Modifier = Modifier
 ) {
-    if (section.items.isEmpty()) return
-
-    HorizontalCenteredHeroCarousel(
-        state = rememberCarouselState { section.items.size },
-        maxItemWidth = 250.dp,
-        itemSpacing = 8.dp,
-        contentPadding = PaddingValues(horizontal = 16.dp),
+    LazyRow(
+        contentPadding = WindowInsets.systemBars
+            .only(WindowInsetsSides.Horizontal)
+            .asPaddingValues(),
         modifier = modifier
-            .fillMaxWidth()
-            .height(290.dp)
-    ) { index ->
-        val item = section.items[index]
-        YouTubeGridItemWrapper(
-            item = item,
-            mediaMetadata = mediaMetadata,
-            isPlaying = isPlaying,
-            navController = navController,
-            playerConnection = playerConnection,
-            menuState = menuState,
-            haptic = haptic,
-            scope = scope
-        )
+    ) {
+        items(
+            items = section.items,
+            key = { it.id }
+        ) { item ->
+            YouTubeGridItemWrapper(
+                item = item,
+                mediaMetadata = mediaMetadata,
+                isPlaying = isPlaying,
+                navController = navController,
+                playerConnection = playerConnection,
+                menuState = menuState,
+                haptic = haptic,
+                scope = scope
+            )
+        }
     }
 }
 
@@ -1031,7 +1030,7 @@ fun SimilarRecommendationsTitle(
         title = recommendation.title.title,
         thumbnail = recommendation.title.thumbnailUrl?.let { thumbnailUrl ->
             {
-                val shape = if (recommendation.title is Artist) CircleShape
+                val shape = if (recommendation.title is Artist) CircleShape 
                     else RoundedCornerShape(ThumbnailCornerRadius)
                 AsyncImage(
                     model = thumbnailUrl,
@@ -1068,7 +1067,7 @@ fun HomePageSectionTitle(
         label = section.label,
         thumbnail = section.thumbnail?.let { thumbnailUrl ->
             {
-                val shape = if (section.endpoint?.isArtistEndpoint == true) CircleShape
+                val shape = if (section.endpoint?.isArtistEndpoint == true) CircleShape 
                     else RoundedCornerShape(ThumbnailCornerRadius)
                 AsyncImage(
                     model = thumbnailUrl,
@@ -1106,7 +1105,7 @@ fun LazyListScope.AccountPlaylistsContainer(
 ) {
     item {
         val accountPlaylists by viewModel.accountPlaylists.collectAsState()
-
+        
         // Check if list is not null and not empty
         val currentPlaylists = accountPlaylists
         if (!currentPlaylists.isNullOrEmpty()) {
@@ -1147,7 +1146,7 @@ fun LazyListScope.SimilarRecommendationsContainer(
 ) {
      item {
         val similarRecommendations by viewModel.similarRecommendations.collectAsState()
-
+        
         Column {
             similarRecommendations?.forEach { recommendation ->
                 SimilarRecommendationsTitle(
